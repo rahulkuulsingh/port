@@ -21,7 +21,7 @@ export function Card({ ...props }) {
           <Tag link={"https://example.com"} label={"SASS"} />
           <Tag link={"https://example.com"} label={"Marketing Automation"} />
         </div>
-        <h2 className="card-title">{props.title}</h2>
+        <h2 className="card-title leading-9	">{props.title}</h2>
         <div className="project-meta-details">
           <p className="role">Role: {props.role}</p>
           <p className="projectDate">Year: {props.projectDate}</p>
@@ -36,7 +36,7 @@ export function Card({ ...props }) {
             growthValue={7}
             growthStatement={"BOOST IN product adoption"}
           />
-          <GrowthMetrics growthValue={9}growthStatement={"RISE in MRR"} />
+          <GrowthMetrics growthValue={9} growthStatement={"RISE in MRR"} />
         </div>
         <Link
           className="flex p-3 pl-6 bg-gray-300 w-fit self-end rounded-lg"

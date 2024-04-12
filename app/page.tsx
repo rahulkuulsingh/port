@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Card } from "./ui/card";
+import Navbar from "./ui/layout";
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
       </h1>
       <div className="short-bio w-1/2 text-xs md:text-base">
         <p className="mb-4">
-          {`Hey, I'm Rahul. I'm a product designer. I'm currently building
+          {`Hey, I&lsquom Rahul. I&lsquom a product designer. I&lsquom currently building
           Architect at Insider. This is an app that empowers marketers to create
           fast and efficient automated marketing campaigns.`}
         </p>
@@ -41,7 +42,7 @@ function Home() {
             role="Product Designer, @Insider"
             projectDate="2021 - 2023"
             team="Sarper, Blazenko, Nour, Cansu, Barim"
-            link='/projects'
+            link='/case-study/insider'
           />
       </div>
     </>

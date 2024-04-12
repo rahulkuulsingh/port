@@ -86,3 +86,9 @@ h2.card-title {
   display: flex;  /* Make the container a flexbox */
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
+
+.mobile-menu{
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 17, 17, 0.3);
+  background-image: linear-gradient(180deg, #000 15%, transparent);
+}
