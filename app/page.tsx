@@ -14,9 +14,9 @@ function Home() {
           fast and efficient automated marketing campaigns.`}
         </p>
         <p className="mb-4">
-          Before Architect, I spent my time at Lrnr (learner an edTech startup)
+          {`Before Architect, I spent my time at Lrnr (learner an edTech startup)
           designing web and mobile apps for medical grad students, this app was
-          adopted by top community colleges in USA.
+          adopted by top community colleges in USA.`}
         </p>
         <p>
           Before Lrnr, I worked on projects like designing experiences for
