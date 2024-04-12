@@ -31,3 +31,58 @@ body {
     text-wrap: balance;
   }
 }
+
+.tagCloud {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.tagLink {
+  border-radius: 4px;
+  border: 1px solid #333;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagLink:hover{
+  border-color: #fff;
+  background-color: #232042;
+  transition: all ease-in-out 200ms;
+}
+
+
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h2.card-title {
+  color: #ffffff;
+  font-weight: 300;
+  text-align: left;
+  font-size: 32px;
+  letter-spacing: -0.875px;
+}
+
+.project-meta-details {
+  color: #A3A3A3;
+}
+
+.growth-value {
+  display: flex;
+  align-items: center;
+}
+
+.section-projects {
+  display: flex;  /* Make the container a flexbox */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
