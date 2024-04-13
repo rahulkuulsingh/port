@@ -10,14 +10,14 @@ function Home() {
       </h1>
       <div className="short-bio self-center	 md:w-1/2 text-xm md:text-base">
         <p className="mb-4">
-          Hey, I'm Rahul. I&lsquom a product designer. I'm currently building
+          Hey, I&apos;m Rahul. I&lsquom a product designer. I&apos;m currently building
           Architect at Insider. This is an app that empowers marketers to create
           fast and efficient automated marketing campaigns.
         </p>
         <p className="mb-4">
-          {`Before Architect, I spent my time at Lrnr (learner an edTech startup)
+          Before Architect, I spent my time at Lrnr (learner an edTech startup)
           designing web and mobile apps for medical grad students, this app was
-          adopted by top community colleges in USA.`}
+          adopted by top community colleges in USA.
         </p>
         <p>
           Before Lrnr, I worked on projects like designing experiences for
