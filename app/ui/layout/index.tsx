@@ -17,11 +17,11 @@ const { SITE_NAME } = process.env; // Not required
 
 // Simulated local menu data
 const localMenuData: Record<string, Menu[]> = {
-  'next-js-frontend-header-menu': [
+  'top-navigation-handle': [
     { title: 'Home', path: '/' },
     { title: 'Projects', path: '/case-study' },
-    { title: 'About Me', path: '/about-me' },
     { title: 'Gallery', path: '/gallery' },
+    { title: 'About Me', path: '/about-me' },
     // Add more menu items as needed
   ],
   // Add more menu handles and items as needed
@@ -43,10 +43,10 @@ export async function getMenu(handle: string): Promise<Menu[]> {
 
 
 export default async function Navbar() {
-  const menu = await getMenu('next-js-frontend-header-menu');
+  const menu = await getMenu('top-navigation-handle');
 
   return (
-    <nav className="relative flex items-center justify-between p-4 lg:px-6">
+    <nav className="relative flex items-center justify-between ">
       <div className="block flex-none md:hidden">
         <Suspense fallback={null}>
           <MobileMenu menu={menu} />

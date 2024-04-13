@@ -4,7 +4,7 @@ import { Card } from "@/app/ui/card";
 export default function Insider() {
   return (
     <>
-      <p>Insider</p>
+      <p className="mb-8">Insider Case Study</p>
       <Card
             className="w-full"
             title="Enhancing Usability of Architect."

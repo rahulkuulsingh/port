@@ -8,11 +8,11 @@ function Home() {
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
-      <div className="short-bio w-1/2 text-xs md:text-base">
+      <div className="short-bio self-center	 md:w-1/2 text-xm md:text-base">
         <p className="mb-4">
-          {`Hey, I&lsquom Rahul. I&lsquom a product designer. I&lsquom currently building
+          Hey, I'm Rahul. I&lsquom a product designer. I'm currently building
           Architect at Insider. This is an app that empowers marketers to create
-          fast and efficient automated marketing campaigns.`}
+          fast and efficient automated marketing campaigns.
         </p>
         <p className="mb-4">
           {`Before Architect, I spent my time at Lrnr (learner an edTech startup)
