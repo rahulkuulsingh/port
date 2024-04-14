@@ -12,6 +12,11 @@ export type Edge<T> = {
   node: T;
 };
 
+export type TagItem = {
+  url: string;
+  label: string;
+}
+
 export type Cart = Omit<ShopifyCart, 'lines'> & {
   lines: CartItem[];
 };

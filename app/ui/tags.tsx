@@ -1,9 +1,11 @@
 
+import Link from "next/link";
+import { TagItem } from "../lib/definations";
 
-export function Tag({...props}){
+export default function Tag({url, label}:TagItem){
     return(
         <>
-            <a className="tagLink" href={props.link}>{props.label}</a>
+        <Link href={url}>{label}</Link>
         </>
     );
 }

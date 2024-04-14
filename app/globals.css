@@ -92,3 +92,10 @@ h2.card-title {
   background-color: rgba(17, 17, 17, 0.3);
   background-image: linear-gradient(180deg, #000 15%, transparent);
 }
+
+.tagCloud a {
+  padding: 2px 8px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  font-size: 12px;
+}
