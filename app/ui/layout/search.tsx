@@ -1,7 +1,7 @@
 'use client';
 
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
-import { createUrl } from '@/app/lib/utils'
+import { createUrl } from '@/app/utils/utils'
 import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function Search() {

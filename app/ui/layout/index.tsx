@@ -2,7 +2,7 @@
 // import OpenCart from 'components/cart/open-cart';
 import LogoSquare from '../logo-square';
 // import { getMenu } from 'lib/shopify'; Not sure what this deos so commenting
-import { Menu } from '@/app/lib/definations';
+import { Menu } from '@/app/utils/definations';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import MobileMenu from './mobile-menu';

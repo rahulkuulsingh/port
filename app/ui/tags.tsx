@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import { TagItem } from "../lib/definations";
+import { TagItem } from "../utils/definations";
 
 export default function Tag({url, label}:TagItem){
     return(
