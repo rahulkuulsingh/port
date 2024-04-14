@@ -21,7 +21,7 @@ export default function Insider() {
           team="Sarper, Blazenko, Nour, Cansu, Barim"
           caseLink="/case-study/insider"
           showGrowthMetrics={false}
-          cardImage={sakraDesktop}
+          cardImage={sakraDesktop.src}
         />
     </>
   );
