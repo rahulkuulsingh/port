@@ -4,12 +4,14 @@ import sakraDesktop from "./public/sakra-desktop/sakra-desktop-2x.png";
 import lrnrDesktop from "./public/lrnr-desktop/lrnr-virtual-sim-desktop-2x.png";
 import abbDesktop from "./public/abb-desktop/abb-desktop-2x.png";
 
-
 function Home() {
+  
   return (
+    
     <>
       <h1 className="mb-8 text-2xl  font-semibold tracking-tighter">
         A little about me
+
       </h1>
       <div className="short-bio 	 md:w-1/2 text-xm md:text-base">
         <p className="mb-4">
@@ -53,7 +55,7 @@ function Home() {
           team="Sarper, Blazenko, Nour, Cansu, Barim"
           caseLink="/case-study/insider"
           showGrowthMetrics={true}
-          cardImage={insiderDesktop}
+          cardImage={insiderDesktop.src}
         />
         <Card
           className="md:col-span-3 md:row-span-1"
@@ -70,8 +72,9 @@ function Home() {
           team="Sarper, Blazenko, Nour, Cansu, Barim"
           caseLink="/case-study/lrnr"
           showGrowthMetrics={false}
-          cardImage={lrnrDesktop}
+          cardImage={lrnrDesktop.src}
         />
+        
         <Card
           className="md:col-span-3 md:row-span-1 "
           title="Mobile and Web App for Sakra world hospital"
@@ -85,7 +88,7 @@ function Home() {
           team="Sarper, Blazenko, Nour, Cansu, Barim"
           caseLink="/case-study/sakra"
           showGrowthMetrics={false}
-          cardImage={sakraDesktop}
+          cardImage={sakraDesktop.src}
         />
         <Card
           className="md:col-span-6 md:row-span-1 lg:flex-row"
@@ -103,7 +106,7 @@ function Home() {
           team="Sarper, Blazenko, Nour, Cansu, Barim"
           caseLink="/case-study/sakra"
           showGrowthMetrics={false}
-          cardImage={abbDesktop}
+          cardImage={abbDesktop.src}
         />
       </div>
 
