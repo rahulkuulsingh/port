@@ -99,3 +99,7 @@ h2.card-title {
   border-radius: 2px;
   font-size: 12px;
 }
+
+.media-container {
+  min-width: 460px;
+}

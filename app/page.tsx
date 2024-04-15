@@ -1,17 +1,17 @@
+import React from 'react';
 import { Card } from "./ui/card";
 import insiderDesktop from "./public/insider-desktop/insider-desktop-2x.png";
 import sakraDesktop from "./public/sakra-desktop/sakra-desktop-2x.png";
 import lrnrDesktop from "./public/lrnr-desktop/lrnr-virtual-sim-desktop-2x.png";
 import abbDesktop from "./public/abb-desktop/abb-desktop-2x.png";
+import Button from "./ui/Button";
+import CustomButton, {CustomButtonProps} from "./ui/CustomButton";
 
 function Home() {
-  
   return (
-    
     <>
       <h1 className="mb-8 text-2xl  font-semibold tracking-tighter">
         A little about me
-
       </h1>
       <div className="short-bio 	 md:w-1/2 text-xm md:text-base">
         <p className="mb-4">
@@ -74,7 +74,7 @@ function Home() {
           showGrowthMetrics={false}
           cardImage={lrnrDesktop.src}
         />
-        
+
         <Card
           className="md:col-span-3 md:row-span-1 "
           title="Mobile and Web App for Sakra world hospital"
@@ -90,31 +90,15 @@ function Home() {
           showGrowthMetrics={false}
           cardImage={sakraDesktop.src}
         />
-        <Card
-          className="md:col-span-6 md:row-span-1 lg:flex-row"
-          title="Drive and Motor Specifications Web App"
-          tags={[
-            { link: "https://example.com", label: "B2B" },
-            {
-              link: "https://example.com",
-              label: "Machinery Automation Tools",
-            },
-            { link: "https://example.com", label: "Web App" },
-          ]}
-          role="Product Designer"
-          projectDate="2021 - 2023"
-          team="Sarper, Blazenko, Nour, Cansu, Barim"
-          caseLink="/case-study/sakra"
-          showGrowthMetrics={false}
-          cardImage={abbDesktop.src}
-        />
+
+
       </div>
 
       <section className="gallery">
         <h2>Checkout more of my work in Gallery</h2>
         <p>A space for my creative freedom, paid and voluntary project etc.</p>
         <div className="gallery-items">
-
+        import React from 'react';
         </div>
       </section>
     </>

@@ -22,8 +22,8 @@ interface CardProps {
   team: string;
   caseLink: string;
   className?: string;
-  showGrowthMetrics:boolean;
-  cardImage:string;
+  showGrowthMetrics: boolean;
+  cardImage: string;
 }
 
 export function Card({
@@ -35,20 +35,22 @@ export function Card({
   caseLink,
   className,
   showGrowthMetrics,
-  cardImage
+  cardImage,
 }: CardProps) {
   return (
     <div
-      className={`${className} card flex flex-col gap-4 rounded-lg border border-neutral-800 bg-zinc-900 text-xs p-8 pb-4`}
+      className={`${className} card flex flex-col gap-4 rounded-lg bg-zinc-900 text-xs`}
     >
-      <Image
-        className="card-image"
-        src={cardImage}
-        width={520}
-        height={520}
-        alt="Project featured Image describing the project"
-      />
-      <div className="card-details w-full">
+      <div className="media-container">
+        <Image
+          className="card-image"
+          src={cardImage}
+          width={520}
+          height={520}
+          alt="Project featured Image describing the project"
+        />
+      </div>
+      <div className="card-details w-full py-8 px-4 pb-4">
         <div className="tagCloud">
           {tags.map((tag, index) => (
             <Tag key={index} url={tag.link} label={tag.label} />
@@ -61,7 +63,7 @@ export function Card({
           <p className="team">Team: {team}</p>
         </div>
         {showGrowthMetrics && ( // Conditionally render GrowthMetrics
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between pt-12">
             <GrowthMetrics
               growthValue={13}
               growthStatement={"INCREASE IN NPS score"}
