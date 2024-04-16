@@ -6,14 +6,9 @@ import { Menu } from '@/app/utils/definations';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import MobileMenu from './mobile-menu';
-// import Search, { SearchSkeleton } from './search'; //not required
-const { SITE_NAME } = process.env; // Not required
 
-// Define a type for a menu item
-// interface MenuItem {
-//   title: string;
-//   url: string;
-// }
+
+const { SITE_NAME } = process.env; // Not required
 
 // Simulated local menu data
 const localMenuData: Record<string, Menu[]> = {
