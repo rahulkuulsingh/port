@@ -1,4 +1,6 @@
-import { Card } from "@/app/ui/card";
+
+
+import  Card  from "@/app/Components/Card";
 import sakraDesktop from "@/app/public/sakra-desktop/sakra-desktop-2x.png";
 
 

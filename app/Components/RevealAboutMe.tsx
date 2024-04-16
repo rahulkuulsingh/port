@@ -1,7 +1,8 @@
+
 "use client";
 import React, { useState } from "react";
 
-function AboutMeIntro() {
+function RevealAboutMe() {
   const [rahulOpen, setRahulOpen] = useState(false);
   const [uxOpen, setUXOpen] = useState(false);
   const [andOpen, setAndOpen] = useState(false);
@@ -35,7 +36,7 @@ function AboutMeIntro() {
 
   return (
     <>
-      <h1 className="about-me mb-8 text-2xl md:text-4xl home-text	">
+      <div className="reveal-about-me mb-8 mt-10 text-2xl md:text-4xl home-text	">
         Hi, I am{" "}
         <button
           type="button"
@@ -127,9 +128,9 @@ function AboutMeIntro() {
         >
           LinkedIn.
         </span>
-      </h1>
+      </div>
     </>
   );
 }
 
-export default AboutMeIntro;
+export default RevealAboutMe;

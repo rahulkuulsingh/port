@@ -26,7 +26,7 @@ interface CardProps {
   cardImage: string;
 }
 
-export function Card({
+export default function Card({
   tags,
   title,
   role,

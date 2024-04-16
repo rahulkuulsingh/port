@@ -1,45 +1,17 @@
 import React from "react";
-import { Card } from "./ui/card";
+import Card  from "@/app/Components/Card";
 import insiderDesktop from "./public/insider-desktop/insider-desktop-2x.png";
 import sakraDesktop from "./public/sakra-desktop/sakra-desktop-2x.png";
 import lrnrDesktop from "./public/lrnr-desktop/lrnr-virtual-sim-desktop-2x.png";
 import abbDesktop from "./public/abb-desktop/abb-desktop-2x.png";
-import AboutMeIntro from "./ui/AboutMe";
+import RevealAboutMe from "./Components/RevealAboutMe";
 
 // import InteractiveH1 from "./ui/InteractiveH1";
 
 function Home() {
   return (
     <>
-      <h1 className="mb-8 text-2xl  font-semibold tracking-tighter">
-        A little about me
-      </h1>
-
-      <AboutMeIntro></AboutMeIntro>
-
-{/* <Example></Example> */}
-
-      {/* <InteractiveH1></InteractiveH1> */}
-      <div className="short-bio 	 md:w-1/2 text-xm md:text-base">
-        <p className="mb-4">
-          Before Architect, I spent my time at Lrnr (learner an edTech startup)
-          designing web and mobile apps for medical grad students, this app was
-          adopted by top community colleges in USA.
-        </p>
-        <p>
-          Before Lrnr, I worked on projects like designing experiences for
-          hospitals and patients, I also worked on a machinery automation tools
-          for ABB at Cosmonet solutions.
-        </p>
-        <p>
-          Before that, I designed student experiences for online examination at
-          Paramount Coahing Center.
-        </p>
-        <p>
-          I originally started designing when I was in college, I did
-          freelancing for two years on 99designs
-        </p>
-      </div>
+      <RevealAboutMe />
 
       <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6">
         <h2>Recent Work</h2>
