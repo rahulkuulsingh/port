@@ -101,7 +101,7 @@ function Home() {
       <section className="gallery">
         <h2>Checkout more of my work in Gallery</h2>
         <p>A space for my creative freedom, paid and voluntary project etc.</p>
-        <div className="gallery-items">import React from 'react';</div>
+        <div className="gallery-items">import React from react;</div>
       </section>
     </>
   );
