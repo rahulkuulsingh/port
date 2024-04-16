@@ -4,11 +4,7 @@ import insiderDesktop from "./public/insider-desktop/insider-desktop-2x.png";
 import sakraDesktop from "./public/sakra-desktop/sakra-desktop-2x.png";
 import lrnrDesktop from "./public/lrnr-desktop/lrnr-virtual-sim-desktop-2x.png";
 import abbDesktop from "./public/abb-desktop/abb-desktop-2x.png";
-import Button from "./ui/Button";
-import CustomButton, { CustomButtonProps } from "./ui/CustomButton";
-import ClickableIntro from "./ui/AboutMe";
 import AboutMeIntro from "./ui/AboutMe";
-import Example from "./ui/example";
 
 // import InteractiveH1 from "./ui/InteractiveH1";
 
