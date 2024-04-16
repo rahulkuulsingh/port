@@ -103,3 +103,70 @@ h2.card-title {
 .media-container {
   min-width: 460px;
 }
+
+
+/* Pedro */
+
+.home-text {
+  --delay: 0;
+  --scaling:1;
+  --line-height-8: calc(42px * var(--scaling));
+  --line-height-9: calc(70px * var(--scaling));
+  --letter-spacing-8: 0em;
+  --letter-spacing-9: 0em;
+  font-variation-settings: "wght" 500;
+  letter-spacing: -.01em;
+  filter: blur(.25px);
+  animation: show .6s both;
+  animation-delay: calc(.16s * var(--delay));
+  will-change: opacity;
+}
+
+.reveal-trigger {
+  background: none;
+  color: inherit;
+  outline: none;
+  font-family: inherit;
+  font-variation-settings: inherit;
+  display: inline-block;
+  position: relative;
+  border: 1px solid;
+  border-radius: 9999px;
+  padding: .2em .4em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: .8em;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.reveal-trigger[data-state=open] {
+  --ring-color: blue;
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.reveal-trigger:hover {
+  cursor: help;
+  background: orange;
+  color: #000;
+  border-color: orange;
+}
+.reveal-trigger:hover +.reveal-content[data-state=open] {
+  color: orange;
+}
+
+
+
+.reveal-content[data-state=closed] {
+  filter: blur(6px);
+  opacity: .8;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  color: #fff;
+}
+
+.reveal-content[data-state=open] {
+  animation: reveal .6s both;
+}

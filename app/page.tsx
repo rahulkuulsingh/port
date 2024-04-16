@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
 import { Card } from "./ui/card";
 import insiderDesktop from "./public/insider-desktop/insider-desktop-2x.png";
 import sakraDesktop from "./public/sakra-desktop/sakra-desktop-2x.png";
 import lrnrDesktop from "./public/lrnr-desktop/lrnr-virtual-sim-desktop-2x.png";
 import abbDesktop from "./public/abb-desktop/abb-desktop-2x.png";
 import Button from "./ui/Button";
-import CustomButton, {CustomButtonProps} from "./ui/CustomButton";
+import CustomButton, { CustomButtonProps } from "./ui/CustomButton";
+import ClickableIntro from "./ui/AboutMe";
+import AboutMeIntro from "./ui/AboutMe";
+import Example from "./ui/example";
+
+// import InteractiveH1 from "./ui/InteractiveH1";
 
 function Home() {
   return (
@@ -13,12 +18,13 @@ function Home() {
       <h1 className="mb-8 text-2xl  font-semibold tracking-tighter">
         A little about me
       </h1>
+
+      <AboutMeIntro></AboutMeIntro>
+
+{/* <Example></Example> */}
+
+      {/* <InteractiveH1></InteractiveH1> */}
       <div className="short-bio 	 md:w-1/2 text-xm md:text-base">
-        <p className="mb-4">
-          Hey, I&apos;m Rahul. I&apos;m a product designer. I&apos;m currently
-          building Architect at Insider. This is an app that empowers marketers
-          to create fast and efficient automated marketing campaigns.
-        </p>
         <p className="mb-4">
           Before Architect, I spent my time at Lrnr (learner an edTech startup)
           designing web and mobile apps for medical grad students, this app was
@@ -90,16 +96,12 @@ function Home() {
           showGrowthMetrics={false}
           cardImage={sakraDesktop.src}
         />
-
-
       </div>
 
       <section className="gallery">
         <h2>Checkout more of my work in Gallery</h2>
         <p>A space for my creative freedom, paid and voluntary project etc.</p>
-        <div className="gallery-items">
-        import React from 'react';
-        </div>
+        <div className="gallery-items">import React from 'react';</div>
       </section>
     </>
   );
