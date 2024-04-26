@@ -5,6 +5,7 @@ import sakraDesktop from "./public/sakra-desktop/sakra-desktop-2x.png";
 import lrnrDesktop from "./public/lrnr-desktop/lrnr-virtual-sim-desktop-2x.png";
 import abbDesktop from "./public/abb-desktop/abb-desktop-2x.png";
 import RevealAboutMe from "./Components/RevealAboutMe";
+import SectionTitle from "./Components/SectionTitle";
 
 // import InteractiveH1 from "./ui/InteractiveH1";
 
@@ -13,9 +14,9 @@ function Home() {
     <>
       <RevealAboutMe />
 
+      <SectionTitle title="Checkout My Recent Work" desc="Click on any project to learn more about it."/>
       <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6">
-        <h2>Recent Work</h2>
-        <p>Click on any project to learn more about it.</p>
+
         <Card
           className="md:col-span-6 md:row-span-1 lg:flex-row"
           title="Enhancing Usability of Architect."
@@ -66,11 +67,7 @@ function Home() {
         />
       </div>
 
-      <section className="gallery">
-        <h2>Checkout more of my work in Gallery</h2>
-        <p>A space for my creative freedom, paid and voluntary project etc.</p>
-        <div className="gallery-items">import React from react;</div>
-      </section>
+      <SectionTitle title="Checkout more of my work in Gallery" desc="A space for my creative freedom, paid and voluntary projects etc."/>
     </>
   );
 }

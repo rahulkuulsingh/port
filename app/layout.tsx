@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {alliance2} from '@/app/Components/fonts';
 import "./globals.css";
-import Navbar from "./Components/Layout";
+import Navbar from "./Components/layout";
 
 
 
