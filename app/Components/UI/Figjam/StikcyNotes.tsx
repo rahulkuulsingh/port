@@ -10,6 +10,7 @@ interface StickyNotesProps {
 }
 
 const colorVariants = {
+gray: "bg-gray-100",
   red: "bg-red-300",
   orange: "bg-orange-300",
   amber: "bg-amber-300",
@@ -46,7 +47,7 @@ const StickyNotes: React.FC<StickyNotesProps> = ({
   return (
     <div
       style={{ transform: `rotate(${rotation}deg)` }}
-      className={cn(`min-h-40 w-40 ${colorClass} font-bold flex flex-col transition-all ease-in duration-150 text-black rounded-sm text-xs p-4 shadow-lg`, containerClassName) }
+      className={cn(`min-h-40 w-40 ${colorClass} font-bold flex flex-col text-black rounded-sm text-xs p-4 shadow-lg`, containerClassName) }
     >
       <p className=" flex-1 opacity-75">{content}</p>
       {authorName && (

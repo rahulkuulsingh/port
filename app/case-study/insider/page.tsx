@@ -6,6 +6,7 @@ import { CanvasRevealEffect } from "@/app/Components/Visual/canvas-reveal-effect
 import Folder from "@/app/Components/UI/Folder/Folder";
 import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
+import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
 
 export default function Insider() {
   const workflow = [
@@ -18,11 +19,6 @@ export default function Insider() {
     "Not be able to identify which journey does what in a snap",
   ];
 
-  const workflowDistilled = [
-    "1. Can’t see preview of the element design",
-    "2. Clear indication of current location within the canvas",
-    "3. Struggling in quickly zoom in and out to different areas to see the logic",
-  ];
 
   const bugs = [
     "Edit button vanishes if canvas is zoomed at 150%",
@@ -44,6 +40,7 @@ export default function Insider() {
     "Disconnected Experience From Academy to Canvas",
     "Architect conditions are confusing, not easy to remember.",
     "Self learning is difficult",
+    "Not knowing when to use what element"
   ];
 
   const colorVariants = {
@@ -283,12 +280,15 @@ export default function Insider() {
       <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
         <blockquote className="text-xl font-light lg:text-3xl pl-8 border-l-2 ">
           <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
-            Research analysis says, the Users reported interaction challenges
-            multiple times, citing a{" "}
+            Research analysis reveals that users encounter{" "}
+            <strong className="text-sky-300 underline underline-offset-4">
+              interaction challenges
+            </strong>
+            , resulting in a{" "}
             <strong className="text-yellow-300 underline underline-offset-4">
               lack of flexibility{" "}
             </strong>
-            in the{" "}
+            within the{" "}
             <strong className="text-orange-500 underline underline-offset-4">
               workflow.
             </strong>
@@ -313,16 +313,18 @@ export default function Insider() {
         </div>
       </section>
 
-      {/* another section */}
+      {/* How Might We Section */}
       <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-      
         <blockquote className="text-xl font-light lg:text-3xl pl-8 border-l-2 ">
-        <p className=" pb-4 text-sm font-medium text-sky-300">Workflow Problem No.1 </p>
-          <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
-            How might we minimize the number of clicks required to preview
-            multiple elements simultaneously?{" "}
+          <p className=" pb-4 text-sm font-medium ">
+            <strong className="text-sky-300">Workflow Problem No.1:</strong>{" "}
+            Users struggle to preview element design, such as email or webpush
           </p>
-        </blockquote> 
+          <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
+            How might we streamline multi-element preview, minimizing clicks for
+            user efficiency?{" "}
+          </p>
+        </blockquote>
       </section>
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
@@ -402,12 +404,17 @@ export default function Insider() {
 
       {/* Mini Map Section */}
 
+      <HowMightWeSection
+        quoteText="How might we improve navigation within the canvas for users who rely on trackpad/mouse, especially when designing large journeys."
+        problemStatement="Users struggle to navigate large journeys within the canvas using trackpad/mouse, requiring excessive zooming and dragging"
+        problemCount={2}
+        // highlightedWords={["improve", "navigation" ]}
+      />
+
+
+
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
-          <h2 className="text-sm font-medium bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-            How might we minimize the number of clicks required to preview
-            multiple elements simultaneously?
-          </h2>
           <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
             2. Introducing{" "}
             <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
@@ -490,6 +497,12 @@ export default function Insider() {
       </section>
 
       {/* Copy / Split and Paste Multiple Branches */}
+
+      <HowMightWeSection
+        quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
+        problemStatement="Users struggle to efficiently manage multiple elements within the canvas. This limits their ability to perform bulk actions."
+        problemCount={3}
+      />
 
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
@@ -614,6 +627,41 @@ export default function Insider() {
       </div>
 
       {/* High Learning Curve */}
+
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <blockquote className="text-xl font-light lg:text-3xl pl-8 border-l-2 ">
+          <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
+            Research analysis reveals that users encounter{" "}
+            <strong className="text-sky-300 underline underline-offset-4">
+              interaction challenges
+            </strong>
+            , resulting in a{" "}
+            <strong className="text-yellow-300 underline underline-offset-4">
+              lack of flexibility{" "}
+            </strong>
+            within the{" "}
+            <strong className="text-orange-500 underline underline-offset-4">
+              workflow.
+            </strong>
+          </p>
+        </blockquote>
+
+        <p className="mt-4 max-w-md text-base/6 text-gray-500">
+          I focused on solving the "Low Effort" and "High Gains" problem first,
+          which can be adapted to future use cases.
+        </p>
+
+        <div className="inline-flex flex-wrap  mt-8 pt-8  relative">
+          {learnigCurve.map((item, index) => (
+            <StickyNotes
+              key={index}
+              content={item}
+              containerClassName="text-sm hover:bg-rose-500"
+              authorName="Workflow Issue"
+            />
+          ))}
+        </div>
+      </section>
 
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
