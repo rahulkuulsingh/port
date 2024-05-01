@@ -1,5 +1,7 @@
 
 "use client";
+
+
 import React, { useState } from "react";
 
 function RevealAboutMe() {
@@ -13,6 +15,8 @@ function RevealAboutMe() {
   const triggerRahulToggle = () => {
     setRahulOpen(!rahulOpen);
   };
+
+
 
   const triggerUXToggle = () => {
     setUXOpen(!uxOpen);
@@ -36,7 +40,7 @@ function RevealAboutMe() {
 
   return (
     <>
-      <div className="reveal-about-me mb-8 mt-10 text-2xl md:text-4xl home-text	">
+      <div className="reveal-about-me home-text mb-8 mt-10 text-2xl  md:text-4xl 	">
         Hi, I am{" "}
         <button
           type="button"
@@ -45,13 +49,13 @@ function RevealAboutMe() {
           className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           Rahul
-        </button>{" "}
-        .{" "}
+        </button>
+        
         <span
           data-state={rahulOpen ? "open" : "closed"}
           className={`reveal-content`}
         >
-          I’m a Product designer
+          .{" "}I’m a Product designer
         </span>{" "}
         focusing on{" "}
         <button
@@ -90,7 +94,7 @@ function RevealAboutMe() {
           className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           Insider
-        </button>{" "}
+        </button>
         <span
           data-state={insiderOpen ? "open" : "closed"}
           className={`reveal-content`}
@@ -126,7 +130,7 @@ function RevealAboutMe() {
           data-state={linkedinOpen ? "open" : "closed"}
           className={`reveal-content`}
         >
-          LinkedIn.
+          <a className="hover:bg-sky-700 px-4 py-2 rounded " href="https://www.linkedin.com/in/uxdrahul/">LinkedIn</a>
         </span>
       </div>
     </>
@@ -134,3 +138,4 @@ function RevealAboutMe() {
 }
 
 export default RevealAboutMe;
+

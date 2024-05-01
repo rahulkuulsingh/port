@@ -1,7 +1,5 @@
-// import Cart from 'components/cart';
-// import OpenCart from 'components/cart/open-cart';
+
 import LogoSquare from '../logo-square';
-// import { getMenu } from 'lib/shopify'; Not sure what this deos so commenting
 import { Menu } from '@/app/utils/definations';
 import Link from 'next/link';
 import { Suspense } from 'react';
@@ -41,7 +39,7 @@ export default async function Navbar() {
   const menu = await getMenu('top-navigation-handle');
 
   return (
-    <nav className="relative flex items-center justify-between ">
+    <nav className="laptop-nav relative flex items-center justify-between max-w-screen-lg	px-8 m-auto py-4">
       <div className="block flex-none md:hidden">
         <Suspense fallback={null}>
           <MobileMenu menu={menu} />
@@ -71,9 +69,6 @@ export default async function Navbar() {
           ) : null}
         </div>
         <div className="hidden justify-center md:flex md:w-1/3">
-          {/* <Suspense fallback={<SearchSkeleton />}>
-            <Search />
-          </Suspense> */}
         </div>
       </div>
     </nav>

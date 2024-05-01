@@ -39,11 +39,11 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`${className} card flex flex-col gap-4 rounded-lg bg-zinc-900 text-xs`}
+      className={`${className} card flex flex-col gap-4 rounded-lg bg-white	shadow-xl overflow-clip dark:bg-zinc-900 text-xs`}
     >
-      <div className="media-container">
+      <div className="media-container overflow-hidden">
         <Image
-          className="card-image"
+          className="card-image overflow-hidden"
           src={cardImage}
           width={520}
           height={520}
@@ -57,10 +57,10 @@ export default function Card({
           ))}
         </div>
         <h2 className="card-title leading-9	">{title}</h2>
-        <div className="project-meta-details">
+        <div className="project-meta-details opacity-50">
           <p className="role">Role: {role}</p>
           <p className="projectDate">Year: {projectDate}</p>
-          <p className="team">Team: {team}</p>
+          <p className="team ">Team: {team}</p>
         </div>
         {showGrowthMetrics && ( // Conditionally render GrowthMetrics
           <div className="flex flex-row justify-between pt-12">

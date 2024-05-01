@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import {alliance2} from '@/app/Components/fonts';
+import { alliance2 } from "@/app/Components/fonts";
 import "./globals.css";
 import Navbar from "./Components/layout";
-
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,15 +14,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      {/* <body className={alliance2.className}>{children}</body> */}
-      <body className= {`${alliance2.className} antialiased max-w-5xl mx-auto`}>
-        <Navbar />
-        <main className="flex-auto min-w-0 w-full mt-6 flex flex-col px-2 md:px-0">
-        {children}
-        </main>
+    <html lang="en" >
+      <body
+    className={`${alliance2.className} antialiased flex w-full min-h-full flex-col bg-[--root-bg]`}
+    >
+        <header id="header">
+          <Navbar />
+        </header>
+        <div className="edge-to-edge-container relative w-full m-auto">{children}</div>
+        <footer className="">
+          <p>some footer link will go here</p>
+        </footer>
       </body>
     </html>
-
   );
 }
