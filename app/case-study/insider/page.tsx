@@ -19,7 +19,6 @@ export default function Insider() {
     "Not be able to identify which journey does what in a snap",
   ];
 
-
   const bugs = [
     "Edit button vanishes if canvas is zoomed at 150%",
     "Frustration with losing unsaved changes",
@@ -40,7 +39,7 @@ export default function Insider() {
     "Disconnected Experience From Academy to Canvas",
     "Architect conditions are confusing, not easy to remember.",
     "Self learning is difficult",
-    "Not knowing when to use what element"
+    "Not knowing when to use what element",
   ];
 
   const colorVariants = {
@@ -408,10 +407,14 @@ export default function Insider() {
         quoteText="How might we improve navigation within the canvas for users who rely on trackpad/mouse, especially when designing large journeys."
         problemStatement="Users struggle to navigate large journeys within the canvas using trackpad/mouse, requiring excessive zooming and dragging"
         problemCount={2}
-        // highlightedWords={["improve", "navigation" ]}
+        highlightedText={[
+          "improve navigation within",
+          "rely on",
+          "trackpad/mouse",
+          "large journeys",
+        ]}
+        highlightedColors={["lime", "purple", "", "cyan"]}
       />
-
-
 
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
@@ -628,36 +631,37 @@ export default function Insider() {
 
       {/* High Learning Curve */}
 
+      <HowMightWeSection
+        quoteText="During Research, we wanted to know what resources our partners use to learn architect, Do they find it easy to learn?"
+        problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
+        problemCount={2}
+        highlightedText={[
+          "what resources",
+          "easy to learn",
+          "trackpad/mouse",
+          "large journeys",
+        ]}
+        highlightedColors={["lime", "", "", "cyan"]}
+      />
+
       <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <blockquote className="text-xl font-light lg:text-3xl pl-8 border-l-2 ">
-          <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
-            Research analysis reveals that users encounter{" "}
-            <strong className="text-sky-300 underline underline-offset-4">
-              interaction challenges
-            </strong>
-            , resulting in a{" "}
-            <strong className="text-yellow-300 underline underline-offset-4">
-              lack of flexibility{" "}
-            </strong>
-            within the{" "}
-            <strong className="text-orange-500 underline underline-offset-4">
-              workflow.
-            </strong>
+      <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
+            We got the answers, They Feel Confused, They try learning on their own, but fail to do so.
           </p>
-        </blockquote>
 
         <p className="mt-4 max-w-md text-base/6 text-gray-500">
-          I focused on solving the "Low Effort" and "High Gains" problem first,
-          which can be adapted to future use cases.
+          The general response was towards negative side, Partner felt confused,
+          they often visited the academy and but it was not helpful to them,
+          some times they had to contact support to find what they are looking
+          for.
         </p>
-
         <div className="inline-flex flex-wrap  mt-8 pt-8  relative">
           {learnigCurve.map((item, index) => (
             <StickyNotes
               key={index}
               content={item}
               containerClassName="text-sm hover:bg-rose-500"
-              authorName="Workflow Issue"
+              authorName="Learning Curve"
             />
           ))}
         </div>
@@ -666,47 +670,33 @@ export default function Insider() {
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
           <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            3. How might we reduce the learning curve?
+            How might we reduce the learning curve?
           </p>
           <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            How do we educate our users, what areas need the most help? Can they
-            follow along when they watch tutorials? while reading documentation?
+            In order to ask this question, we must ask a few more questions.
           </p>
         </header>
         <div className="inline-flex flex-wrap  mt-4 relative">
           <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
+            content="Do we train our users?"
             authorName="rahul"
           />
           <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
+            content="If, Yes. How Frequently?"
             authorName="rahul"
             stickyColor="green"
           />
           <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
-            authorName="rahul"
-            stickyColor="yellow"
-          />
-          <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
+            content="In general, partners complain about which product area, is it the starters? or conditions or ?"
             authorName="rahul"
           />
           <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
+            content="Do we have enough examples? Can they follow along easily while reading academy articles"
             authorName="rahul"
           />
           <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
+            content="What product areas require industry knowledge?"
             authorName="rahul"
-          />
-          <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
-            stickyColor="teal"
-          />
-          <StickyNotes
-            content="It may be difficult to recall or understand the high-level purpose journeys via scanning."
-            containerClassName="rotate-0"
           />
         </div>
       </section>
