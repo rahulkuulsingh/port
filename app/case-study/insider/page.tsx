@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import dovetail from "../../../public/dovetail.png";
+import dovetail from "@/public/insider/case-assets/dovetail.png";
 
 import { CanvasRevealEffect } from "@/app/Components/Visual/canvas-reveal-effect";
 import Folder from "@/app/Components/UI/Folder/Folder";
@@ -163,7 +163,7 @@ export default function Insider() {
                   Q1. The capabilities of Architect meet my requirement. (1-7)
                 </p>
                 <Image
-                  src="../q-scale.svg"
+                  src="../insider/case-assets/q-scale.svg"
                   alt="Image description"
                   width={290}
                   height={38}
@@ -175,7 +175,7 @@ export default function Insider() {
                   Q2. Architect is easy to use. (1-7){" "}
                 </p>
                 <Image
-                  src="../q-scale.svg"
+                  src="../insider/case-assets/q-scale.svg"
                   alt="Image description"
                   width={290}
                   height={38}
@@ -187,7 +187,7 @@ export default function Insider() {
                   Q3. Why do you rate Architect this way. (Text Input){" "}
                 </p>
                 <Image
-                  src="../q-long-survey.svg"
+                  src="../insider/case-assets/q-long-survey.svg"
                   alt="Image description"
                   width={290}
                   height={38}
@@ -198,7 +198,7 @@ export default function Insider() {
           </header>
           <div className="relative flex items-center justify-center">
             <Image
-              src="../anoted-results.svg"
+              src="../insider/case-assets/anoted-results.svg"
               alt="Image description"
               width={520}
               height={363}
@@ -345,7 +345,7 @@ export default function Insider() {
           <div className="col-span-3">
             <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
               <Video
-                src="../PrototypePreviewOld.webm"
+                src="../insider/videos/PrototypePreviewOld.webm"
                 height={1080}
                 width={1920}
               />
@@ -376,7 +376,7 @@ export default function Insider() {
           <div className="col-span-3">
             <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
               <Video
-                src="../PrototypePreviewNew.webm"
+                src="../insider/videos/PrototypePreviewNew.webm"
                 height={1080}
                 width={1920}
               />
@@ -449,7 +449,7 @@ export default function Insider() {
           <div className="col-span-3">
             <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
               <Video
-                src="../PrototypePreviewOld.webm"
+                src="../insider/videos/PrototypePreviewOld.webm"
                 height={1080}
                 width={1920}
               />
@@ -472,7 +472,7 @@ export default function Insider() {
           <div className="col-span-3">
             <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
               <Video
-                src="../PrototypePreviewNew.webm"
+                src="../insider/videos/PrototypePreviewNew.webm"
                 height={1080}
                 width={1920}
               />
@@ -537,7 +537,7 @@ export default function Insider() {
           <div className="col-span-3">
             <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
               <Video
-                src="../PrototypePreviewOld.webm"
+                src="../insider/videos/PrototypePreviewOld.webm"
                 height={1080}
                 width={1920}
               />
@@ -560,7 +560,7 @@ export default function Insider() {
           <div className="col-span-3">
             <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
               <Video
-                src="../PrototypePreviewNew.webm"
+                src="../insider/videos/PrototypePreviewNew.webm"
                 height={1080}
                 width={1920}
               />
@@ -613,7 +613,7 @@ export default function Insider() {
       <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6 ">
         <div className="video-container bg-gray-600 fit-content overflow-clip col-span-6 rounded-lg">
           <Video
-            src="../Prototype-Drag-Academy.webm"
+            src="../insider/videos/Prototype-Drag-Academy.webm"
             height={1080}
             width={1920}
           />
