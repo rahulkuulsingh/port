@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "@/app/Components/Card";
-import insiderDesktop from "./public/insider-desktop/insider-desktop-2x.png";
-import sakraDesktop from "./public/sakra-desktop/sakra-desktop-2x.png";
-import lrnrDesktop from "./public/lrnr-desktop/lrnr-virtual-sim-desktop-2x.png";
-import abbDesktop from "./public/abb-desktop/abb-desktop-2x.png";
+import insiderDesktop from "@/public/insider/insider-desktop-2x.png";
+import sakraDesktop from "@/public/sakra/sakra-desktop-2x.png";
+import lrnrDesktop from "@/public/lrnr/lrnr-virtual-sim-desktop-2x.png";
+import abbDesktop from "@/public/abb/abb-desktop-2x.png";
 import RevealAboutMe from "./Components/RevealAboutMe";
 import SectionTitle from "./Components/SectionTitle";
 

@@ -1,5 +1,6 @@
 import Alliance from 'next/font/local';
 
+
 export const alliance2 = Alliance({
   src:[
     {
