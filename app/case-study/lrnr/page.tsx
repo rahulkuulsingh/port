@@ -317,7 +317,7 @@ export default function Lrnr() {
           />
 
           <p className="mt-16  py-2 text-purple-600 ">
-            A Generic Student Flow can be created, that's the goal.
+            A Generic Student Flow can be created, that&apos;s the goal.
           </p>
 
           <p className=" mb-8 text-gray-400 text-balance">
@@ -341,7 +341,7 @@ export default function Lrnr() {
         <div className="relative">
           <header className="max-w-2xl">
             <p className="mt-4 text-gray-400 text-base/6">
-              Experiments can't be made consitent, because they are unique -
+              Experiments can&apos;t be made consitent, because they are unique -
               Hmmmm...
             </p>
             <p className="mt-4 text-gray-400 text-base/6">
