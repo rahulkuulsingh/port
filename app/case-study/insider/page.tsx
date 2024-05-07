@@ -607,7 +607,7 @@ export default function Insider() {
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
           <h2 className="text-sm font-medium text-sky-300">
-            How might we enhance users' awareness of their current location
+            How might we enhance users awareness of their current location
             within the canvas for improved navigation{" "}
           </h2>
           <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
