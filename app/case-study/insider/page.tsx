@@ -302,7 +302,7 @@ export default function Insider() {
         </blockquote>
 
         <p className="mt-4 max-w-md text-base/6 text-gray-500">
-          I focused on solving the "Low Effort" and "High Gains" problem first,
+          I focused on solving the &#34;Low Effort&#34; and &#34;High Gains&#34; problem first,
           which can be adapted to future use cases.
         </p>
 
@@ -436,12 +436,12 @@ export default function Insider() {
           <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
             2. Introducing{" "}
             <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-              “Mini Map”{" "}
+            &#8220;Mini Map&#8221;{" "}
             </span>
             and Better
             <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
               {" "}
-              “Contextual Zoom Functionality"
+              &#8220;Contextual Zoom Functionality&#8221;
             </span>
           </p>
           <p className="mt-4 max-w-md text-base/6 text-gray-500">
@@ -531,7 +531,7 @@ export default function Insider() {
             3. Users often wanted to copy existing elements, Move multiple of
             them at once{" "}
             <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-              "But our software lacked this ability”{" "}
+            &#8220;But our software lacked this ability&#8221;{" "}
             </span>
           </p>
           <p className="mt-4 max-w-md text-base/6 text-gray-500">
@@ -613,11 +613,11 @@ export default function Insider() {
           <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
             2. Let’s redesign canvas for{" "}
             <span className="bg-gradient-to-r from-sky-500 to-gray-50 bg-clip-text text-transparent">
-              “Flexibility”
+            &#8220;Flexibility&#8221;
             </span>
           </p>
           <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Users complain about “Feature Parity Gap” like the ability to copy,
+            Users complain about &#8220;Feature Parity Gap&#8221; like the ability to copy,
             paste, merge, zoom in or out etc. They face high learning curve,
             Lack of clarity and insufficient guidance at the end of the day they
             feel confused.
