@@ -108,6 +108,44 @@ export default function Lrnr() {
           Chaitanya. Both of them are subject matter experts.
         </p>
       </section>
+
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <p className="relative text-xl font-light lg:text-3xl">
+          <span>Primary users are Students and Professors. </span>
+        </p>
+        <ul
+          role="list"
+          className="relative grid w-full grid-cols-2 mt-16 isolate col-span-full"
+        >
+          <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+            <p className="mt-6 pb-8  text-md ">
+              What it is that the students want from this app?
+            </p>
+            <p className="text-gray-400 ">
+              1. They want to get good grade points.
+            </p>
+            <p className="text-gray-400 ">
+              2. Do the assignments effortlessly.
+            </p>
+            <p className="text-gray-400 ">
+              3. Audit experiments on their own pace.
+            </p>
+          </li>
+          <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+            <p className="mt-6 pb-8 text-md ">
+              What it is that the Instrcutors want from this app?
+            </p>
+            <p className="text-gray-400">
+              1. Create lab assignments and easily assign to students.
+            </p>
+            <p className="text-gray-400">
+              2. They want the students to learn to abide by the process
+            </p>
+            <p className="text-gray-400">3. Make mistakes, and learn from it</p>
+          </li>
+        </ul>
+      </section>
+
       <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
         <div className="relative">
           <header className="max-w-2xl">
@@ -284,57 +322,11 @@ export default function Lrnr() {
 
           <p className=" mb-8 text-gray-400 text-balance">
             Note: It was noticed that not all the experimets will have All four
-            steps, a single step can have multiple stages.
+            steps.
           </p>
         </div>
       </section>
-      {/* <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        What are the primary learning goals that students aim to achieve by
-        visiting this website?
-        <div className="flex">
-          <div className="flex flex-col">
-            <img src="../lrnr/case-assets/process.svg" alt="procees" />
-            <p>
-              Get good grade points and the curriculam requires hem to visit the
-              website
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <img
-              src="../lrnr/case-assets/learning-objective.svg"
-              alt="procees"
-            />
-            <p>
-              Get good grade points and the curriculam requires hem to visit the
-              website
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <img
-              src="../lrnr/case-assets/simulated-mistakes.svg"
-              alt="procees"
-            />
-            <p>
-              Get good grade points and the curriculam requires hem to visit the
-              website
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem] ">
-        What are the primary goals that Instructors aim to achieve by visiting
-        this website?
-        <div className="flex">
-          <div className="flex flex-col">
-            <img src="../lrnr/case-assets/process.svg" alt="procees" />
-            <p>They want the students to learn to abide by the process</p>
-            <p>make mistakes, and see what safety issues it may lead to</p>
-            <p>
-              They aslo want to create assignments and easily assign to students
-            </p>
-          </div>
-        </div>
-      </section> */}
+
       <HowMightWeSection
         quoteText="How might we ensure consistent UI and common interactions throughout the product, rendering it seamlessly integrated and virtually invisible to the user?"
         highlightedText={[
@@ -353,8 +345,9 @@ export default function Lrnr() {
               Hmmmm...
             </p>
             <p className="mt-4 text-gray-400 text-base/6">
-              I remined myself, that I am not trying to make the experiemnt consistent, but the tool we
-              use to conduct it. Hence there is a slight possibility.
+              I remined myself, that I am not trying to make the experiemnt
+              consistent, but the tool we use to conduct it. Hence there is a
+              slight possibility.
             </p>
           </header>
           <ul className="flex flex-wrap gap-4 mt-16">
@@ -418,16 +411,43 @@ export default function Lrnr() {
         </div>
       </section>
 
+      {/* <section className="flex relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        
+        <div className="left">
+          <img
+            className="w-full  pt-16 mt-8"
+            src="../lrnr/case-assets/topbar.svg"
+            alt="procees"
+          />
+          <p className="mt-4 text-gray-400 text-base/6">
+            The top bar displays the current experiment name, score,
+            accessibility tools, and exit button.
+          </p>
+        </div>
+        <div className="right">
+          <img
+            className="w-full pt-16 mt-8"
+            src="../lrnr/case-assets/topbar.svg"
+            alt="procees"
+          />
+          <p className="mt-4 text-gray-400 text-base/6">
+            The top bar displays the current experiment name, score,
+            accessibility tools, and exit button.
+          </p>
+        </div>
+      </section> */}
+
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
-          Standard navigation: Fixed topbar - with accessibilty & help tools.
+          Designbing the navigation - Fixed topbar - with accessibilty & help tools.
         </p>
+        
         <p className="mt-4 text-gray-400 text-base/6">
           The top bar displays the current experiment name, score, accessibility
           tools, and exit button.
         </p>
         <img
-          className="w-full pt-16 mt-8"
+          className="w-full  pt-16 mt-8"
           src="../lrnr/case-assets/topbar.svg"
           alt="procees"
         />
