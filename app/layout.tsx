@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { alliance2 } from "@/app/fonts";
 import "./globals.css";
-import Navbar from "./Components/layout/index";
+import Navbar from "@/app/Components/navigation/Navbar"
+
 
 
 export const metadata: Metadata = {
