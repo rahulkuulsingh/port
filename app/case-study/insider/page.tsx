@@ -7,7 +7,6 @@ import Folder from "@/app/Components/UI/Folder/Folder";
 import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
-import AnimatedSVG from "@/app/Components/UI/Figjam/AnimatedSVG";
 
 export default function Insider() {
   const workflow = [
