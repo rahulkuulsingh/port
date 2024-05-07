@@ -1,0 +1,12 @@
+      To make the software invisible, we wanted to make the screens consitent
+      and common on for alomost all the experiemnts. Probem is, this can't be
+      done, well not 100% but it we definatley few things common such as the
+      layout elements like - Howq the user navigate s the experimets, The way
+      will see thge progress, The way they will interact witht differenty
+      materials, aparatus, equipments, The way we show errors. What are they
+      going to do on the screens, They will Read, They will listen, They will
+      focus, they will go back and forth, they will make mistakes, they will
+      search for things, they may accidently close be afraid of losing progess,
+      they be frustrated if they lose grade points because they got confused,
+      they will try to cheat, defate the system. They will need guidance, they
+      will need help. They may get curious.

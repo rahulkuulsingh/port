@@ -7,6 +7,7 @@ import Folder from "@/app/Components/UI/Folder/Folder";
 import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
+import AnimatedSVG from "@/app/Components/UI/Figjam/AnimatedSVG";
 
 export default function Insider() {
   const workflow = [
@@ -143,7 +144,8 @@ export default function Insider() {
       </section>
 
       <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-y-0">
+        {/* <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-y-0"> */}
+        <div className="relative">
           <header className="max-w-2xl">
             <h2 className="text-sm font-medium text-sky-300">
               How it all started?
@@ -157,29 +159,32 @@ export default function Insider() {
             <p className="mt-4 text-base/6 text-gray-400">
               In this survey, we asked our users 3 question.
             </p>
+          </header>
             <ul>
               <li>
-                <p className="mt-4 text-base/6 text-gray-400">
+                <p className="mt-8 text-base/6 text-gray-400">
                   Q1. The capabilities of Architect meet my requirement. (1-7)
                 </p>
+
                 <Image
-                  src="../insider/case-assets/q-scale.svg"
+                  src="../insider/case-assets/survey-q-1.svg"
                   alt="Image description"
-                  width={290}
+                  width={1200}
                   height={38}
-                  className="pt-4"
+                  className="pt-4 "
                 />
+
               </li>
               <li>
-                <p className="mt-4 text-base/6 text-gray-400">
+                <p className="mt-8 text-base/6 text-gray-400">
                   Q2. Architect is easy to use. (1-7){" "}
                 </p>
                 <Image
-                  src="../insider/case-assets/q-scale.svg"
+                  src="../insider/case-assets/survey-q-2.svg"
                   alt="Image description"
-                  width={290}
+                  width={1200}
                   height={38}
-                  className="pt-4"
+                  className="pt-4 "
                 />
               </li>
               <li>
@@ -189,14 +194,13 @@ export default function Insider() {
                 <Image
                   src="../insider/case-assets/q-long-survey.svg"
                   alt="Image description"
-                  width={290}
+                  width={600}
                   height={38}
                   className="pt-4"
                 />
               </li>
             </ul>
-          </header>
-          <div className="relative flex items-center justify-center">
+          <div className="absolute -bottom-[20rem] right-0">
             <Image
               src="../insider/case-assets/anoted-results.svg"
               alt="Image description"
@@ -226,7 +230,10 @@ export default function Insider() {
         </header>
       </section>
       <section className="lg:max-w-[64rem] md:max-w-[48rem] mx-auto relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <Image src={dovetail} alt="Image description" className="pt-4" />
+        <Image src={dovetail} alt="Image description" loading={'lazy'}  className="pt-4" />
+        <p className="mt-4 max-w-md text-base/6 text-gray-500">
+            Image 01: Low resolution image of User Interview Findings 
+          </p>
       </section>
       <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
         <header className="max-w-3xl">
@@ -342,8 +349,16 @@ export default function Insider() {
         </header>
 
         <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6 ">
-          <div className="col-span-3">
+          <div className="col-span-3 relative">
+          {/* <Image
+              src="../insider/case-assets/arrow-preview.svg"
+              alt="Image description"
+              width={232}
+              height={56}
+              className="absolute -top-16 right-16   z-10"
+            /> */}
             <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
+
               <Video
                 src="../insider/videos/PrototypePreviewOld.webm"
                 height={1080}
@@ -673,12 +688,12 @@ export default function Insider() {
             How might we reduce the learning curve?
           </p>
           <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            In order to ask this question, we must ask a few more questions.
+            In order to answer this question, we must ask a few more questions.
           </p>
         </header>
         <div className="inline-flex flex-wrap  mt-4 relative">
           <StickyNotes
-            content="Do we train our users?"
+            content="How do we train our users? Videos, Artciles, Podcasts? How ???"
             authorName="rahul"
           />
           <StickyNotes

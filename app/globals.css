@@ -164,3 +164,20 @@ h2.card-title {
 .reveal-content[data-state=open] {
   animation: reveal .6s both;
 }
+
+
+
+
+
+.svgcontainer:hover .circle {
+  animation: opacity-appear 1s ease-in-out forwards;
+}
+
+@keyframes opacity-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
