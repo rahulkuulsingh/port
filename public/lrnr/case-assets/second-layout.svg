@@ -1,7 +1,15 @@
 <svg width="346" height="195" viewBox="0 0 346 195" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="345" height="14" stroke="white"/>
-<rect x="0.5" y="14.5" width="345" height="163" stroke="white"/>
-<rect x="0.5" y="177.5" width="345" height="17" stroke="white"/>
-<rect opacity="0.7" width="346" height="195" fill="#111111"/>
-<rect x="183.5" y="0.5" width="162" height="194" fill="#111111" stroke="white"/>
+<g clip-path="url(#clip0_769_57)">
+<path d="M184 0H0V14H184V0Z" stroke="#262626"/>
+<path d="M184 14H0V177H184V14Z" stroke="#262626"/>
+<path d="M184 177H0V194H184V177Z" stroke="#262626"/>
+<path d="M345.5 0.5H183.5V194.5H345.5V0.5Z" stroke="white"/>
+<path d="M339 7L333 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M333 7L339 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_769_57">
+<rect width="346" height="195" fill="white"/>
+</clipPath>
+</defs>
 </svg>

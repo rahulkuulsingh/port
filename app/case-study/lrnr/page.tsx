@@ -266,6 +266,7 @@ export default function Lrnr() {
           />
         </div>
         <div>
+          How these experiments are performed in the Real World?
           <ul
             role="list"
             className="relative grid w-full grid-cols-4 mt-24 isolate col-span-full"
@@ -315,11 +316,9 @@ export default function Lrnr() {
             height={38}
             className="pt-4 mt-16"
           />
-
           <p className="mt-16  py-2 text-purple-600 ">
             A Generic Student Flow can be created, that&apos;s the goal.
           </p>
-
           <p className=" mb-8 text-gray-400 text-balance">
             Note: It was noticed that not all the experimets will have All four
             steps.
@@ -341,8 +340,8 @@ export default function Lrnr() {
         <div className="relative">
           <header className="max-w-2xl">
             <p className="mt-4 text-gray-400 text-base/6">
-              Experiments can&apos;t be made consitent, because they are unique -
-              Hmmmm...
+              Experiments can&apos;t be made consitent, because they are unique
+              - Hmmmm...
             </p>
             <p className="mt-4 text-gray-400 text-base/6">
               I remined myself, that I am not trying to make the experiemnt
@@ -383,14 +382,18 @@ export default function Lrnr() {
           While designing, looking at the content, I grdually was able to reduce
           the screen variants. I arrived at 4 options.{" "}
         </p>
-        <div className="flex w-full gap-4 flex-wrap-flex-col">
+        <p className="mt-4 text-gray-400 text-base/6">
+          Simplifing screen variations for quicker tool mastery. This reduces
+          the congntive load.
+        </p>
+        <div className="flex mt-8 pt-8  w-full gap-4 flex-wrap-flex-col">
           <picture className="flex-grow">
             <img
               className="w-full"
               src="../lrnr/case-assets/first-layout.svg"
               alt="procees"
             />
-            <p>Layout 1. Wide layout</p>
+            <p className="pt-4 text-gray-600 text-sm">Layout 1. Wide layout</p>
           </picture>
           <picture className="flex-grow">
             <img
@@ -398,7 +401,9 @@ export default function Lrnr() {
               src="../lrnr/case-assets/second-layout.svg"
               alt="procees"
             />
-            <p>Layout 2. Drawer layout</p>
+            <p className="pt-4 text-gray-600 text-sm">
+              Layout 2. Drawer layout
+            </p>
           </picture>
           <picture className="flex-grow">
             <img
@@ -406,7 +411,17 @@ export default function Lrnr() {
               src="../lrnr/case-assets/third-layout.svg"
               alt="procees"
             />
-            <p>Layout 3. Sidebar layout</p>
+            <p className="pt-4 text-gray-600 text-sm">
+              Layout 3. Sidebar layout
+            </p>
+          </picture>
+          <picture className="flex-grow">
+            <img
+              className="w-full"
+              src="../lrnr/case-assets/fourth-layout.svg"
+              alt="procees"
+            />
+            <p className="pt-4 text-gray-600 text-sm">Layout 4. Modals</p>
           </picture>
         </div>
       </section>
@@ -438,14 +453,35 @@ export default function Lrnr() {
       </section> */}
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
-          Designbing the navigation - Fixed topbar - with accessibilty & help tools.
+          Fixed Topbar
         </p>
-        
+
         <p className="mt-4 text-gray-400 text-base/6">
-          The top bar displays the current experiment name, score, accessibility
-          tools, and exit button.
+          My focus was on, taking advantage of the top bar to show all the
+          necesassy information to user in seconds.
         </p>
+        <p className=" pt-2 text-gray-400">
+          What is the most important information for a Student?
+        </p>
+        <ul>
+          <li className="mt-8 list-disc text-gray-400">
+            Which experiment they are practcing.
+          </li>
+          <li className="mt-2 list-disc text-gray-400">Grade Points</li>
+          <li className="mt-2 list-disc text-gray-400">
+            Quick Help or Support
+          </li>
+          <li className="mt-2 list-disc text-gray-400">
+            Exit from the experiment.
+          </li>
+          <li className="mt-2 list-disc text-gray-400">
+            Accessibility Tools to increase font size, high contrast mode,
+            toggle on or off hints etc.
+          </li>
+        </ul>
+
         <img
           className="w-full  pt-16 mt-8"
           src="../lrnr/case-assets/topbar.svg"
@@ -454,11 +490,23 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
-          Standard navigation: Fixed bottom navigation bar
+          Fixed Bottom Navigation Bar
+        </p>
+
+        <p className="mt-4 text-gray-400 text-base/6">
+          The Navigation is the most important part of all to achive consistent
+          interaction. It was also the most challenging to design.
         </p>
         <p className="mt-4 text-gray-400 text-base/6">
-          The bottom bar displays the current step name, sub-steps, and a
+          The navigation should be intuitive, it should always tell the user how
+          much progress they have made, they should be able to go back and
+          forth. It should also clearly inform user if a step if Optional. There
+          should only be one Primary Action Button.
+        </p>
+        <p className="mt-4 text-gray-400 text-base/6">
+          Hence the bottom bar displays the current step name, sub-steps, and a
           context-aware action button.
         </p>
         <img
@@ -469,12 +517,14 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
-          Standard navigation: Sidebar for materials, answers, and tasks.
+          Simplifuing access to find Materisl, Appratus, Tasks, Answers.
         </p>
         <p className="mt-4 text-gray-400 text-base/6">
-          The sidebar displays the materials, answers, or tasks that the users
-          can interact with to perform the experiments.
+          Implementing a drawer or shelf type feature to conveniently store
+          materials, apparatus, tasks, and answers for each experiment. Enhances
+          findability and usability.
         </p>
         <img
           className="w-full pt-16 mt-8"
@@ -484,13 +534,33 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
-          Standard navigation: Main area - experiment canvas.
+          Experiment Canvas
         </p>
         <p className="mt-4 text-gray-400 text-base/6">
-          The main area displays reading materials, videos, and instructions.
-          Students can perform the procedure in this area of the layout.
+          This is the area where the student will spend most of the time. So it
+          has to be as simple as possible. It has to be informative. The main
+          area displays reading materials, videos, and instructions. Students
+          can perform the procedure in this area of the layout.
         </p>
+
+        <ul>
+          <li className="mt-8 list-disc text-gray-400">
+            Displays Main Content, that is designed and developed by the
+            instrctors.
+          </li>
+          <li className="mt-2 list-disc text-gray-400">
+            It can include, Images, Videos, Tables, Rich Formatted Text, The
+            Layout can be multi columns.
+          </li>
+          <li className="mt-2 list-disc text-gray-400">
+            Displays onScreen hints, success or failure states
+          </li>
+          <li className="mt-2 list-disc text-gray-400">
+            This type of screen will also change with experiment to experiment.
+          </li>
+        </ul>
         <img
           className="w-full pt-16 mt-8"
           src="../lrnr/case-assets/main-area-2x.png"
