@@ -13,8 +13,9 @@ function Home() {
       <div className="max-w-5xl m-auto px-8">
         <RevealAboutMe />
         <SectionTitle
+        sectionID="recent-work"
           title="Checkout My Recent Work"
-          desc="Click on any project to learn more about it."
+          subtitle="Click on any project to learn more about it."
         />
         <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6">
           <Card
@@ -68,8 +69,7 @@ function Home() {
         </div>
         <SectionTitle
           title="Checkout more of my work in Gallery"
-          desc="Exploring design by doing it"
-        />
+          subtitle="Exploring design by doing it" sectionID={"gallary"}        />
       </div>
     </>
   );
