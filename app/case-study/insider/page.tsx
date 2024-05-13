@@ -1,14 +1,46 @@
+// "use client";
+
 import React from "react";
 import Image from "next/image";
-import dovetail from "@/public/insider/case-assets/dovetail.png";
 
-import { CanvasRevealEffect } from "@/app/Components/Visual/canvas-reveal-effect";
+import { CanvasRevealEffect } from "@/app/Components/UI/CosmeticComponents/Backgrounds/canvas-reveal-effect";
 import Folder from "@/app/Components/UI/Folder/Folder";
 import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
 
+// Static Images
+import dovetail from "@/public/insider/case-assets/dovetail.png";
+import previewComponent from "@/public/insider/case-assets/preview-component.png";
+import DovetailCard from "@/app/Components/UI/Dovetail/dovetailCard";
+import MasonryLayout from "@/app/Components/UI/MasonryLayout/MasonryLayout";
+import DotGridBG from "@/app/Components/UI/CosmeticComponents/Backgrounds/DotGridBG";
+import TableOfContents from "@/app/Components/navigation/ContentStickyNav/TableOfContents";
+import SectionTitle from "@/app/Components/SectionTitle";
+import SectionMultiSelect from "@/app/Components/Parts/Insider/SectionMultiSelect";
+import IntroductionGrid from "@/app/Components/IntroductionGrid";
+
 export default function Insider() {
+  const tocItems = [
+    { id: "section1", title: "Introduction" },
+    { id: "section2", title: "Research - Survey" },
+    { id: "section3", title: "Research - User Interviews" },
+    { id: "section3", title: "Research - Analysis" },
+    { id: "section3", title: "Problem Statemet 1 " },
+    { id: "section3", title: "Solutions Exploration - Preview " },
+    { id: "section3", title: "Problem Statemet 2 " },
+    { id: "section3", title: "Solutions Exploration - Navigation " },
+    { id: "section3", title: "Problem Statemet 3 " },
+    { id: "section3", title: "Solutions Exploration - Bulk Actions " },
+    { id: "section3", title: "Problem Statemet 4 " },
+    { id: "section3", title: "Solutions Exploration - Learning Curve " },
+    { id: "section3", title: "Restructing Canvas" },
+    { id: "section3", title: "Updating the design systems " },
+    { id: "section3", title: "Adding Micro Interactions " },
+    { id: "section3", title: "UX Improvments" },
+    { id: "cool", title: "Final Results and Impact" },
+  ];
+
   const workflow = [
     "Can’t copy and paste entire branches or multiple elements at once",
     "While creating a journey user can’t split and reconnect paths",
@@ -64,141 +96,85 @@ export default function Insider() {
         animationSpeed={0.8}
         colors={[[255, 255, 255]]}
       />
-      <section className="hero-section mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <div className="">
-          <h2 className="text-sm  text-purple-500 pb-8">B2B SaaS Product</h2>
-          <h1 className="max-w-4xl text-balance text-3xl/9  tracking-tight  sm:text-5.5xl md:text-6xl">
-            Enhancing Usability of Architect.
-          </h1>
-          {/* <p className="mt-4 text-3xl tracking-[-0.015em] ">Enhancing Usability of Architect.</p> */}
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Architect is a SaaS platform that empowers marketers to automate
-            their omnichannel marketing campaigns.
+
+      <IntroductionGrid
+        title={"Enhancing Usability of Architect."}
+        subTitle={"B2B SaaS Product"}
+        subTitleColor={"blue"}
+        description={
+          "Architect is a SaaS platform that empowers marketers to automate their omnichannel marketing campaigns."
+        }
+        roleContent={[
+          "The project aims to improve user satisfaction by addressing key pain points like workflow issues and high learning curves, enhancing usability.",
+          "Conduct research to identify usability issues, then iterate and release product solutions. Collaborate with cross-functional teams to provide a consistent product experience across Insider.",
+        ]}
+        teamContent={["Cagdas", "Sarper", "Nour", "Blzenko"]}
+        timeline={"Dec, 2021 - June, 2023"}
+      />
+
+      <div className="relative max-w-[80rem] mx-auto">
+        <HowMightWeSection
+          quoteText="Creating complex marketing customer journeys can be time-consuming and frustrating for marketers. Disjointed workflow across platforms can further add to the challenge."
+          highlightedText={[
+            "customer journeys",
+            "Disjointed workflow",
+            "across platforms",
+          ]}
+          highlightedColors={["purple", "orange", "red"]}
+          containerClass="my-8"
+        />
+      </div>
+
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+        <div className="relative">
+          <SectionTitle
+            sectionID="survey"
+            title="Our Research team did a UMUX Survey, the results were concering."
+            subtitle="How it all started?"
+          />
+          <p className="mt-4 text-gray-400 text-base/6">
+            In this survey, we asked our users 3 question.
           </p>
-        </div>
-        <div className="my-role isolate mt-24 grid grid-cols-1 border border-white/[.075] sm:grid-cols-2 lg:grid-cols-4">
-          <div className="relative z-10 col-start-1 row-start-1 px-6 py-8">
-            <h2 className="text-balance text-xl tracking-[-0.015em] ">
-              The Projects High Level Context
-            </h2>
-            <p className="mt-3 text-sm/5 text-gray-400">
-              This software is used by Marketers, they use this software to
-              automaticaly target users based on different criterias. Such as,
-              Past Purchases, Product View History
-            </p>
-          </div>
-          <ul
-            role="list"
-            className="relative isolate col-span-full col-start-1 flex flex-wrap sm:row-start-1"
-          >
-            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075] px-6 py-8 sm:ml-[50%] sm:w-1/2 sm:border-l sm:border-t-0 lg:ml-[25%] lg:w-1/4">
-              <h3 className="mt-6 text-sm font-medium ">My Role</h3>
-              <p className="mb-auto mt-2 text-sm/5 text-gray-400">
-                Conduct Research to identify usablity issues, then idate and
-                release product solutions. Collaborate with crossfunctional
-                teams to provide consistent product experince accross insider.
+
+          <ul>
+            <li>
+              <p className="mt-8 text-gray-400 text-base/6">
+                Q1. The capabilities of Architect meet my requirement. (1-7)
               </p>
-              {/* <p className="mt-16 text-2xs text-gray-400">
-                I worked as a Product designer, researcher, motion and
-                interaction designer.
-              </p> */}
+
+              <Image
+                src="../insider/case-assets/survey-q-1.svg"
+                alt="Image description"
+                width={1200}
+                height={38}
+                className="pt-4 "
+              />
             </li>
-            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075]  px-6 py-8 sm:w-1/2 lg:w-1/4 lg:border-l lg:border-t-0">
-              <h3 className="mt-6 text-sm font-medium ">Team Structure</h3>
-              <p className="mb-auto mt-2 text-sm/5 text-gray-400">
-                <span>Design Team: Cagdas, Sarper, Nour, Blzenko</span>
-                <br />
-                <span className="mt-4 block">
-                  Product Management: Ibrahim, Cansu, Barim
-                </span>
+            <li>
+              <p className="mt-8 text-gray-400 text-base/6">
+                Q2. Architect is easy to use. (1-7){" "}
               </p>
-              {/* <p className="mt-16 text-2xs text-gray-400">
-                A dedicated development team of 15 devs
-              </p> */}
+              <Image
+                src="../insider/case-assets/survey-q-2.svg"
+                alt="Image description"
+                width={1200}
+                height={38}
+                className="pt-4 "
+              />
             </li>
-            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075]  px-6 py-8 sm:w-1/2 sm:border-l lg:w-1/4 lg:border-t-0">
-              <h3 className="mt-6 text-sm font-medium ">Project Timeline</h3>
-              <p className="mb-auto mt-2 text-sm/5 text-gray-400">
-                Dec, 2021 - June, 2023
+            <li>
+              <p className="mt-4 text-gray-400 text-base/6">
+                Q3. Why do you rate Architect this way. (Text Input){" "}
               </p>
+              <Image
+                src="../insider/case-assets/q-long-survey.svg"
+                alt="Image description"
+                width={600}
+                height={38}
+                className="pt-4"
+              />
             </li>
           </ul>
-        </div>
-      </section>
-
-      {/* Block Quote */}
-
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <blockquote className="text-xl font-light lg:text-3xl pl-8 border-l-2 ">
-          <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
-            Creating complex customer journeys can be time-consuming and
-            frustrating for marketers.{" "}
-            <span className="relative mr-4 bg-gradient-to-r from-purple-500 to-gray-50 hover:to-purple-600  bg-clip-text text-transparent before:font-bold before:absolute before:-right-2 before:-top-2 before:inline-flex before:items-center before:justify-center before:h-4 before:w-4 before:bg-purple-50 before:text-[12px] before:rounded-full before:-z-10 before:text-black before:content-['1']">
-              Disjointed workflow{" "}
-            </span>
-            <strong className="text-orange-600">across platforms</strong> can
-            further add to the challenge.
-          </p>
-        </blockquote>
-      </section>
-
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        {/* <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-y-0"> */}
-        <div className="relative">
-          <header className="max-w-2xl">
-            <h2 className="text-sm font-medium text-sky-300">
-              How it all started?
-            </h2>
-            <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-              <span className="inline-block">
-                Our Research team did a UMUX Survey, the results were{" "}
-                <span className="relative my-underline">concering</span>.
-              </span>
-            </p>
-            <p className="mt-4 text-base/6 text-gray-400">
-              In this survey, we asked our users 3 question.
-            </p>
-          </header>
-            <ul>
-              <li>
-                <p className="mt-8 text-base/6 text-gray-400">
-                  Q1. The capabilities of Architect meet my requirement. (1-7)
-                </p>
-
-                <Image
-                  src="../insider/case-assets/survey-q-1.svg"
-                  alt="Image description"
-                  width={1200}
-                  height={38}
-                  className="pt-4 "
-                />
-
-              </li>
-              <li>
-                <p className="mt-8 text-base/6 text-gray-400">
-                  Q2. Architect is easy to use. (1-7){" "}
-                </p>
-                <Image
-                  src="../insider/case-assets/survey-q-2.svg"
-                  alt="Image description"
-                  width={1200}
-                  height={38}
-                  className="pt-4 "
-                />
-              </li>
-              <li>
-                <p className="mt-4 text-base/6 text-gray-400">
-                  Q3. Why do you rate Architect this way. (Text Input){" "}
-                </p>
-                <Image
-                  src="../insider/case-assets/q-long-survey.svg"
-                  alt="Image description"
-                  width={600}
-                  height={38}
-                  className="pt-4"
-                />
-              </li>
-            </ul>
           <div className="absolute -bottom-[20rem] right-0">
             <Image
               src="../insider/case-assets/anoted-results.svg"
@@ -211,42 +187,45 @@ export default function Insider() {
         </div>
       </section>
 
-      {/* Followup calls and  Research is Required */}
-
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <header className="max-w-3xl">
-          <h2 className="text-sm font-medium text-sky-300">
-            Results were indicating not happy users
-          </h2>
-          <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            To understand the reasons behind the low satisfaction scores and
-            identify areas for improvement, we conducted user interviews.
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            I did the analysis while the research team did the followup
-            interview session
-          </p>
-        </header>
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <SectionTitle
+          sectionID="survey"
+          subtitle="Survey Results were indicating not happy users"
+          title="To understand the reasons behind the low satisfaction scores and identify areas for improvement, we conducted user interviews."
+          customCode={
+            <p className="max-w-md mt-4 text-gray-500 text-base/6">
+              I did the analysis while the research team did the followup
+              interview session
+            </p>
+          }
+        />
       </section>
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] mx-auto relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <Image src={dovetail} alt="Image description" loading={'lazy'}  className="pt-4" />
-        <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Image 01: Low resolution image of User Interview Findings 
-          </p>
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] mx-auto relative sm:max-w-[40rem] w-full">
+        <Image
+          src={dovetail}
+          alt="Image description"
+          loading={"lazy"}
+          className="pt-4"
+        />
+        <p className="max-w-md mt-4 text-gray-500 text-base/6">
+          Image 01: Low resolution image of User Interview Findings
+        </p>
       </section>
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <header className="max-w-3xl">
-          <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            After analysis, four types of pain points surfaced.
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            The Software does not fit properly in the workflow, it is hard to
-            learn, it crashes and freezes, when compared to other tools lacks
-            certain features.
-          </p>
-        </header>
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <SectionTitle
+          sectionID="survey"
+          // subtitle="Survey Results were indicating not happy users"
+          title="After analysis, four types of pain points surfaced."
+          customCode={
+            <p className="max-w-md mt-4 text-gray-500 text-base/6">
+              The Software does not fit properly in the workflow, it is hard to
+              learn, it crashes and freezes, when compared to other tools lacks
+              certain features.
+            </p>
+          }
+        />
       </section>
-      <div className="mt-12 grid grid-flow-col grid-cols-1 grid-rows-6 gap-2 md:grid-cols-2 md:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 relative pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+      <div className="mt-12 grid grid-flow-col grid-cols-1 grid-rows-6 gap-2 md:grid-cols-2 md:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 relative pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
         <Folder
           folderName="Work Flow"
           listItems={workflow}
@@ -276,52 +255,49 @@ export default function Insider() {
         />
       </div>
 
-      {/* Sectyion abnout solutions */}
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full"></section>
 
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]"></section>
+      <div className="relative">
+        <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+          <HowMightWeSection
+            quoteText="Research analysis reveals that users encounter interaction challenges, resulting in a lack of flexibility within the workflow."
+            problemCount={2}
+            highlightedText={[
+              "interaction challenges",
+              "lack of flexibility",
+              "workflow",
+            ]}
+            highlightedColors={["lime", "orange", "gray"]}
+            containerClass="mb-16"
+          />
 
-      {/* Block Quote */}
+          <div className="relative inline-flex flex-wrap pt-8 mb-8">
+            {workflow.map((item, index) => (
+              <StickyNotes
+                key={index}
+                content={item}
+                containerClassName="text-sm hover:bg-rose-500"
+                authorName="Workflow Issue"
+              />
+            ))}
+          </div>
 
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <blockquote className="text-xl font-light lg:text-3xl pl-8 border-l-2 ">
-          <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
-            Research analysis reveals that users encounter{" "}
-            <strong className="text-sky-300 underline underline-offset-4">
-              interaction challenges
-            </strong>
-            , resulting in a{" "}
-            <strong className="text-yellow-300 underline underline-offset-4">
-              lack of flexibility{" "}
-            </strong>
-            within the{" "}
-            <strong className="text-orange-500 underline underline-offset-4">
-              workflow.
-            </strong>
+          <p className="max-w-md mt-4 text-gray-500 text-base/6">
+            Solving these problems had the heightest priority, because it will
+            increase usability of our software.
           </p>
-        </blockquote>
 
-        <p className="mt-4 max-w-md text-base/6 text-gray-500">
-          I focused on solving the &#34;Low Effort&#34; and &#34;High Gains&#34; problem first,
-          which can be adapted to future use cases.
-        </p>
+          <p className="max-w-md mt-4 text-gray-500 text-base/6">
+            I focused on solving the &#34;Low Effort&#34; and &#34;High
+            Gains&#34; problem first, which can be adapted to future use cases.
+          </p>
+        </section>
+        <DotGridBG />
+      </div>
 
-        <div className="inline-flex flex-wrap  mt-8 pt-8  relative">
-          {workflow.map((item, index) => (
-            <StickyNotes
-              key={index}
-              content={item}
-              stickyColor="rose"
-              containerClassName="text-sm hover:bg-rose-500"
-              authorName="Workflow Issue"
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* How Might We Section */}
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <blockquote className="text-xl font-light lg:text-3xl pl-8 border-l-2 ">
-          <p className=" pb-4 text-sm font-medium ">
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+        {/* <blockquote className="pl-8 text-xl font-light border-l-2 lg:text-3xl ">
+          <p className="pb-4 text-sm font-medium ">
             <strong className="text-sky-300">Workflow Problem No.1:</strong>{" "}
             Users struggle to preview element design, such as email or webpush
           </p>
@@ -329,35 +305,40 @@ export default function Insider() {
             How might we streamline multi-element preview, minimizing clicks for
             user efficiency?{" "}
           </p>
-        </blockquote>
+        </blockquote> */}
+
+        <HowMightWeSection
+          quoteText="How might we streamline multi-element preview, minimizing clicks for
+        user efficiency?"
+          problemStatement="Users struggle to preview campaign designs for Email, Webpush, App Push, etc."
+          problemCount={1}
+          highlightedText={[
+            "what resources",
+            "easy to learn",
+            "trackpad/mouse",
+            "large journeys",
+          ]}
+          highlightedColors={["lime", "", "", "cyan"]}
+        />
       </section>
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <header className="max-w-3xl">
-          <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            1. Introducing New and{" "}
-            <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-              “Faster Previews”
-            </span>
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Users can’t see preview of elements, for example, to see an email
-            design, they have to double click the email element, element config
-            page loads with the design, imagine doing this for all the elements
-            on the journey.
-          </p>
-        </header>
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <SectionTitle
+          sectionID="survey"
+          // subtitle="Survey Results were indicating not happy users"
+          title="Introducing New and Faster Previews"
+          customCode={
+            <p className="max-w-md mt-4 text-gray-500 text-base/6">
+              Users can’t see preview of elements, for example, to see an email
+              design, they have to double click the email element, element
+              config page loads with the design, imagine doing this for all the
+              elements on the journey.
+            </p>
+          }
+        />
 
-        <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6 ">
-          <div className="col-span-3 relative">
-          {/* <Image
-              src="../insider/case-assets/arrow-preview.svg"
-              alt="Image description"
-              width={232}
-              height={56}
-              className="absolute -top-16 right-16   z-10"
-            /> */}
-            <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
-
+        <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
+          <div className="relative col-span-3">
+            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
               <Video
                 src="../insider/videos/PrototypePreviewOld.webm"
                 height={1080}
@@ -388,7 +369,7 @@ export default function Insider() {
             </ol>
           </div>
           <div className="col-span-3">
-            <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
+            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
               <Video
                 src="../insider/videos/PrototypePreviewNew.webm"
                 height={1080}
@@ -412,58 +393,72 @@ export default function Insider() {
             </ol>
           </div>
         </div>
-        {/* add 2 columns layout for the videos here. Video will have a captions as well */}
+        <p className="mt-16">
+          <strong className="text-sky-500">
+            I extended the existing component,{" "}
+          </strong>
+          So that it can display preview images right in the canvas.
+        </p>
       </section>
+      <div className=" relative w-full">
+        {/* <picture className="max-w-screen-2xl">
+          <img
+            src="../insider/case-assets/preview-component.png"
+            alt="Image description"
+            width={1200}
+            height={56}
+            className="m-auto"
+          />
+        </picture> */}
+        <DotGridBG />
+        <img className="m-auto" src="../insider/case-assets/Testing.svg" alt="" />
+      </div>
 
-      {/* Mini Map Section */}
+      <div className="relative max-w-[80rem] mx-auto">
+        <HowMightWeSection
+          quoteText="How might we improve navigation within the canvas for users who rely on trackpad/mouse, especially when designing large journeys."
+          problemStatement="Users struggle to navigate large journeys within the canvas using trackpad/mouse, requiring excessive zooming and dragging"
+          problemCount={2}
+          highlightedText={[
+            "improve navigation within",
+            "rely on",
+            "trackpad/mouse",
+            "large journeys",
+          ]}
+          highlightedColors={["lime", "purple", "", "cyan"]}
+        />
+      </div>
 
-      <HowMightWeSection
-        quoteText="How might we improve navigation within the canvas for users who rely on trackpad/mouse, especially when designing large journeys."
-        problemStatement="Users struggle to navigate large journeys within the canvas using trackpad/mouse, requiring excessive zooming and dragging"
-        problemCount={2}
-        highlightedText={[
-          "improve navigation within",
-          "rely on",
-          "trackpad/mouse",
-          "large journeys",
-        ]}
-        highlightedColors={["lime", "purple", "", "cyan"]}
-      />
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <SectionTitle
+          sectionID="survey"
+          // subtitle="Survey Results were indicating not happy users"
+          title="Introducing Mini Map and Better Contextual Zoom Functionality"
+          customCode={
+            <>
+              <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                Multiple users complained about navigation issues, They mainly
+                use Trackpad or Mouse to navigate within the canvas.
+              </p>
+              <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                When designing large journeys, their is no easier interaction
+                using the mouse or trackpad. User have to zoom out and drag the
+                canvas and zoom again.
+              </p>
+              <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                Our canvas always zoomed from the center of the viewport, that
+                means even if the user has dragged to the correct position,
+                zooming in will feel weird
+              </p>
+            </>
+          }
+        />
 
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <header className="max-w-3xl">
-          <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            2. Introducing{" "}
-            <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-            &#8220;Mini Map&#8221;{" "}
-            </span>
-            and Better
-            <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-              {" "}
-              &#8220;Contextual Zoom Functionality&#8221;
-            </span>
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Multiple users complained about navigation issues, They mainly use
-            Trackpad or Mouse to navigate within the canvas.
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            When designing large journeys, their is no easier interaction using
-            the mouse or trackpad. User have to zoom out and drag the canvas and
-            zoom again.
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Our canvas always zoomed from the center of the viewport, that means
-            even if the user has dragged to the correct position, zooming in
-            will feel weird
-          </p>
-        </header>
-
-        <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6 ">
+        <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
           <div className="col-span-3">
-            <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
+            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
               <Video
-                src="../insider/videos/PrototypePreviewOld.webm"
+                src="../insider/videos/MiniMap.webm"
                 height={1080}
                 width={1920}
               />
@@ -484,9 +479,9 @@ export default function Insider() {
             </ol>
           </div>
           <div className="col-span-3">
-            <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
+            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
               <Video
-                src="../insider/videos/PrototypePreviewNew.webm"
+                src="../insider/videos/NewZoom.webm"
                 height={1080}
                 width={1920}
               />
@@ -514,42 +509,50 @@ export default function Insider() {
       </section>
 
       {/* Copy / Split and Paste Multiple Branches */}
+      <div className="relative max-w-[80rem] mx-auto">
+        <HowMightWeSection
+          quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
+          problemStatement="Users often wanted to copy existing elements, Move multiple of them at once &#8220;But our software lacked this ability&#8221;"
+          problemCount={3}
+          highlightedText={[
+            "bulk actions",
+            "copying",
+            "pasting",
+            "deleting",
+            "rearranging",
+          ]}
+          highlightedColors={[""]}
+        />
+      </div>
 
-      <HowMightWeSection
-        quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
-        problemStatement="Users struggle to efficiently manage multiple elements within the canvas. This limits their ability to perform bulk actions."
-        problemCount={3}
-      />
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <SectionTitle
+          title="Supporting multi select, to perform bulk actions"
+          sectionID="multi-select"
+          customCode={
+            <>
+              <span className=" text-3xl tracking-[-0.015em] text-transparent bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text">
+                {" "}
+              </span>
+              <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                This was The biggest challenge of this task.
+              </p>
+              <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                Enabling users to select multiple elements at once opens up
+                numerous new possibilities.
+              </p>
+              <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                Bulk action like copy and paste would become much easier,
+                deleting multiple elements would also be possible. Moving
+                multiple elements to new locations would be so simpler.
+              </p>
+            </>
+          }
+        />
 
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <header className="max-w-3xl">
-          <h2 className="text-sm font-medium bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-            How might we help users reuse an existing Group or Single Elements
-          </h2>
-          <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            3. Users often wanted to copy existing elements, Move multiple of
-            them at once{" "}
-            <span className="bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text text-transparent">
-            &#8220;But our software lacked this ability&#8221;{" "}
-            </span>
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            This was The biggest challenge of this task.
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Enabling users to select multiple elements at once opens up numerous
-            new possibilities.
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Bulk action like copy and paste would become much easier, deleting
-            multiple elements would also be possible. Moving multiple elements
-            to new locations would be so simpler.
-          </p>
-        </header>
-
-        <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6 ">
+        <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
           <div className="col-span-3">
-            <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
+            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
               <Video
                 src="../insider/videos/PrototypePreviewOld.webm"
                 height={1080}
@@ -572,7 +575,7 @@ export default function Insider() {
             </ol>
           </div>
           <div className="col-span-3">
-            <div className="video-container bg-gray-600 fit-content overflow-clip col-span-3 rounded-lg">
+            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
               <Video
                 src="../insider/videos/PrototypePreviewNew.webm"
                 height={1080}
@@ -598,99 +601,65 @@ export default function Insider() {
             </ol>
           </div>
         </div>
-        {/* add 2 columns layout for the videos here. Video will have a captions as well */}
       </section>
-
-      {/* section for canvas Flexibility */}
-
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <header className="max-w-3xl">
-          <h2 className="text-sm font-medium text-sky-300">
-            How might we enhance users awareness of their current location
-            within the canvas for improved navigation{" "}
-          </h2>
-          <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            2. Let’s redesign canvas for{" "}
-            <span className="bg-gradient-to-r from-sky-500 to-gray-50 bg-clip-text text-transparent">
-            &#8220;Flexibility&#8221;
-            </span>
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            Users complain about &#8220;Feature Parity Gap&#8221; like the ability to copy,
-            paste, merge, zoom in or out etc. They face high learning curve,
-            Lack of clarity and insufficient guidance at the end of the day they
-            feel confused.
-          </p>
-        </header>
-      </section>
-      {/* grid layout edge-to-edge */}
-      <div className="mx-auto grid max-w-screen-2xl gap-4 mt-8 pb-4 md:grid-cols-6 ">
-        <div className="video-container bg-gray-600 fit-content overflow-clip col-span-6 rounded-lg">
-          <Video
-            src="../insider/videos/Prototype-Drag-Academy.webm"
-            height={1080}
-            width={1920}
-          />
-        </div>
-        <div className="video-container bg-gray-600 h-96 col-span-2 rounded-lg">
-          Something
-        </div>
-        <div className="video-container bg-gray-600 h-96 col-span-2 rounded-lg">
-          Something
-        </div>
-        <div className="video-container bg-gray-600 h-96 col-span-2 rounded-lg">
-          Something
-        </div>
-      </div>
 
       {/* High Learning Curve */}
-
-      <HowMightWeSection
-        quoteText="During Research, we wanted to know what resources our partners use to learn architect, Do they find it easy to learn?"
-        problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
-        problemCount={2}
-        highlightedText={[
-          "what resources",
-          "easy to learn",
-          "trackpad/mouse",
-          "large journeys",
-        ]}
-        highlightedColors={["lime", "", "", "cyan"]}
-      />
-
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-      <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
-            We got the answers, They Feel Confused, They try learning on their own, but fail to do so.
+      <div className="relative max-w-[80rem] mx-auto">
+        <HowMightWeSection
+          quoteText="During Research, we wanted to know what resources our partners use to learn architect, Do they find it easy to learn?"
+          problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
+          problemCount={2}
+          highlightedText={[
+            "what resources",
+            "easy to learn",
+          ]}
+          highlightedColors={["gray","gray"]}
+          containerClass="my-8"
+        />
+      </div>
+      <div className="relative">
+        <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+          <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
+            We got the answers, They Feel Confused, They try learning on their
+            own, but fail to do so.
           </p>
 
-        <p className="mt-4 max-w-md text-base/6 text-gray-500">
-          The general response was towards negative side, Partner felt confused,
-          they often visited the academy and but it was not helpful to them,
-          some times they had to contact support to find what they are looking
-          for.
+          <p className="max-w-md mt-4 text-gray-500 text-base/6">
+            The general response was towards negative side, Partner felt
+            confused, they often visited the academy and but it was not helpful
+            to them, some times they had to contact support to find what they
+            are looking for.
+          </p>
+          <div className="relative inline-flex flex-wrap pt-8 mt-8">
+            {learnigCurve.map((item, index) => (
+              <StickyNotes
+                key={index}
+                content={item}
+                containerClassName="text-sm hover:bg-rose-500"
+                authorName="Learning Curve"
+              />
+            ))}
+          </div>
+        </section>
+        <DotGridBG />
+      </div>
+
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <HowMightWeSection
+          quoteText="How might we reduce the learning curve?"
+          highlightedText={[
+            "what resources",
+            "easy to learn",
+            "trackpad/mouse",
+            "large journeys",
+          ]}
+          // highlightedColors={["lime", "", "", "cyan"]}
+        />
+
+        <p className="max-w-md mt-4 text-gray-500 text-base/6">
+          In order to answer this question, we must ask a few more questions.
         </p>
-        <div className="inline-flex flex-wrap  mt-8 pt-8  relative">
-          {learnigCurve.map((item, index) => (
-            <StickyNotes
-              key={index}
-              content={item}
-              containerClassName="text-sm hover:bg-rose-500"
-              authorName="Learning Curve"
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full xl:max-w-[80rem]">
-        <header className="max-w-3xl">
-          <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-            How might we reduce the learning curve?
-          </p>
-          <p className="mt-4 max-w-md text-base/6 text-gray-500">
-            In order to answer this question, we must ask a few more questions.
-          </p>
-        </header>
-        <div className="inline-flex flex-wrap  mt-4 relative">
+        <div className="relative inline-flex flex-wrap mt-4">
           <StickyNotes
             content="How do we train our users? Videos, Artciles, Podcasts? How ???"
             authorName="rahul"

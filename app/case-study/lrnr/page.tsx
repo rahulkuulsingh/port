@@ -3,7 +3,7 @@ import Image from "next/image";
 import benchmark from "@/public/lrnr/case-assets/benchmark-full.png";
 import manuscriptHighlited from "@/public/lrnr/case-assets/manuscript-highlighted.png";
 
-import { CanvasRevealEffect } from "@/app/Components/Visual/canvas-reveal-effect";
+import { CanvasRevealEffect } from "@/app/Components/UI/CosmeticComponents/Backgrounds/canvas-reveal-effect";
 import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
@@ -118,7 +118,13 @@ export default function Lrnr() {
           className="relative grid w-full grid-cols-2 mt-16 isolate col-span-full"
         >
           <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
-            <p className="mt-6 pb-8  text-md ">
+          <Image
+            src="../lrnr/case-assets/student.svg"
+            alt="Image description"
+            width={48}
+            height={38}
+          />
+            <p className="pb-8 mt-6 text-md ">
               What it is that the students want from this app?
             </p>
             <p className="text-gray-400 ">
@@ -132,7 +138,13 @@ export default function Lrnr() {
             </p>
           </li>
           <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
-            <p className="mt-6 pb-8 text-md ">
+          <Image
+            src="../lrnr/case-assets/teacher.svg"
+            alt="Image description"
+            width={48}
+            height={38}
+          />
+            <p className="pb-8 mt-6 text-md ">
               What it is that the Instrcutors want from this app?
             </p>
             <p className="text-gray-400">
@@ -251,7 +263,7 @@ export default function Lrnr() {
             <p className="mt-4 mb-8 text-gray-400 text-balance">
               After reviewing 10+ experiments we found that almost all the
               experiment share the same flow.{" "}
-              <span className="underline text-purple-500">
+              <span className="text-purple-500 underline">
                 Procedure is the only step which differs from experiment to
                 experiment.
               </span>
@@ -316,10 +328,10 @@ export default function Lrnr() {
             height={38}
             className="pt-4 mt-16"
           />
-          <p className="mt-16  py-2 text-purple-600 ">
+          <p className="py-2 mt-16 text-purple-600 ">
             A Generic Student Flow can be created, that&apos;s the goal.
           </p>
-          <p className=" mb-8 text-gray-400 text-balance">
+          <p className="mb-8 text-gray-400 text-balance">
             Note: It was noticed that not all the experimets will have All four
             steps.
           </p>
@@ -386,14 +398,14 @@ export default function Lrnr() {
           Simplifing screen variations for quicker tool mastery. This reduces
           the congntive load.
         </p>
-        <div className="flex mt-8 pt-8  w-full gap-4 flex-wrap-flex-col">
+        <div className="flex w-full gap-4 pt-8 mt-8 flex-wrap-flex-col">
           <picture className="flex-grow">
             <img
               className="w-full"
               src="../lrnr/case-assets/first-layout.svg"
               alt="procees"
             />
-            <p className="pt-4 text-gray-600 text-sm">Layout 1. Wide layout</p>
+            <p className="pt-4 text-sm text-gray-600">Layout 1. Wide layout</p>
           </picture>
           <picture className="flex-grow">
             <img
@@ -401,7 +413,7 @@ export default function Lrnr() {
               src="../lrnr/case-assets/second-layout.svg"
               alt="procees"
             />
-            <p className="pt-4 text-gray-600 text-sm">
+            <p className="pt-4 text-sm text-gray-600">
               Layout 2. Drawer layout
             </p>
           </picture>
@@ -411,7 +423,7 @@ export default function Lrnr() {
               src="../lrnr/case-assets/third-layout.svg"
               alt="procees"
             />
-            <p className="pt-4 text-gray-600 text-sm">
+            <p className="pt-4 text-sm text-gray-600">
               Layout 3. Sidebar layout
             </p>
           </picture>
@@ -421,7 +433,7 @@ export default function Lrnr() {
               src="../lrnr/case-assets/fourth-layout.svg"
               alt="procees"
             />
-            <p className="pt-4 text-gray-600 text-sm">Layout 4. Modals</p>
+            <p className="pt-4 text-sm text-gray-600">Layout 4. Modals</p>
           </picture>
         </div>
       </section>
@@ -430,7 +442,7 @@ export default function Lrnr() {
         
         <div className="left">
           <img
-            className="w-full  pt-16 mt-8"
+            className="w-full pt-16 mt-8"
             src="../lrnr/case-assets/topbar.svg"
             alt="procees"
           />
@@ -453,7 +465,7 @@ export default function Lrnr() {
       </section> */}
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
           Fixed Topbar
         </p>
@@ -462,35 +474,35 @@ export default function Lrnr() {
           My focus was on, taking advantage of the top bar to show all the
           necesassy information to user in seconds.
         </p>
-        <p className=" pt-2 text-gray-400">
+        <p className="pt-2 text-gray-400 ">
           What is the most important information for a Student?
         </p>
         <ul>
-          <li className="mt-8 list-disc text-gray-400">
+          <li className="mt-8 text-gray-400 list-disc">
             Which experiment they are practcing.
           </li>
-          <li className="mt-2 list-disc text-gray-400">Grade Points</li>
-          <li className="mt-2 list-disc text-gray-400">
+          <li className="mt-2 text-gray-400 list-disc">Grade Points</li>
+          <li className="mt-2 text-gray-400 list-disc">
             Quick Help or Support
           </li>
-          <li className="mt-2 list-disc text-gray-400">
+          <li className="mt-2 text-gray-400 list-disc">
             Exit from the experiment.
           </li>
-          <li className="mt-2 list-disc text-gray-400">
+          <li className="mt-2 text-gray-400 list-disc">
             Accessibility Tools to increase font size, high contrast mode,
             toggle on or off hints etc.
           </li>
         </ul>
 
         <img
-          className="w-full  pt-16 mt-8"
+          className="w-full pt-16 mt-8"
           src="../lrnr/case-assets/topbar.svg"
           alt="procees"
         />
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
           Fixed Bottom Navigation Bar
         </p>
@@ -517,7 +529,7 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
           Simplifuing access to find Materisl, Appratus, Tasks, Answers.
         </p>
@@ -534,7 +546,7 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className=" text-sm text-purple-500">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
           Experiment Canvas
         </p>
@@ -546,18 +558,18 @@ export default function Lrnr() {
         </p>
 
         <ul>
-          <li className="mt-8 list-disc text-gray-400">
+          <li className="mt-8 text-gray-400 list-disc">
             Displays Main Content, that is designed and developed by the
             instrctors.
           </li>
-          <li className="mt-2 list-disc text-gray-400">
+          <li className="mt-2 text-gray-400 list-disc">
             It can include, Images, Videos, Tables, Rich Formatted Text, The
             Layout can be multi columns.
           </li>
-          <li className="mt-2 list-disc text-gray-400">
+          <li className="mt-2 text-gray-400 list-disc">
             Displays onScreen hints, success or failure states
           </li>
-          <li className="mt-2 list-disc text-gray-400">
+          <li className="mt-2 text-gray-400 list-disc">
             This type of screen will also change with experiment to experiment.
           </li>
         </ul>

@@ -39,17 +39,17 @@ export default async function Navbar() {
   const menu = await getMenu('top-navigation-handle');
 
   return (
-    <nav className="laptop-nav relative flex items-center justify-between max-w-screen-lg	px-8 m-auto py-4">
-      <div className="block flex-none md:hidden">
+    <nav className="relative flex items-center justify-between max-w-screen-lg px-8 py-4 m-auto laptop-nav">
+      <div className="flex-none block md:hidden">
         <Suspense fallback={null}>
           <MobileMenu menu={menu} />
         </Suspense>
       </div>
-      <div className="flex w-full items-center">
+      <div className="flex items-center w-full">
         <div className="flex w-full">
-          <Link href="/" className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6">
+          <Link href="/" className="flex items-center justify-center w-full mr-2 md:w-auto lg:mr-6">
             <LogoSquare />
-            <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
+            <div className="flex-none ml-2 text-sm font-medium uppercase md:hidden lg:block">
               {SITE_NAME}
             </div>
           </Link>
@@ -68,7 +68,7 @@ export default async function Navbar() {
             </ul>
           ) : null}
         </div>
-        <div className="hidden justify-center md:flex md:w-1/3">
+        <div className="justify-center hidden md:flex md:w-1/3">
         </div>
       </div>
     </nav>
