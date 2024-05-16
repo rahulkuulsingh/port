@@ -19,6 +19,8 @@ import TableOfContents from "@/app/Components/navigation/ContentStickyNav/TableO
 import SectionTitle from "@/app/Components/SectionTitle";
 import SectionMultiSelect from "@/app/Components/Parts/Insider/SectionMultiSelect";
 import IntroductionGrid from "@/app/Components/IntroductionGrid";
+import solutionTrashed from "@/public/insider/case-assets/solutionTrashed.png";
+import solutionTrashed2 from "@/public/insider/case-assets/solutionTrashed2.png";
 
 export default function Insider() {
   const tocItems = [
@@ -281,8 +283,8 @@ export default function Insider() {
             </div>
 
             <p className="max-w-md mt-4 text-gray-500 text-base/6">
-              Solving workflow issues is top priority due to their direct
-              impact on user efficiency and experience.
+              Solving workflow issues is top priority due to their direct impact
+              on user efficiency and experience.
             </p>
             {/* Rahul This bottom paragraph needs better copy */}
             {/* <p className="max-w-md mt-4 text-gray-500 text-base/6">
@@ -298,7 +300,7 @@ export default function Insider() {
           <HowMightWeSection
             quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
             problemStatement="Users often wanted to copy existing elements, Move multiple of them at once &#8220;But our software lacked this ability&#8221;"
-            problemCount={3}
+            problemCount={1}
             highlightedText={[
               "bulk actions",
               "copying",
@@ -335,21 +337,76 @@ export default function Insider() {
             }
           />
 
-          <div className="container mx-auto">
+          <div className="container mx-auto mt-8">
             <div className="w-full">
-              <div className="bg-blue-500"></div>
-              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
-                <Video
-                  src="../insider/videos/PrototypePreviewOld.webm"
-                  height={1080}
-                  width={1920}
-                />
+              <div className="mb-8 pb-8">
+                <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                  <Video
+                    src="../insider/videos/MultiSelectArrange.webm"
+                    height={1080}
+                    width={1920}
+                  />
+                </div>
+                <p className="mt-4 text-gray-400 text-sm">
+                  Video demonstrating multi-select and copy-paste operations.
+                </p>
+                <p className="mt-2 text-gray-400 text-sm">
+                  Users can click and drag to select multiple items. By holding
+                  the Alt key, they can easily duplicate these elements.
+                </p>
               </div>
             </div>
             <div className="grid w-full grid-cols-1 gap-4 mt-4 sm:grid-cols-3">
-              <div className="bg-red-500">Column 1</div>
-              <div className="bg-green-500">Column 2</div>
-              <div className="bg-yellow-500">Column 3</div>
+              <div className="">
+                <div className="bg-gray-600  rounded-lg video-container fit-content overflow-clip">
+                  <Video
+                    src="../insider/videos/DropInMiddle2.webm"
+                    height={1440}
+                    width={1280}
+                  />
+                </div>
+                <p className="mt-4 text-gray-400 text-sm">
+                  Video demonstrating dragging and rearranging element
+                  positions.
+                </p>
+                <p className="mt-4 text-gray-400 text-sm">
+                  As the elements are now draggable, users can arrange them
+                  however they like. The Canvas UI will show visual cues
+                  indicating whether an element can be dropped at a specific
+                  location.
+                </p>
+              </div>
+              <div className="">
+                <Image
+                  className="rounded-lg overflow-clip"
+                  src={solutionTrashed}
+                  alt="Solution that did not make it to the final stage"
+                  width={640}
+                  height={720}
+                />
+                <p className="mt-4 text-gray-400 text-sm">Shuffle Elements</p>
+                <p className="mt-4 text-gray-400 text-sm">
+                  Notice how the elements display drag handles as signifier, but
+                  still this design did not make it to the final launch. Because
+                  it conflicted with Elemnt Actions menu.
+                </p>
+              </div>
+              <div className="">
+                <Image
+                  className="rounded-lg overflow-clip"
+                  src={solutionTrashed2}
+                  alt="Swap or Change Elements"
+                  width={640}
+                  height={720}
+                />
+                <p className="mt-4 text-gray-400 text-sm">
+                  Swap or Change Elements
+                </p>
+                <p className="mt-4 text-gray-400 text-sm">
+                  This design was also scraped, because we went into a different
+                  direction. This solution was limiting.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -357,20 +414,27 @@ export default function Insider() {
           {/* Rahul Add all intermediary startes, lifting, copying, moving, deleteing, merging etc - Add Images Zoomed in, Tight */}
         </section>
 
-        <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+        <section className="relative mt-16 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
           <HowMightWeSection
             quoteText="How might we streamline multi-element preview, minimizing clicks for
         user efficiency?"
             problemStatement="Users struggle to preview campaign designs for Email, Webpush, App Push, etc., impacting efficiency due to a slow and cumbersome process."
-            problemCount={1}
-            highlightedText={[
-              "what resources",
-              "easy to learn",
-              "trackpad/mouse",
-              "large journeys",
-            ]}
+            problemCount={2}
+            highlightedText={["multi-element preview"]}
             highlightedColors={["lime", "", "", "cyan"]}
           />
+
+          <div className="rounded-lg fit-content overflow-clip mt-8  m-auto pt-8">
+            <p className="mt-4 text-gray-400 text-sm">
+              First of all, let's hear a user's feedback. Unmute the video to
+              listen. He explains his problem very clearly, and it makes sense.
+            </p>
+            <Video
+              src="../insider/videos/remix-bg-quick-preview.webm"
+              width={1920}
+              height={1080}
+            />
+          </div>
         </section>
         <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
           <SectionTitle
@@ -469,7 +533,7 @@ export default function Insider() {
           <HowMightWeSection
             quoteText="How might we improve navigation within the canvas for users who rely on trackpad/mouse, especially when designing large journeys?"
             problemStatement="Users struggle to navigate large journeys within the canvas using trackpad/mouse, requiring excessive zooming and dragging"
-            problemCount={2}
+            problemCount={3}
             highlightedText={[
               "improve navigation within",
               "rely on",
@@ -554,8 +618,8 @@ export default function Insider() {
               </p>
               <div className="text-gray-400">
                 <p className="mb-4">
-                  Scroll Wheel&#58; Taking advantage of users devices, Using mouse&#39;s
-                  scroll wheel to zoom in or out.
+                  Scroll Wheel&#58; Taking advantage of users devices, Using
+                  mouse&#39;s scroll wheel to zoom in or out.
                 </p>
                 <p className="mb-4">
                   Keyboard Shortcuts&#58; Added support for Dedicated keyboard
@@ -580,8 +644,8 @@ export default function Insider() {
                 <p>
                   Zoom Toolbar Button: A zoom toolbar button, allowing you to
                   click &#34;<span className="font-bold">+</span>&#34; or &#34;
-                  <span className="font-bold">-</span>&#34; icons to adjust the zoom
-                  level. If double tapped the number resets the zoom.
+                  <span className="font-bold">-</span>&#34; icons to adjust the
+                  zoom level. If double tapped the number resets the zoom.
                 </p>
               </div>
             </div>
@@ -602,17 +666,30 @@ export default function Insider() {
         </div>
         <div className="relative">
           <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-            <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
-              We got the answers, They Feel Confused, They try learning on their
-              own, but fail to do so.
-            </p>
+            <div className="flex flex-wrap gap-8 ">
+              <div>
+                <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
+                  We got the answers, They Feel Confused, They try learning on
+                  their own, but fail to do so.
+                </p>
 
-            <p className="max-w-md mt-4 text-gray-500 text-base/6">
-              The general response was towards negative side, Partner felt
-              confused, they often visited the academy and but it was not
-              helpful to them, some times they had to contact support to find
-              what they are looking for.
-            </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  The general response was towards negative side, Partner felt
+                  confused, they often visited the academy and but it was not
+                  helpful to them, some times they had to contact support to
+                  find what they are looking for.
+                </p>
+              </div>
+              <div className="w-full sm:w-1/2 overflow-hidden rounded-xl">
+                user feedback, says can't understand, needs help of colleagues.
+                <Video
+                  src="../insider/videos/helpNeededCollegues.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+            </div>
+
             <div className="relative inline-flex flex-wrap pt-8 mt-8">
               {learnigCurve.map((item, index) => (
                 <StickyNotes
@@ -624,46 +701,55 @@ export default function Insider() {
               ))}
             </div>
           </section>
+
           <DotGridBG />
         </div>
 
-        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-          <HowMightWeSection
-            quoteText="How might we reduce the learning curve?"
-            highlightedText={[
-              "what resources",
-              "easy to learn",
-              "trackpad/mouse",
-              "large journeys",
-            ]}
-            // highlightedColors={["lime", "", "", "cyan"]}
-          />
-
-          <p className="max-w-md mt-4 text-gray-500 text-base/6">
-            In order to answer this question, we must ask a few more questions.
-          </p>
-          <div className="relative inline-flex flex-wrap mt-4">
-            <StickyNotes
-              content="How do we train our users? Videos, Artciles, Podcasts? How ???"
-              authorName="rahul"
+        <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+          <div className="w-full">
+            <div className="mb-8 pb-8">
+              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                <Video
+                  src="../insider/videos/StarterExplanation.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+              <p className="mt-4 text-gray-400 text-sm">
+                Users reported they have hard time understanding the use cases
+                for Starter Elements. So I added an Inline Help, when they hover
+                they see these useful tips.
+              </p>
+              <p className="mt-2 text-gray-400 text-sm">
+                But this is not enough. I wanted to make self learning
+                accessible, to do that I had another plan.
+              </p>
+            </div>
+            <SectionTitle
+              sectionID="survey"
+              // subtitle=""
+              title="Brinnging Academy aka Help Center right in the canvas, access anything, anytime"
+              customCode={
+                <>
+                  <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                    What if we cloud bring the help center right in the canvas.
+                    I did the following mockup.
+                  </p>
+                </>
+              }
             />
-            <StickyNotes
-              content="If, Yes. How Frequently?"
-              authorName="rahul"
-              stickyColor="green"
-            />
-            <StickyNotes
-              content="In general, partners complain about which product area, is it the starters? or conditions or ?"
-              authorName="rahul"
-            />
-            <StickyNotes
-              content="Do we have enough examples? Can they follow along easily while reading academy articles"
-              authorName="rahul"
-            />
-            <StickyNotes
-              content="What product areas require industry knowledge?"
-              authorName="rahul"
-            />
+            <div className="my-8 pb-8">
+              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                <Video
+                  src="../insider/videos/academyInCanvas.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+              <p className="mt-4 text-gray-400 text-sm">
+                As good it may sound and look, we cloud not do it, Our Technical infrastruture cloud not support it at that time.
+              </p>
+            </div>
           </div>
         </section>
       </div>
