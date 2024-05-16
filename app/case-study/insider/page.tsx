@@ -426,7 +426,7 @@ export default function Insider() {
 
           <div className="rounded-lg fit-content overflow-clip mt-8  m-auto pt-8">
             <p className="mt-4 text-gray-400 text-sm">
-              First of all, let's hear a user's feedback. Unmute the video to
+              First of all, let&apos;s hear a user&apos;s feedback. Unmute the video to
               listen. He explains his problem very clearly, and it makes sense.
             </p>
             <Video
@@ -681,7 +681,7 @@ export default function Insider() {
                 </p>
               </div>
               <div className="w-full sm:w-1/2 overflow-hidden rounded-xl">
-                user feedback, says can't understand, needs help of colleagues.
+                user feedback, says can&apos;t understand, needs help of colleagues.
                 <Video
                   src="../insider/videos/helpNeededCollegues.webm"
                   height={1080}
