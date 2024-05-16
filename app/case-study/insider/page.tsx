@@ -554,14 +554,14 @@ export default function Insider() {
               </p>
               <div className="text-gray-400">
                 <p className="mb-4">
-                  Scroll Wheel: Taking advantage of users devices, Using mouse's
+                  Scroll Wheel&#58; Taking advantage of users devices, Using mouse&#39;s
                   scroll wheel to zoom in or out.
                 </p>
                 <p className="mb-4">
-                  Keyboard Shortcuts: Added support for Dedicated keyboard
+                  Keyboard Shortcuts&#58; Added support for Dedicated keyboard
                   shortcuts for quick zooming.
                   <span className="inline-block p-1 mx-2 text-xs font-bold text-white bg-gray-700 rounded">
-                    Ctrl/Cmd
+                    Ctrl&#47;Cmd
                   </span>
                   +
                   <span className="inline-block p-1 mx-2 text-xs font-bold text-white bg-gray-700 rounded">
@@ -579,8 +579,8 @@ export default function Insider() {
                 </p>
                 <p>
                   Zoom Toolbar Button: A zoom toolbar button, allowing you to
-                  click "<span className="font-bold">+</span>" or "
-                  <span className="font-bold">-</span>" icons to adjust the zoom
+                  click &#34;<span className="font-bold">+</span>&#34; or &#34;
+                  <span className="font-bold">-</span>&#34; icons to adjust the zoom
                   level. If double tapped the number resets the zoom.
                 </p>
               </div>
