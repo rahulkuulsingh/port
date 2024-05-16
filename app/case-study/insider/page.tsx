@@ -162,7 +162,7 @@ export default function Insider() {
                 <Image
                   src="../insider/case-assets/q-long-survey.svg"
                   alt="Image description"
-                  width={600}
+                  width={300}
                   height={38}
                   className="pt-4"
                 />
@@ -172,7 +172,7 @@ export default function Insider() {
               <Image
                 src="../insider/case-assets/anoted-results.svg"
                 alt="Image description"
-                width={520}
+                width={360}
                 height={363}
                 className="pt-4"
               />
@@ -281,8 +281,8 @@ export default function Insider() {
             </div>
 
             <p className="max-w-md mt-4 text-gray-500 text-base/6">
-              "Solving workflow issues is top priority due to their direct
-              impact on user efficiency and experience."
+              Solving workflow issues is top priority due to their direct
+              impact on user efficiency and experience.
             </p>
             {/* Rahul This bottom paragraph needs better copy */}
             {/* <p className="max-w-md mt-4 text-gray-500 text-base/6">
@@ -292,6 +292,70 @@ export default function Insider() {
           </section>
           <DotGridBG />
         </div>
+
+        {/* Copy / Split and Paste Multiple Branches */}
+        <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
+          <HowMightWeSection
+            quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
+            problemStatement="Users often wanted to copy existing elements, Move multiple of them at once &#8220;But our software lacked this ability&#8221;"
+            problemCount={3}
+            highlightedText={[
+              "bulk actions",
+              "copying",
+              "pasting",
+              "deleting",
+              "rearranging",
+            ]}
+            highlightedColors={[""]}
+          />
+        </div>
+
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            title="Supporting multi select, to perform bulk actions"
+            sectionID="multi-select"
+            customCode={
+              <>
+                <span className=" text-3xl tracking-[-0.015em] text-transparent bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text">
+                  {" "}
+                </span>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  This was the biggest challenge of this task.
+                </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  Enabling users to select multiple elements at once opens up
+                  numerous new possibilities.
+                </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  Bulk actions like copy and paste would become much easier.
+                  Deleting multiple elements would also be possible, and moving
+                  multiple elements to new locations would be simpler.
+                </p>
+              </>
+            }
+          />
+
+          <div className="container mx-auto">
+            <div className="w-full">
+              <div className="bg-blue-500"></div>
+              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                <Video
+                  src="../insider/videos/PrototypePreviewOld.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+            </div>
+            <div className="grid w-full grid-cols-1 gap-4 mt-4 sm:grid-cols-3">
+              <div className="bg-red-500">Column 1</div>
+              <div className="bg-green-500">Column 2</div>
+              <div className="bg-yellow-500">Column 3</div>
+            </div>
+          </div>
+
+          {/* Rahul Add Images, and Videos for Multi Select Different States */}
+          {/* Rahul Add all intermediary startes, lifting, copying, moving, deleteing, merging etc - Add Images Zoomed in, Tight */}
+        </section>
 
         <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
           <HowMightWeSection
@@ -333,8 +397,8 @@ export default function Insider() {
                   width={1920}
                 />
               </div>
-              <p className="mt-4 mb-4 inline-block">
-                <span className="text-orange-500 inline-block">
+              <p className="inline-block mt-4 mb-4">
+                <span className="inline-block text-orange-500">
                   Old Preview Flow,
                 </span>{" "}
                 this method is slow, tedious and time consuming.
@@ -384,7 +448,7 @@ export default function Insider() {
             </div>
           </div>
         </section>
-        <div className=" relative w-full">
+        <div className="relative w-full ">
           <div className="max-w-[80rem] mx-auto pt-8">
             <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
               After exploring various approaches, we decided to enhance our
@@ -496,19 +560,19 @@ export default function Insider() {
                 <p className="mb-4">
                   Keyboard Shortcuts: Added support for Dedicated keyboard
                   shortcuts for quick zooming.
-                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                  <span className="inline-block p-1 mx-2 text-xs font-bold text-white bg-gray-700 rounded">
                     Ctrl/Cmd
                   </span>
                   +
-                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                  <span className="inline-block p-1 mx-2 text-xs font-bold text-white bg-gray-700 rounded">
                     +
                   </span>
                   to Zoom In and{" "}
-                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                  <span className="inline-block p-1 mx-2 text-xs font-bold text-white bg-gray-700 rounded">
                     Ctrl/Cmd
                   </span>
                   +
-                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                  <span className="inline-block p-1 mx-2 text-xs font-bold text-white bg-gray-700 rounded">
                     -
                   </span>
                   to Zoom Out.
@@ -523,52 +587,6 @@ export default function Insider() {
             </div>
           </div>
           {/* add 2 columns layout for the videos here. Video will have a captions as well */}
-        </section>
-
-        {/* Copy / Split and Paste Multiple Branches */}
-        <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
-          <HowMightWeSection
-            quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
-            problemStatement="Users often wanted to copy existing elements, Move multiple of them at once &#8220;But our software lacked this ability&#8221;"
-            problemCount={3}
-            highlightedText={[
-              "bulk actions",
-              "copying",
-              "pasting",
-              "deleting",
-              "rearranging",
-            ]}
-            highlightedColors={[""]}
-          />
-        </div>
-
-        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-          <SectionTitle
-            title="Supporting multi select, to perform bulk actions"
-            sectionID="multi-select"
-            customCode={
-              <>
-                <span className=" text-3xl tracking-[-0.015em] text-transparent bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text">
-                  {" "}
-                </span>
-                <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                  This was the biggest challenge of this task.
-                </p>
-                <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                  Enabling users to select multiple elements at once opens up
-                  numerous new possibilities.
-                </p>
-                <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                  Bulk actions like copy and paste would become much easier.
-                  Deleting multiple elements would also be possible, and moving
-                  multiple elements to new locations would be simpler.
-                </p>
-              </>
-            }
-          />
-
-          {/* Rahul Add Images, and Videos for Multi Select Different States */}
-          {/* Rahul Add all intermediary startes, lifting, copying, moving, deleteing, merging etc - Add Images Zoomed in, Tight */}
         </section>
 
         {/* High Learning Curve */}
