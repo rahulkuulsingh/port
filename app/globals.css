@@ -186,3 +186,24 @@ h2.card-title {
     opacity: 1;
   }
 }
+
+.toc-container {
+  overflow: hidden;
+}
+
+.toc-list {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+}
+
+.toc-list.expanded {
+
+  max-height: 500px;
+  opacity: 1;
+}
+
+.toc-list.collapsed {
+  max-height: 0;
+  opacity: 0;
+}

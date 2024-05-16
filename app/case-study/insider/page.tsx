@@ -22,27 +22,16 @@ import IntroductionGrid from "@/app/Components/IntroductionGrid";
 
 export default function Insider() {
   const tocItems = [
-    { id: "section1", title: "Introduction" },
-    { id: "section2", title: "Research - Survey" },
-    { id: "section3", title: "Research - User Interviews" },
-    { id: "section3", title: "Research - Analysis" },
-    { id: "section3", title: "Problem Statemet 1 " },
-    { id: "section3", title: "Solutions Exploration - Preview " },
-    { id: "section3", title: "Problem Statemet 2 " },
-    { id: "section3", title: "Solutions Exploration - Navigation " },
-    { id: "section3", title: "Problem Statemet 3 " },
-    { id: "section3", title: "Solutions Exploration - Bulk Actions " },
-    { id: "section3", title: "Problem Statemet 4 " },
-    { id: "section3", title: "Solutions Exploration - Learning Curve " },
-    { id: "section3", title: "Restructing Canvas" },
-    { id: "section3", title: "Updating the design systems " },
-    { id: "section3", title: "Adding Micro Interactions " },
-    { id: "section3", title: "UX Improvments" },
-    { id: "cool", title: "Final Results and Impact" },
+    { id: "Introduction", title: "Introduction" },
+    { id: "Research", title: "Research Phase" },
+    { id: "Identified-Problems", title: "Identified Problems" },
+    { id: "section3", title: "Problem Analysis and Solutions" },
+    { id: "section3", title: "Implementation and Results" },
+    { id: "section3", title: "Conclusion" },
   ];
 
   const workflow = [
-    "Can’t copy and paste entire branches or multiple elements at once",
+    "Can't copy and paste entire branches or multiple elements at once.",
     "While creating a journey user can’t split and reconnect paths",
     "Can’t see preview of the element design",
     "Lack of clarity regarding journey editability",
@@ -112,7 +101,7 @@ export default function Insider() {
         timeline={"Dec, 2021 - June, 2023"}
       />
 
-      <div className="relative max-w-[80rem] mx-auto">
+      <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
         <HowMightWeSection
           quoteText="Creating complex marketing customer journeys can be time-consuming and frustrating for marketers. Disjointed workflow across platforms can further add to the challenge."
           highlightedText={[
@@ -124,565 +113,542 @@ export default function Insider() {
           containerClass="my-8"
         />
       </div>
+      <div className="box-border flex flex-col flex-no-wrap">
+        <TableOfContents items={tocItems} />
+        <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[54rem]">
+          <div className="relative">
+            <SectionTitle
+              sectionID="survey"
+              title="Research team @Insider conducted a UMUX Survey, and the results were concerning."
+              subtitle="How it all started?"
+            />
+            <p className="mt-4 text-gray-400 text-base/6">
+              In this survey, we asked our users 3 questions.
+            </p>
 
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-        <div className="relative">
-          <SectionTitle
-            sectionID="survey"
-            title="Our Research team did a UMUX Survey, the results were concering."
-            subtitle="How it all started?"
-          />
-          <p className="mt-4 text-gray-400 text-base/6">
-            In this survey, we asked our users 3 question.
-          </p>
+            <ul className="">
+              <li>
+                <p className="mt-8 text-gray-400 text-base/6">
+                  Q1. The capabilities of Architect meet my requirements?
+                  &#40;1-7&#41;
+                </p>
 
-          <ul>
-            <li>
-              <p className="mt-8 text-gray-400 text-base/6">
-                Q1. The capabilities of Architect meet my requirement. (1-7)
-              </p>
+                <Image
+                  src="../insider/case-assets/survey-q-1.svg"
+                  alt="Image description"
+                  width={1200}
+                  height={38}
+                  className="pt-4 "
+                />
+              </li>
+              <li>
+                <p className="mt-8 text-gray-400 text-base/6">
+                  Q2. Is the Architect easy to use? &#40;1-7&#41;
+                </p>
+                <Image
+                  src="../insider/case-assets/survey-q-2.svg"
+                  alt="Image description"
+                  width={1200}
+                  height={38}
+                  className="pt-4 "
+                />
+              </li>
+              <li>
+                <p className="mt-4 text-gray-400 text-base/6">
+                  Q3. Why did you rate Architect this way? &#40;Text Input&#41;
+                </p>
 
+                {/* Rahul - Change the design here. later */}
+                <Image
+                  src="../insider/case-assets/q-long-survey.svg"
+                  alt="Image description"
+                  width={600}
+                  height={38}
+                  className="pt-4"
+                />
+              </li>
+            </ul>
+            <div className="absolute -bottom-[20rem] right-0">
               <Image
-                src="../insider/case-assets/survey-q-1.svg"
+                src="../insider/case-assets/anoted-results.svg"
                 alt="Image description"
-                width={1200}
-                height={38}
-                className="pt-4 "
-              />
-            </li>
-            <li>
-              <p className="mt-8 text-gray-400 text-base/6">
-                Q2. Architect is easy to use. (1-7){" "}
-              </p>
-              <Image
-                src="../insider/case-assets/survey-q-2.svg"
-                alt="Image description"
-                width={1200}
-                height={38}
-                className="pt-4 "
-              />
-            </li>
-            <li>
-              <p className="mt-4 text-gray-400 text-base/6">
-                Q3. Why do you rate Architect this way. (Text Input){" "}
-              </p>
-              <Image
-                src="../insider/case-assets/q-long-survey.svg"
-                alt="Image description"
-                width={600}
-                height={38}
+                width={520}
+                height={363}
                 className="pt-4"
               />
-            </li>
-          </ul>
-          <div className="absolute -bottom-[20rem] right-0">
-            <Image
-              src="../insider/case-assets/anoted-results.svg"
-              alt="Image description"
-              width={520}
-              height={363}
-              className="pt-4"
-            />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-        <SectionTitle
-          sectionID="survey"
-          subtitle="Survey Results were indicating not happy users"
-          title="To understand the reasons behind the low satisfaction scores and identify areas for improvement, we conducted user interviews."
-          customCode={
-            <p className="max-w-md mt-4 text-gray-500 text-base/6">
-              I did the analysis while the research team did the followup
-              interview session
-            </p>
-          }
-        />
-      </section>
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] mx-auto relative sm:max-w-[40rem] w-full">
-        <Image
-          src={dovetail}
-          alt="Image description"
-          loading={"lazy"}
-          className="pt-4"
-        />
-        <p className="max-w-md mt-4 text-gray-500 text-base/6">
-          Image 01: Low resolution image of User Interview Findings
-        </p>
-      </section>
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-        <SectionTitle
-          sectionID="survey"
-          // subtitle="Survey Results were indicating not happy users"
-          title="After analysis, four types of pain points surfaced."
-          customCode={
-            <p className="max-w-md mt-4 text-gray-500 text-base/6">
-              The Software does not fit properly in the workflow, it is hard to
-              learn, it crashes and freezes, when compared to other tools lacks
-              certain features.
-            </p>
-          }
-        />
-      </section>
-      <div className="mt-12 grid grid-flow-col grid-cols-1 grid-rows-6 gap-2 md:grid-cols-2 md:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 relative pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-        <Folder
-          folderName="Work Flow"
-          listItems={workflow}
-          bgColor={colorVariants.rose}
-          strokeColor={colorVariants.roseBorder}
-          containerClassName="row-span-2 order-first isolate"
-        />
-        <Folder
-          folderName="High Learning Curve"
-          listItems={learnigCurve}
-          bgColor={colorVariants.orange}
-          strokeColor={colorVariants.orangeBorder}
-          containerClassName="isolate order-second xl:order-none"
-        />
-        <Folder
-          folderName="Feature Requests"
-          listItems={featureRequest}
-          bgColor={colorVariants.violet}
-          strokeColor={colorVariants.violetBorder}
-        />
-        <Folder
-          folderName="Unexpected Behaviour - Bugs"
-          listItems={bugs}
-          bgColor={colorVariants.blue}
-          strokeColor={colorVariants.blueBorder}
-          containerClassName="row-span-2"
-        />
-      </div>
-
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full"></section>
-
-      <div className="relative">
-        <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-          <HowMightWeSection
-            quoteText="Research analysis reveals that users encounter interaction challenges, resulting in a lack of flexibility within the workflow."
-            problemCount={2}
-            highlightedText={[
-              "interaction challenges",
-              "lack of flexibility",
-              "workflow",
-            ]}
-            highlightedColors={["lime", "orange", "gray"]}
-            containerClass="mb-16"
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            sectionID="survey"
+            subtitle="The survey results indicated unhappy users."
+            title="To understand the reasons behind the low satisfaction scores and identify areas for improvement, we conducted user interviews."
+            // Rahul add a better paragraph here
+            // customCode={
+            //   <p className="max-w-md mt-4 text-gray-500 text-base/6">
+            //     I did the analysis while the research team did the followup
+            //     interview session
+            //   </p>
+            // }
           />
-
-          <div className="relative inline-flex flex-wrap pt-8 mb-8">
-            {workflow.map((item, index) => (
-              <StickyNotes
-                key={index}
-                content={item}
-                containerClassName="text-sm hover:bg-rose-500"
-                authorName="Workflow Issue"
-              />
-            ))}
-          </div>
-
+        </section>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] mx-auto relative sm:max-w-[40rem] w-full">
+          {/* Rahul Add a better way to represennt the User Interviews here  */}
+          <Image
+            src={dovetail}
+            alt="Image description"
+            height={410}
+            width={1200}
+            loading={"lazy"}
+            className="pt-4"
+          />
           <p className="max-w-md mt-4 text-gray-500 text-base/6">
-            Solving these problems had the heightest priority, because it will
-            increase usability of our software.
+            Image 01&#58; Low-resolution image of User Interview Findings
           </p>
+        </section>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            sectionID="survey"
+            // subtitle=""
+            // title="After analysis, four types of pain points emerged."
+            title="The software does not integrate well into the workflow, it is difficult to learn, it crashes and freezes, and it lacks certain features compared to other tools."
+            customCode={
+              <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                Below is a compilation of all the problems and issues we
+                discovered during the research, mainly four kinds of problems,
+                with workflow being the most important to fix.
+              </p>
+            }
+          />
+        </section>
+        <div className="mt-12 grid grid-flow-col grid-cols-1 grid-rows-6 gap-2 md:grid-cols-2 md:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 relative pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+          <Folder
+            folderName="Work Flow"
+            listItems={workflow}
+            bgColor={colorVariants.rose}
+            strokeColor={colorVariants.roseBorder}
+            containerClassName="row-span-2 order-first isolate"
+          />
+          <Folder
+            folderName="High Learning Curve"
+            listItems={learnigCurve}
+            bgColor={colorVariants.orange}
+            strokeColor={colorVariants.orangeBorder}
+            containerClassName="isolate order-second xl:order-none"
+          />
+          <Folder
+            folderName="Feature Requests"
+            listItems={featureRequest}
+            bgColor={colorVariants.violet}
+            strokeColor={colorVariants.violetBorder}
+          />
+          <Folder
+            folderName="Unexpected Behaviour - Bugs"
+            listItems={bugs}
+            bgColor={colorVariants.blue}
+            strokeColor={colorVariants.blueBorder}
+            containerClassName="row-span-2"
+          />
+        </div>
 
-          <p className="max-w-md mt-4 text-gray-500 text-base/6">
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full"></section>
+
+        <div className="relative">
+          <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+            <HowMightWeSection
+              quoteText="Research analysis reveals that users encounter interaction challenges, resulting in a lack of flexibility within the workflow."
+              problemCount={2}
+              highlightedText={[
+                "interaction challenges",
+                "lack of flexibility",
+                "workflow",
+              ]}
+              highlightedColors={["lime", "orange", "gray"]}
+              containerClass="mb-16"
+            />
+
+            <div className="relative inline-flex flex-wrap pt-8 mb-8">
+              {workflow.map((item, index) => (
+                <StickyNotes
+                  key={index}
+                  content={item}
+                  containerClassName="text-sm hover:bg-rose-500"
+                  authorName="Workflow Issue"
+                />
+              ))}
+            </div>
+
+            <p className="max-w-md mt-4 text-gray-500 text-base/6">
+              "Solving workflow issues is top priority due to their direct
+              impact on user efficiency and experience."
+            </p>
+            {/* Rahul This bottom paragraph needs better copy */}
+            {/* <p className="max-w-md mt-4 text-gray-500 text-base/6">
             I focused on solving the &#34;Low Effort&#34; and &#34;High
             Gains&#34; problem first, which can be adapted to future use cases.
-          </p>
-        </section>
-        <DotGridBG />
-      </div>
+          </p> */}
+          </section>
+          <DotGridBG />
+        </div>
 
-      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-        {/* <blockquote className="pl-8 text-xl font-light border-l-2 lg:text-3xl ">
-          <p className="pb-4 text-sm font-medium ">
-            <strong className="text-sky-300">Workflow Problem No.1:</strong>{" "}
-            Users struggle to preview element design, such as email or webpush
-          </p>
-          <p className="relative before:absolute before:right-full before:top-0 before:content-['“'] after:content-['”']">
-            How might we streamline multi-element preview, minimizing clicks for
-            user efficiency?{" "}
-          </p>
-        </blockquote> */}
-
-        <HowMightWeSection
-          quoteText="How might we streamline multi-element preview, minimizing clicks for
+        <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+          <HowMightWeSection
+            quoteText="How might we streamline multi-element preview, minimizing clicks for
         user efficiency?"
-          problemStatement="Users struggle to preview campaign designs for Email, Webpush, App Push, etc."
-          problemCount={1}
-          highlightedText={[
-            "what resources",
-            "easy to learn",
-            "trackpad/mouse",
-            "large journeys",
-          ]}
-          highlightedColors={["lime", "", "", "cyan"]}
-        />
-      </section>
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-        <SectionTitle
-          sectionID="survey"
-          // subtitle="Survey Results were indicating not happy users"
-          title="Introducing New and Faster Previews"
-          customCode={
-            <p className="max-w-md mt-4 text-gray-500 text-base/6">
-              Users can’t see preview of elements, for example, to see an email
-              design, they have to double click the email element, element
-              config page loads with the design, imagine doing this for all the
-              elements on the journey.
-            </p>
-          }
-        />
-
-        <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
-          <div className="relative col-span-3">
-            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
-              <Video
-                src="../insider/videos/PrototypePreviewOld.webm"
-                height={1080}
-                width={1920}
-              />
-            </div>
-            <p className="mt-4 mb-4">
-              <strong className="text-orange-500">Old Preview Flow,</strong>{" "}
-              this method is slow, tedious and time consuming.
-            </p>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2 text-gray-400">
-                The user first identifies which element they want to see the
-                preview of.
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                Then they need to click on the element.
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                Wait for the page to load.
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                The config page loads with the content load first.
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                Then the once the content is loaded, Image Preview will load.
-              </li>
-            </ol>
-          </div>
-          <div className="col-span-3">
-            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
-              <Video
-                src="../insider/videos/PrototypePreviewNew.webm"
-                height={1080}
-                width={1920}
-              />
-            </div>
-            <p className="mt-4 mb-4">
-              <strong className="text-sky-500">New Preview Flow, </strong>{" "}
-              Faster, and provides better context.
-            </p>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2 text-gray-400">
-                The user finds the Preview Button
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                Clicks on Preview to activate it
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                All eligible Channels with previews load optimized images.
-              </li>
-            </ol>
-          </div>
-        </div>
-        <p className="mt-16">
-          <strong className="text-sky-500">
-            I extended the existing component,{" "}
-          </strong>
-          So that it can display preview images right in the canvas.
-        </p>
-      </section>
-      <div className=" relative w-full">
-        {/* <picture className="max-w-screen-2xl">
-          <img
-            src="../insider/case-assets/preview-component.png"
-            alt="Image description"
-            width={1200}
-            height={56}
-            className="m-auto"
+            problemStatement="Users struggle to preview campaign designs for Email, Webpush, App Push, etc., impacting efficiency due to a slow and cumbersome process."
+            problemCount={1}
+            highlightedText={[
+              "what resources",
+              "easy to learn",
+              "trackpad/mouse",
+              "large journeys",
+            ]}
+            highlightedColors={["lime", "", "", "cyan"]}
           />
-        </picture> */}
-        <DotGridBG />
-        <img className="m-auto" src="../insider/case-assets/Testing.svg" alt="" />
-      </div>
+        </section>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            sectionID="survey"
+            // subtitle="Survey Results were indicating not happy users"
+            title="Introducing New and Faster Previews"
+            // Rahul Need a Better Copy here
+            // customCode={
+            //   <p className="max-w-md mt-4 text-gray-500 text-base/6">
+            //     Users can’t see preview of elements, for example, to see an email
+            //     design, they have to double click the email element, element
+            //     config page loads with the design, imagine doing this for all the
+            //     elements on the journey.
+            //   </p>
+            // }
+          />
 
-      <div className="relative max-w-[80rem] mx-auto">
-        <HowMightWeSection
-          quoteText="How might we improve navigation within the canvas for users who rely on trackpad/mouse, especially when designing large journeys."
-          problemStatement="Users struggle to navigate large journeys within the canvas using trackpad/mouse, requiring excessive zooming and dragging"
-          problemCount={2}
-          highlightedText={[
-            "improve navigation within",
-            "rely on",
-            "trackpad/mouse",
-            "large journeys",
-          ]}
-          highlightedColors={["lime", "purple", "", "cyan"]}
-        />
-      </div>
-
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-        <SectionTitle
-          sectionID="survey"
-          // subtitle="Survey Results were indicating not happy users"
-          title="Introducing Mini Map and Better Contextual Zoom Functionality"
-          customCode={
-            <>
-              <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                Multiple users complained about navigation issues, They mainly
-                use Trackpad or Mouse to navigate within the canvas.
+          <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
+            <div className="relative col-span-3">
+              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                <Video
+                  src="../insider/videos/PrototypePreviewOld.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+              <p className="mt-4 mb-4 inline-block">
+                <span className="text-orange-500 inline-block">
+                  Old Preview Flow,
+                </span>{" "}
+                this method is slow, tedious and time consuming.
               </p>
-              <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                When designing large journeys, their is no easier interaction
-                using the mouse or trackpad. User have to zoom out and drag the
-                canvas and zoom again.
-              </p>
-              <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                Our canvas always zoomed from the center of the viewport, that
-                means even if the user has dragged to the correct position,
-                zooming in will feel weird
-              </p>
-            </>
-          }
-        />
-
-        <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
-          <div className="col-span-3">
-            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
-              <Video
-                src="../insider/videos/MiniMap.webm"
-                height={1080}
-                width={1920}
-              />
+              <ol className="list-decimal list-inside">
+                <li className="mb-2 text-gray-400">
+                  Users must first identify the desired element for preview.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  Then they need to click on the element.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  Wait for the inner page to load.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  Where the content has more priority, hence it loads first.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  Once the content load is done, image preview will load.
+                </li>
+              </ol>
             </div>
-            <p className="mt-4 mb-4">
-              <strong className="text-orange-500">
-                Old Navigation Interaction,
-              </strong>{" "}
-              , which
-            </p>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2 text-gray-400">
-                Canvas always zoomed from the center
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                This behavious of zoom, conficted with users mental model.
-              </li>
-            </ol>
-          </div>
-          <div className="col-span-3">
-            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
-              <Video
-                src="../insider/videos/NewZoom.webm"
-                height={1080}
-                width={1920}
-              />
+            <div className="col-span-3">
+              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                <Video
+                  src="../insider/videos/PrototypePreviewNew.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+              <p className="mt-4 mb-4">
+                <span className="text-sky-500">New Preview Flow, </span> A
+                contextually better and faster method.
+              </p>
+              <ol className="list-decimal list-inside">
+                <li className="mb-2 text-gray-400">
+                  The user finds the Preview Button.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  Clicks on Preview to activate it.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  Optimized images are loaded for all eligible channels with
+                  previews.
+                </li>
+              </ol>
             </div>
-            <p className="mt-4 mb-4">
-              <strong className="text-sky-500">
-                New Navigation Interaction with Minimap,{" "}
-              </strong>{" "}
-            </p>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2 text-gray-400">
-                Now users can Pinch to zoom, Supports native trackpad
-                functionalities
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                The can use the mini map to quikly move position
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                Zoom function uses, mouse location to zoom from that point.
-              </li>
-            </ol>
           </div>
+        </section>
+        <div className=" relative w-full">
+          <div className="max-w-[80rem] mx-auto pt-8">
+            <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
+              After exploring various approaches, we decided to enhance our
+              existing component by incorporating an external trigger to toggle
+              the preview on or off instantly.
+            </p>
+          </div>
+          <img
+            className="m-auto"
+            src="../insider/case-assets/Testing.svg"
+            alt=""
+          />
+          {/* Rahul Add Other Solutions or Maybe Animate this with a colik of a button also, resize the image to a smaller height */}
+          <DotGridBG />
         </div>
-        {/* add 2 columns layout for the videos here. Video will have a captions as well */}
-      </section>
 
-      {/* Copy / Split and Paste Multiple Branches */}
-      <div className="relative max-w-[80rem] mx-auto">
-        <HowMightWeSection
-          quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
-          problemStatement="Users often wanted to copy existing elements, Move multiple of them at once &#8220;But our software lacked this ability&#8221;"
-          problemCount={3}
-          highlightedText={[
-            "bulk actions",
-            "copying",
-            "pasting",
-            "deleting",
-            "rearranging",
-          ]}
-          highlightedColors={[""]}
-        />
-      </div>
-
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-        <SectionTitle
-          title="Supporting multi select, to perform bulk actions"
-          sectionID="multi-select"
-          customCode={
-            <>
-              <span className=" text-3xl tracking-[-0.015em] text-transparent bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text">
-                {" "}
-              </span>
-              <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                This was The biggest challenge of this task.
-              </p>
-              <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                Enabling users to select multiple elements at once opens up
-                numerous new possibilities.
-              </p>
-              <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                Bulk action like copy and paste would become much easier,
-                deleting multiple elements would also be possible. Moving
-                multiple elements to new locations would be so simpler.
-              </p>
-            </>
-          }
-        />
-
-        <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
-          <div className="col-span-3">
-            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
-              <Video
-                src="../insider/videos/PrototypePreviewOld.webm"
-                height={1080}
-                width={1920}
-              />
-            </div>
-            <p className="mt-4 mb-4">
-              <strong className="text-orange-500">
-                Old Navigation Interaction,
-              </strong>{" "}
-              , which
-            </p>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2 text-gray-400">
-                Canvas always zoomed from the center
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                This behavious of zoom, conficted with users mental model.
-              </li>
-            </ol>
-          </div>
-          <div className="col-span-3">
-            <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
-              <Video
-                src="../insider/videos/PrototypePreviewNew.webm"
-                height={1080}
-                width={1920}
-              />
-            </div>
-            <p className="mt-4 mb-4">
-              <strong className="text-sky-500">
-                New Navigation Interaction with Minimap,{" "}
-              </strong>{" "}
-            </p>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2 text-gray-400">
-                Now users can Pinch to zoom, Supports native trackpad
-                functionalities
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                The can use the mini map to quikly move position
-              </li>
-              <li className="mb-2 text-gray-400 ">
-                Zoom function uses, mouse location to zoom from that point.
-              </li>
-            </ol>
-          </div>
+        <div className="relative max-w-[80rem] mx-auto mt-32 pt-16">
+          <HowMightWeSection
+            quoteText="How might we improve navigation within the canvas for users who rely on trackpad/mouse, especially when designing large journeys?"
+            problemStatement="Users struggle to navigate large journeys within the canvas using trackpad/mouse, requiring excessive zooming and dragging"
+            problemCount={2}
+            highlightedText={[
+              "improve navigation within",
+              "rely on",
+              "trackpad/mouse",
+              "large journeys",
+            ]}
+            highlightedColors={["lime", "purple", "", "cyan"]}
+          />
         </div>
-      </section>
 
-      {/* High Learning Curve */}
-      <div className="relative max-w-[80rem] mx-auto">
-        <HowMightWeSection
-          quoteText="During Research, we wanted to know what resources our partners use to learn architect, Do they find it easy to learn?"
-          problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
-          problemCount={2}
-          highlightedText={[
-            "what resources",
-            "easy to learn",
-          ]}
-          highlightedColors={["gray","gray"]}
-          containerClass="my-8"
-        />
-      </div>
-      <div className="relative">
-        <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-          <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
-            We got the answers, They Feel Confused, They try learning on their
-            own, but fail to do so.
-          </p>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            sectionID="survey"
+            // subtitle=""
+            title="Introducing Mini Map and Better Contextual Zoom Functionality"
+            customCode={
+              <>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  Multiple users complained about navigation issues. They mainly
+                  use a trackpad or mouse to navigate within the canvas.
+                </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  When designing large journeys, there is no easier interaction
+                  using the mouse or trackpad. Users have to zoom out, drag the
+                  canvas, and then zoom in again.
+                </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  Our canvas always zooms from the center of the viewport. This
+                  means that even if the user has dragged to the correct
+                  position, zooming in will feel strange.
+                </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  Lack of keyboard shortcuts was another significant reason for
+                  their frustrations.
+                </p>
+              </>
+            }
+          />
+
+          <div className="grid gap-4 pb-4 mx-auto mt-8 max-w-screen-2xl md:grid-cols-6 ">
+            <div className="col-span-3">
+              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                <Video
+                  src="../insider/videos/MiniMap.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+              <p className="mt-4 mb-4">
+                <strong className="text-orange-500">
+                  Mini Map - to better inform the user about their current
+                  position on the canvas.
+                </strong>
+              </p>
+              <ol className="list-decimal list-inside">
+                <li className="mb-2 text-gray-400">
+                  Provides a quick overview of the entire canvas, especially for
+                  large and complex projects.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  Offers a visual reference point, reminding users of their
+                  current location on the canvas.
+                </li>
+                <li className="mb-2 text-gray-400 ">
+                  By clicking on a specific location on the minimap, users can
+                  instantly jump to that area on the canvas.
+                </li>
+              </ol>
+            </div>
+            <div className="col-span-3">
+              <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
+                <Video
+                  src="../insider/videos/NewZoom.webm"
+                  height={1080}
+                  width={1920}
+                />
+              </div>
+              <p className="mt-4 mb-4">
+                <strong className="text-sky-500">
+                  Seamlessly zoom in and out of canvas using various methods
+                </strong>{" "}
+              </p>
+              <div className="text-gray-400">
+                <p className="mb-4">
+                  Scroll Wheel: Taking advantage of users devices, Using mouse's
+                  scroll wheel to zoom in or out.
+                </p>
+                <p className="mb-4">
+                  Keyboard Shortcuts: Added support for Dedicated keyboard
+                  shortcuts for quick zooming.
+                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                    Ctrl/Cmd
+                  </span>
+                  +
+                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                    +
+                  </span>
+                  to Zoom In and{" "}
+                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                    Ctrl/Cmd
+                  </span>
+                  +
+                  <span className="font-bold rounded bg-gray-700 text-white text-xs p-1 inline-block mx-2">
+                    -
+                  </span>
+                  to Zoom Out.
+                </p>
+                <p>
+                  Zoom Toolbar Button: A zoom toolbar button, allowing you to
+                  click "<span className="font-bold">+</span>" or "
+                  <span className="font-bold">-</span>" icons to adjust the zoom
+                  level. If double tapped the number resets the zoom.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* add 2 columns layout for the videos here. Video will have a captions as well */}
+        </section>
+
+        {/* Copy / Split and Paste Multiple Branches */}
+        <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
+          <HowMightWeSection
+            quoteText="How might we enable users to perform bulk actions on elements like copying, pasting, deleting, and rearranging effortlessly."
+            problemStatement="Users often wanted to copy existing elements, Move multiple of them at once &#8220;But our software lacked this ability&#8221;"
+            problemCount={3}
+            highlightedText={[
+              "bulk actions",
+              "copying",
+              "pasting",
+              "deleting",
+              "rearranging",
+            ]}
+            highlightedColors={[""]}
+          />
+        </div>
+
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            title="Supporting multi select, to perform bulk actions"
+            sectionID="multi-select"
+            customCode={
+              <>
+                <span className=" text-3xl tracking-[-0.015em] text-transparent bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text">
+                  {" "}
+                </span>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  This was the biggest challenge of this task.
+                </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  Enabling users to select multiple elements at once opens up
+                  numerous new possibilities.
+                </p>
+                <p className="max-w-md mt-4 text-gray-500 text-base/6">
+                  Bulk actions like copy and paste would become much easier.
+                  Deleting multiple elements would also be possible, and moving
+                  multiple elements to new locations would be simpler.
+                </p>
+              </>
+            }
+          />
+
+          {/* Rahul Add Images, and Videos for Multi Select Different States */}
+          {/* Rahul Add all intermediary startes, lifting, copying, moving, deleteing, merging etc - Add Images Zoomed in, Tight */}
+        </section>
+
+        {/* High Learning Curve */}
+        <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
+          <HowMightWeSection
+            quoteText="During Research, we wanted to know what resources our partners use to learn architect, Do they find it easy to learn?"
+            problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
+            problemCount={2}
+            highlightedText={["what resources", "easy to learn"]}
+            highlightedColors={["gray", "gray"]}
+            containerClass="my-8"
+          />
+        </div>
+        <div className="relative">
+          <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+            <p className="mt-4 text-balance max-w-md text-xl tracking-[-0.015em] ">
+              We got the answers, They Feel Confused, They try learning on their
+              own, but fail to do so.
+            </p>
+
+            <p className="max-w-md mt-4 text-gray-500 text-base/6">
+              The general response was towards negative side, Partner felt
+              confused, they often visited the academy and but it was not
+              helpful to them, some times they had to contact support to find
+              what they are looking for.
+            </p>
+            <div className="relative inline-flex flex-wrap pt-8 mt-8">
+              {learnigCurve.map((item, index) => (
+                <StickyNotes
+                  key={index}
+                  content={item}
+                  containerClassName="text-sm hover:bg-rose-500"
+                  authorName="Learning Curve"
+                />
+              ))}
+            </div>
+          </section>
+          <DotGridBG />
+        </div>
+
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <HowMightWeSection
+            quoteText="How might we reduce the learning curve?"
+            highlightedText={[
+              "what resources",
+              "easy to learn",
+              "trackpad/mouse",
+              "large journeys",
+            ]}
+            // highlightedColors={["lime", "", "", "cyan"]}
+          />
 
           <p className="max-w-md mt-4 text-gray-500 text-base/6">
-            The general response was towards negative side, Partner felt
-            confused, they often visited the academy and but it was not helpful
-            to them, some times they had to contact support to find what they
-            are looking for.
+            In order to answer this question, we must ask a few more questions.
           </p>
-          <div className="relative inline-flex flex-wrap pt-8 mt-8">
-            {learnigCurve.map((item, index) => (
-              <StickyNotes
-                key={index}
-                content={item}
-                containerClassName="text-sm hover:bg-rose-500"
-                authorName="Learning Curve"
-              />
-            ))}
+          <div className="relative inline-flex flex-wrap mt-4">
+            <StickyNotes
+              content="How do we train our users? Videos, Artciles, Podcasts? How ???"
+              authorName="rahul"
+            />
+            <StickyNotes
+              content="If, Yes. How Frequently?"
+              authorName="rahul"
+              stickyColor="green"
+            />
+            <StickyNotes
+              content="In general, partners complain about which product area, is it the starters? or conditions or ?"
+              authorName="rahul"
+            />
+            <StickyNotes
+              content="Do we have enough examples? Can they follow along easily while reading academy articles"
+              authorName="rahul"
+            />
+            <StickyNotes
+              content="What product areas require industry knowledge?"
+              authorName="rahul"
+            />
           </div>
         </section>
-        <DotGridBG />
       </div>
-
-      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-        <HowMightWeSection
-          quoteText="How might we reduce the learning curve?"
-          highlightedText={[
-            "what resources",
-            "easy to learn",
-            "trackpad/mouse",
-            "large journeys",
-          ]}
-          // highlightedColors={["lime", "", "", "cyan"]}
-        />
-
-        <p className="max-w-md mt-4 text-gray-500 text-base/6">
-          In order to answer this question, we must ask a few more questions.
-        </p>
-        <div className="relative inline-flex flex-wrap mt-4">
-          <StickyNotes
-            content="How do we train our users? Videos, Artciles, Podcasts? How ???"
-            authorName="rahul"
-          />
-          <StickyNotes
-            content="If, Yes. How Frequently?"
-            authorName="rahul"
-            stickyColor="green"
-          />
-          <StickyNotes
-            content="In general, partners complain about which product area, is it the starters? or conditions or ?"
-            authorName="rahul"
-          />
-          <StickyNotes
-            content="Do we have enough examples? Can they follow along easily while reading academy articles"
-            authorName="rahul"
-          />
-          <StickyNotes
-            content="What product areas require industry knowledge?"
-            authorName="rahul"
-          />
-        </div>
-      </section>
     </>
   );
 }

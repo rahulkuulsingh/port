@@ -51,7 +51,7 @@ export default function SectionTitle(props: SectionTitleProps) {
         </p>
       )}
       {props.title && (
-        <h2 className="mt-4 text-balance text-3xl tracking-[-0.015em]">
+        <h2 className="mt-4 text-balance text-2xl tracking-[-0.015em]">
           {props.highlightTitle ? highlightWords(props.title || '', props.highlightTitle, []) : props.title}
         </h2>
       )}

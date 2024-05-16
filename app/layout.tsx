@@ -24,7 +24,7 @@ export default function RootLayout({
         <header id="header">
           <Navbar />
         </header>
-        <div className="edge-to-edge-container relative w-full m-auto">{children}</div>
+        <main className="edge-to-edge-container relative w-full m-auto">{children}</main>
         <footer className="">
           <p>some footer link will go here</p>
         </footer>
