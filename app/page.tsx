@@ -7,6 +7,8 @@ import abbDesktop from "@/public/abb/abb-desktop-2x.png";
 import RevealAboutMe from "./Components/RevealAboutMe";
 import SectionTitle from "./Components/SectionTitle";
 
+
+
 function Home() {
   return (
     <>
@@ -67,6 +69,9 @@ function Home() {
             cardImage={sakraDesktop.src}
           />
         </div>
+
+      {/* <ShaderComponent /> */}
+
         <SectionTitle
           title="Checkout more of my work in Gallery"
           subtitle="Exploring design by doing it" sectionID={"gallary"}        />

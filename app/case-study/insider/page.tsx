@@ -426,8 +426,9 @@ export default function Insider() {
 
           <div className="rounded-lg fit-content overflow-clip mt-8  m-auto pt-8">
             <p className="mt-4 text-gray-400 text-sm">
-              First of all, let&apos;s hear a user&apos;s feedback. Unmute the video to
-              listen. He explains his problem very clearly, and it makes sense.
+              First of all, let&apos;s hear a user&apos;s feedback. Unmute the
+              video to listen. He explains his problem very clearly, and it
+              makes sense.
             </p>
             <Video
               src="../insider/videos/remix-bg-quick-preview.webm"
@@ -681,7 +682,8 @@ export default function Insider() {
                 </p>
               </div>
               <div className="w-full sm:w-1/2 overflow-hidden rounded-xl">
-                user feedback, says can&apos;t understand, needs help of colleagues.
+                user feedback, says can&apos;t understand, needs help of
+                colleagues.
                 <Video
                   src="../insider/videos/helpNeededCollegues.webm"
                   height={1080}
@@ -708,6 +710,9 @@ export default function Insider() {
         <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
           <div className="w-full">
             <div className="mb-8 pb-8">
+              <p className="mt-4 mb-8 text-balance max-w-md text-xl tracking-[-0.015em] ">
+                To guide the suer added useful tips on the canvas.
+              </p>
               <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
                 <Video
                   src="../insider/videos/StarterExplanation.webm"
@@ -747,10 +752,29 @@ export default function Insider() {
                 />
               </div>
               <p className="mt-4 text-gray-400 text-sm">
-                As good it may sound and look, we cloud not do it, Our Technical infrastruture cloud not support it at that time.
+                As good it may sound and look, we cloud not do it, Our Technical
+                infrastruture cloud not support it at that time.
               </p>
             </div>
           </div>
+        </section>
+
+        {/* UI Changes to make the user flow hirarchly */}
+
+        {/* High Learning Curve */}
+        <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
+          <HowMightWeSection
+            quoteText="But to do the above changes and implement new interactions, we also updated our IA "
+            problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
+            problemCount={2}
+            highlightedText={["what resources", "easy to learn"]}
+            highlightedColors={["gray", "gray"]}
+            containerClass="my-8"
+          />
+        </div>
+
+        <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
+
         </section>
       </div>
     </>

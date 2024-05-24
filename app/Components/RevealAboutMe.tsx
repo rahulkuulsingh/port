@@ -40,7 +40,7 @@ function RevealAboutMe() {
 
   return (
     <>
-      <div className="reveal-about-me home-text mb-8 mt-10 text-2xl  md:text-4xl 	">
+      <div className="reveal-about-me home-text mb-8 mt-10 text-xl  md:text-2xl 	">
         Hi, I am{" "}
         <button
           type="button"
@@ -138,4 +138,7 @@ function RevealAboutMe() {
 }
 
 export default RevealAboutMe;
+
+
+
 
