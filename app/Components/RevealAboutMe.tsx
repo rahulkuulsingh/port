@@ -1,6 +1,4 @@
-
 "use client";
-
 
 import React, { useState } from "react";
 
@@ -15,8 +13,6 @@ function RevealAboutMe() {
   const triggerRahulToggle = () => {
     setRahulOpen(!rahulOpen);
   };
-
-
 
   const triggerUXToggle = () => {
     setUXOpen(!uxOpen);
@@ -40,29 +36,28 @@ function RevealAboutMe() {
 
   return (
     <>
-      <div className="reveal-about-me home-text text-xl  md:text-2xl mt-16 mb-32 pt-16	">
+      <div className="pt-16 mt-16 mb-32 text-xl reveal-about-me home-text leading-extra-loose md:text-2xl ">
         Hi, I am{" "}
         <button
           type="button"
           data-state={rahulOpen ? "open" : "closed"}
           onClick={triggerRahulToggle}
-          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="inline-flex px-2 leading-snug text-black bg-white border-2 rounded-full place-items-center text-nowrap reveal-trigger"
         >
           Rahul
         </button>
-        
         <span
           data-state={rahulOpen ? "open" : "closed"}
           className={`reveal-content`}
         >
-          .{" "}I’m a Product designer
+          . I’m a Product designer
         </span>{" "}
         focusing on{" "}
         <button
           type="button"
           data-state={uxOpen ? "open" : "closed"}
           onClick={triggerUXToggle}
-          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="inline-flex px-2 leading-snug text-black bg-white border-2 rounded-full place-items-center text-nowrap reveal-trigger"
         >
           User Experience
         </button>
@@ -76,7 +71,7 @@ function RevealAboutMe() {
           type="button"
           data-state={andOpen ? "open" : "closed"}
           onClick={triggerAndToggle}
-          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="inline-flex px-2 leading-snug text-black bg-white border-2 rounded-full place-items-center text-nowrap reveal-trigger"
         >
           and
         </button>{" "}
@@ -91,7 +86,7 @@ function RevealAboutMe() {
           type="button"
           data-state={insiderOpen ? "open" : "closed"}
           onClick={triggerInsiderToggle}
-          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="inline-flex px-2 leading-snug text-black bg-white border-2 rounded-full place-items-center text-nowrap reveal-trigger"
         >
           Insider
         </button>
@@ -106,7 +101,7 @@ function RevealAboutMe() {
           type="button"
           data-state={marketersOpen ? "open" : "closed"}
           onClick={triggerMarketersToggle}
-          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="inline-flex px-2 leading-snug text-black bg-white border-2 rounded-full place-items-center text-nowrap reveal-trigger"
         >
           marketers
         </button>{" "}
@@ -114,15 +109,14 @@ function RevealAboutMe() {
           data-state={marketersOpen ? "open" : "closed"}
           className={`reveal-content`}
         >
-          to create fast and efficient automated marketing campaigns. 
+          to create fast and efficient automated marketing campaigns.
         </span>{" "}
-          I live in
-          Bengaluru, India. You can{" "}
+        I live in Bengaluru, India. You can{" "}
         <button
           type="button"
           data-state={linkedinOpen ? "open" : "closed"}
           onClick={triggerLinkedinToggle}
-          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="inline-flex px-2 leading-snug text-black bg-white border-2 rounded-full place-items-center text-nowrap reveal-trigger"
         >
           find me on
         </button>{" "}
@@ -130,7 +124,12 @@ function RevealAboutMe() {
           data-state={linkedinOpen ? "open" : "closed"}
           className={`reveal-content`}
         >
-          <a className="hover:bg-sky-700 px-4 py-2 rounded " href="https://www.linkedin.com/in/uxdrahul/">LinkedIn</a>
+          <a
+            className="px-4 py-2 rounded hover:bg-sky-700 "
+            href="https://www.linkedin.com/in/uxdrahul/"
+          >
+            LinkedIn
+          </a>
         </span>
       </div>
     </>
@@ -138,7 +137,3 @@ function RevealAboutMe() {
 }
 
 export default RevealAboutMe;
-
-
-
-

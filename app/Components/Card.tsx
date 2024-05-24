@@ -1,3 +1,4 @@
+"use client";
 import Tag from "./tags";
 import GrowthMetrics from "./grwothMetrics";
 import Image from "next/image";
@@ -15,79 +16,94 @@ interface GrowthMetricsProps {
 }
 
 interface CardProps {
-  tags: Tag[];
+  // tags: Tag[];
   title: string;
   role: string;
   projectDate: string;
   team: string;
   caseLink: string;
-  className?: string;
+  containerclassName?: string;
+  cardClassName?: string;
   showGrowthMetrics: boolean;
   cardImage: string;
 }
 
 export default function Card({
-  tags,
+  // tags,
   title,
   role,
   projectDate,
   team,
   caseLink,
-  className,
+  containerclassName,
+  cardClassName,
   showGrowthMetrics,
   cardImage,
 }: CardProps) {
   return (
-    <div
-      className={`${className} card flex flex-col gap-4 rounded-lg bg-white	shadow-xl overflow-clip dark:bg-zinc-900 text-xs`}
-    >
-      <div className="media-container overflow-hidden">
-        <Image
-          className="card-image overflow-hidden"
-          src={cardImage}
-          width={520}
-          height={520}
-          alt="Project featured Image describing the project"
-        />
-      </div>
-      <div className="card-details w-full py-8 px-4 pb-4">
-        <div className="tagCloud">
-          {tags.map((tag, index) => (
-            <Tag key={index} url={tag.link} label={tag.label} />
-          ))}
-        </div>
-        <h2 className="card-title leading-9	">{title}</h2>
-        <div className="project-meta-details opacity-50">
-          <p className="role">Role: {role}</p>
-          <p className="projectDate">Year: {projectDate}</p>
-          <p className="team ">Team: {team}</p>
-        </div>
-        {showGrowthMetrics && ( // Conditionally render GrowthMetrics
-          <div className="flex flex-row justify-between pt-12">
-            <GrowthMetrics
-              growthValue={13}
-              growthStatement={"INCREASE IN NPS score"}
-            />
-            <GrowthMetrics
-              growthValue={7}
-              growthStatement={"BOOST IN product adoption"}
-            />
-            <GrowthMetrics growthValue={9} growthStatement={"RISE in MRR"} />
-          </div>
-        )}
-        <Link
-          className="flex p-3 pl-6 bg-gray-300 w-fit self-end rounded-lg items-center dark:bg-zinc-950 focus:ring focus:ring-violet-300 hover:bg-sky-700	"
-          href={String(caseLink)}
-        >
-          View Case Study
-          <ArrowRightIcon
-            className="ml-2"
-            width={24}
-            height={24}
-            stroke="#00FF9F"
+    <Link href={caseLink} passHref className={`${containerclassName}`}>
+      <div
+        className={`${cardClassName} rounded-lg bg-white shadow-xl overflow-clip dark:bg-zinc-900`}
+      >
+        <div className="overflow-hidden">
+          <Image
+            className="overflow-hidden card-image"
+            src={cardImage}
+            width={520}
+            height={520}
+            alt="Project featured Image describing the project"
           />
-        </Link>
+        </div>
+        <div className="flex flex-col w-full px-4 py-8 pb-4">
+          {/* <div className="tagCloud">
+            {tags.map((tag, index) => (
+              <Tag key={index} url={tag.link} label={tag.label} />
+            ))}
+          </div> */}
+          <h2 className="mt-4 text-2xl font-light tracking-tight">{title}</h2>
+          <div className="flex flex-col gap-1 mt-2 mb-8 text-xs text-gray-400">
+            <p>Role: {role}</p>
+            <p>Year: {projectDate}</p>
+            <p>Team: {team}</p>
+          </div>
+          {showGrowthMetrics && (
+            <div className="flex gap-4 mb-8 max-w-max">
+              <GrowthMetrics
+                growthValue={13}
+                growthStatement={"increase in NPS score"}
+              />
+              <GrowthMetrics
+                growthValue={7}
+                growthStatement={"boost in product adoption"}
+              />
+              <GrowthMetrics growthValue={9} growthStatement={"rise in MRR"} />
+            </div>
+          )}
+
+          <button className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50 text-xs max-w-max place-self-end">
+            <span className="z-10 pr-2">View Case Study</span>
+            <div className="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]">
+              <div className="mr-3.5 flex items-center justify-center">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-neutral-50"
+                >
+                  <path
+                    d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
