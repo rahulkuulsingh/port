@@ -124,18 +124,8 @@ h2.card-title {
 }
 
 .reveal-trigger {
-  height:42px;
   background: none;
   color: inherit;
-  outline: none;
-  display: inline-flex; /* Use flexbox for vertical centering */
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
-  vertical-align: middle; /* Ensure proper vertical alignment */
-  position: relative;
-  border: 2px solid;
-  border-radius: 100px;
-  padding: .2em .4em;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -159,7 +149,7 @@ h2.card-title {
 
 
 .reveal-content[data-state=closed] {
-  filter: blur(5px);
+  filter: blur(2px);
   opacity: .8;
   overflow: hidden;
   pointer-events: none;

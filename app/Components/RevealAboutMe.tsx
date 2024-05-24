@@ -40,13 +40,13 @@ function RevealAboutMe() {
 
   return (
     <>
-      <div className="reveal-about-me home-text mb-8 mt-10 text-xl  md:text-2xl 	">
+      <div className="reveal-about-me home-text text-xl  md:text-2xl mt-16 mb-32 pt-16	">
         Hi, I am{" "}
         <button
           type="button"
           data-state={rahulOpen ? "open" : "closed"}
           onClick={triggerRahulToggle}
-          className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           Rahul
         </button>
@@ -62,7 +62,7 @@ function RevealAboutMe() {
           type="button"
           data-state={uxOpen ? "open" : "closed"}
           onClick={triggerUXToggle}
-          className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           User Experience
         </button>
@@ -76,7 +76,7 @@ function RevealAboutMe() {
           type="button"
           data-state={andOpen ? "open" : "closed"}
           onClick={triggerAndToggle}
-          className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           and
         </button>{" "}
@@ -91,7 +91,7 @@ function RevealAboutMe() {
           type="button"
           data-state={insiderOpen ? "open" : "closed"}
           onClick={triggerInsiderToggle}
-          className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           Insider
         </button>
@@ -106,7 +106,7 @@ function RevealAboutMe() {
           type="button"
           data-state={marketersOpen ? "open" : "closed"}
           onClick={triggerMarketersToggle}
-          className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           marketers
         </button>{" "}
@@ -122,7 +122,7 @@ function RevealAboutMe() {
           type="button"
           data-state={linkedinOpen ? "open" : "closed"}
           onClick={triggerLinkedinToggle}
-          className="px-2 rounded-full py-1 bg-white text-black text-nowrap reveal-trigger"
+          className="px-2 rounded-full border-2 inline-flex place-items-center leading-snug py-1 bg-white text-black text-nowrap reveal-trigger"
         >
           find me on
         </button>{" "}
