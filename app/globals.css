@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 ::selection {
-  color: #fff;
-  background: #c026d3;
+  color: #000;
+  background: #FF4800;
 }
 
 :root {
@@ -115,11 +115,11 @@ body {
 
 .reveal-trigger:hover {
   cursor: help;
-  background: orange;
-  border-color: orange;
+  background: #FF4800;
+  border-color: #FF4800;
 }
 .reveal-trigger:hover +.reveal-content[data-state=open] {
-  color: orange;
+  color: #FF4800;
 }
 
 @keyframes shake {

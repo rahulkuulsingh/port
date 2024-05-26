@@ -46,12 +46,12 @@ export default function SectionTitle(props: SectionTitleProps) {
   return (
     <header className="max-w-3xl" id={props.sectionID}>
       {props.subtitle && ( 
-        <p className={cn("text-sm font-medium text-transparent bg-gradient-to-r from-amber-500 to-gray-50 bg-clip-text", props.subtitleColor )}>
+        <p className={cn("text-sm font-medium text-[#FF4800]", props.subtitleColor )}>
           {props.subtitle}
         </p>
       )}
       {props.title && (
-        <h2 className="mt-4 text-balance text-2xl tracking-[-0.015em]">
+        <h2 className="mt-2 text-balance text-2xl tracking-[-0.015em]">
           {props.highlightTitle ? highlightWords(props.title || '', props.highlightTitle, []) : props.title}
         </h2>
       )}

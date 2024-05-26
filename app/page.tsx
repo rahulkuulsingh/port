@@ -72,12 +72,13 @@ function Home() {
           />
         </div>
 
-
-        <SectionTitle
-          title="Checkout more of my work in Gallery"
-          subtitle="Exploring design by doing it"
-          sectionID={"gallary"}
-        />
+        <section className="hero-section mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+          {/* <SectionTitle
+            title="Checkout more of my work in Gallery"
+            subtitle="Exploring design by doing it"
+            sectionID={"gallary"}
+          /> */}
+        </section>
       </div>
     </>
   );

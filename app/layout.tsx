@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { alliance2 } from "@/app/fonts";
 import "./globals.css";
 import Navbar from "@/app/Components/navigation/Navbar"
+import Footer from "./Components/UI/Footer";
 
 
 
@@ -24,10 +25,8 @@ export default function RootLayout({
         <header id="header">
           <Navbar />
         </header>
-        <main className="edge-to-edge-container relative w-full m-auto">{children}</main>
-        <footer className="">
-          <p>some footer link will go here</p>
-        </footer>
+        <main className="relative w-full m-auto edge-to-edge-container">{children}</main>
+        <Footer email="rahulsingh.uxd@gmail.com" phone="+91-6291233251" />
       </body>
     </html>
   );
