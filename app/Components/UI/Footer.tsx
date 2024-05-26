@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({ email, phone, className = "" }) => {
           alt="Image description"
           width={802}
           height={592}
-          className="pt-4  absolute m-auto -top-[100px] w-1/3 left-[238px]"
+          className="pt-4  absolute m-auto -top-[100px] w-1/3 left-[238px] z-10"
         />
         <div className="relative w-full col-span-full h-60">
           <p>if you are from planet earth,</p>
