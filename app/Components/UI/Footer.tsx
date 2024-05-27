@@ -11,21 +11,20 @@ const Footer: React.FC<FooterProps> = ({ email, phone, className = "" }) => {
   return (
     <>
       <div
-        className={`max-w-5xl font-light w-full px-8 m-auto grid grid-cols-6 gap-4 relative mt-32 p-16   ${className}`}
+        className={`max-w-5xl font-light w-full px-8 m-auto grid grid-cols-1 md:grid-cols-6 gap-4 relative mt-32 p-16   ${className}`}
       >
-        <Image
-          src="/Astronaut.png"
-          alt="Image description"
-          width={802}
-          height={592}
-          className="pt-4  absolute m-auto -top-[100px] w-1/3 left-[238px] z-10"
-        />
-        <div className="relative w-full col-span-full h-60">
-          <p>if you are from planet earth,</p>
-          <p className="text-balance uppercase font-light text-3xl/9 tracking-tight sm:text-5.5xl md:text-6xl">
+        <div className="relative col-span-full h-60">
+          <Image
+            src="/Astronaut.png"
+            alt="Image description"
+            width={802}
+            height={592}
+            className="absolute z-10 w-2/3 transform -translate-x-1/2 lg:w-1/3 lg:-translate-x-[16.8rem] lg:translate-y-[2.3rem] md:-translate-x-[14rem] md:translate-y-[1rem] md:w-1/2 left-1/2 top-0 md:-top-[12rem] md:left-1/2 "
+          />
+          <p className="mt-24 md:mt-4">If you are from planet Earth,</p>
+          <p className="text-2xl font-light tracking-tight uppercase text-balance sm:text-3xl md:text-5xl lg:text-6xl">
             I am <span className="text-[#FF4800]">Reachable</span>
           </p>
-
           <SparklesCore
             background="transparent"
             minSize={0.4}
@@ -34,30 +33,34 @@ const Footer: React.FC<FooterProps> = ({ email, phone, className = "" }) => {
             className="w-full h-full"
             particleColor="#fff"
           />
-
-          {/* Radial Gradient to prevent sharp edges */}
-          <div className="absolute inset-0 w-full  dark:bg-black [mask-image:radial-gradient(650px_300px_at_top,transparent_20%,white)]"></div>
+          <div className="absolute inset-0 w-full dark:bg-black [mask-image:radial-gradient(650px_300px_at_top,transparent_20%,white)]"></div>
         </div>
 
-        <div className="z-10 flex items-center col-start-4 gap-4 my-4 col-span-full">
-          <svg
-            width="74"
-            height="43"
-            viewBox="0 0 74 43"
-            xmlns="http://www.w3.org/2000/svg"
-            className="fill-current dark:text-gray-50"
-          >
-            <path
-              d="M52.7553 42.3344L50.0092 39.5883L66.2065 23.4375H0.393066V19.5278H66.2065L50.0092 3.33042L52.7553 0.630859L73.607 21.4826L52.7553 42.3344Z"
-            />
-          </svg>
-          <div className="flex flex-col ">
-            <a href={`mailto:${email}`} className="mb-2 text-3xl dark:text-gray-50">
-              {email}
-            </a>
-            <a href={`tel:${phone}`} className="text-3xl dark:text-gray-50">
-              +91-6291-233-251
-            </a>
+        <div className="z-10 flex flex-col items-center mt-8 md:items-start col-span-full md:col-start-3 lg:col-start-4 md:mt-0">
+          <div className="flex items-center gap-4 mb-4">
+            <svg
+              width="74"
+              height="43"
+              viewBox="0 0 74 43"
+              xmlns="http://www.w3.org/2000/svg"
+              className="fill-current dark:text-gray-50 hover:text-[#FF4800]"
+            >
+              <path d="M52.7553 42.3344L50.0092 39.5883L66.2065 23.4375H0.393066V19.5278H66.2065L50.0092 3.33042L52.7553 0.630859L73.607 21.4826L52.7553 42.3344Z" />
+            </svg>
+            <div className="flex flex-col">
+              <a
+                href={`mailto:${email}`}
+                className="mb-2 text-xl sm:text-2xl md:text-3xl dark:text-gray-50 hover:text-[#FF4800]"
+              >
+                {email}
+              </a>
+              <a
+                href={`tel:${phone}`}
+                className="text-xl sm:text-2xl md:text-3xl dark:text-gray-50 hover:text-[#FF4800]"
+              >
+                {phone}
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function Lrnr() {
             full range of knowledge and practical skills they need to succeed.
           </p>
         </div>
-        <div className="my-role isolate mt-24 grid grid-cols-1 border border-white/[.075] sm:grid-cols-2 lg:grid-cols-4">
+        <div className="my-role isolate mt-24 grid grid-cols-1 border border-black/[.075] dark:border-white/[.075] sm:grid-cols-2 lg:grid-cols-4">
           <div className="relative z-10 col-start-1 row-start-1 px-6 py-8">
             <h2 className="text-balance text-xl tracking-[-0.015em] ">
               The Projects High Level Context
@@ -47,7 +47,7 @@ export default function Lrnr() {
             role="list"
             className="relative flex flex-wrap col-start-1 isolate col-span-full sm:row-start-1"
           >
-            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075] px-6 py-8 sm:ml-[50%] sm:w-1/2 sm:border-l sm:border-t-0 lg:ml-[25%] lg:w-1/4">
+            <li className="flex w-full flex-none flex-col items-start border-t border-black/[.075] dark:border-white/[.075] px-6 py-8 sm:ml-[50%] sm:w-1/2 sm:border-l sm:border-t-0 lg:ml-[25%] lg:w-1/4">
               <h3 className="mt-6 text-sm font-medium ">My Role</h3>
               <p className="mt-2 mb-auto text-gray-400 text-sm/5">
                 Somehow, design a software from a Biology Lab Manuscript.
@@ -60,7 +60,7 @@ export default function Lrnr() {
                 interaction designer.
               </p> */}
             </li>
-            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075]  px-6 py-8 sm:w-1/2 lg:w-1/4 lg:border-l lg:border-t-0">
+            <li className="flex w-full flex-none flex-col items-start border-t border-black/[.075] dark:border-white/[.075]  px-6 py-8 sm:w-1/2 lg:w-1/4 lg:border-l lg:border-t-0">
               <h3 className="mt-6 text-sm font-medium ">Team Structure</h3>
               <p className="mt-2 mb-auto text-gray-400 text-sm/5">
                 <span>Design Team: Rahul (me)</span>
@@ -74,7 +74,7 @@ export default function Lrnr() {
                 A dedicated development team of 15 devs
               </p> */}
             </li>
-            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075]  px-6 py-8 sm:w-1/2 sm:border-l lg:w-1/4 lg:border-t-0">
+            <li className="flex w-full flex-none flex-col items-start border-t border-black/[.075] dark:border-white/[.075]  px-6 py-8 sm:w-1/2 sm:border-l lg:w-1/4 lg:border-t-0">
               <h3 className="mt-6 text-sm font-medium ">Project Timeline</h3>
               <p className="mt-2 mb-auto text-gray-400 text-sm/5">
                 Sep, 2020 - Nov, 2021
@@ -117,7 +117,7 @@ export default function Lrnr() {
           role="list"
           className="relative grid w-full grid-cols-2 mt-16 isolate col-span-full"
         >
-          <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+          <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
           <Image
             src="../lrnr/case-assets/student.svg"
             alt="Image description"
@@ -137,7 +137,7 @@ export default function Lrnr() {
               3. Audit experiments on their own pace.
             </p>
           </li>
-          <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+          <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
           <Image
             src="../lrnr/case-assets/teacher.svg"
             alt="Image description"
@@ -283,14 +283,14 @@ export default function Lrnr() {
             role="list"
             className="relative grid w-full grid-cols-4 mt-24 isolate col-span-full"
           >
-            <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+            <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
               <p className="mt-6 text-sm ">Step 1</p>
               <h3 className="mb-6 text-sm font-medium">Introduction:</h3>
               <p className="text-gray-400 ">
                 This stage is about getting a basic understanding of concepts
               </p>
             </li>
-            <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+            <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
               <p className="mt-6 text-sm ">Step 2</p>
               <h3 className="mb-6 text-sm font-medium">
                 Preparartion - Material, or Equipent:
@@ -300,14 +300,14 @@ export default function Lrnr() {
                 procedre.
               </p>
             </li>
-            <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+            <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
               <p className="mt-6 text-sm ">Step 3</p>
               <h3 className="mb-6 text-sm font-medium">Procedure:</h3>
               <p className="text-gray-400 ">
                 Students follow process to Perform the experiment in this stage.
               </p>
             </li>
-            <li className=" flex w-full flex-none flex-col items-start border border-white/[.075] px-6 py-8 mt-2 ">
+            <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
               <p className="mt-6 text-sm ">Step 4</p>
               <h3 className="mb-6 text-sm font-medium">
                 Results and Observation:
@@ -317,7 +317,7 @@ export default function Lrnr() {
               </p>
             </li>
           </ul>
-          <p className=" mt-2 px-6 py-4 border border-white/[.075] text-gray-400 ">
+          <p className=" mt-2 px-6 py-4 border border-black/[.075] dark:border-white/[.075] text-gray-400 ">
             Content Type: All the steps can include multiple pages, may include
             images, videos, tables, rich formated text.
           </p>
