@@ -33,7 +33,6 @@ const Footer: React.FC<FooterProps> = ({ email, phone, className = "" }) => {
             className="w-full h-full"
             particleColor="#fff"
           />
-          <div className="absolute inset-0 w-full dark:bg-black [mask-image:radial-gradient(650px_300px_at_top,transparent_20%,white)]"></div>
         </div>
 
         <div className="z-10 flex flex-col items-center mt-8 md:items-start col-span-full md:col-start-3 lg:col-start-4 md:mt-0">
