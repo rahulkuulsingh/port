@@ -76,7 +76,7 @@ function Home() {
             sectionID={"gallary"}
           />
           <div className="m-auto">
-            <Link href="https://example.com" passHref>
+            <Link href="https://www.figma.com/@rahulsingh" passHref>
               <div className="relative group flex">
                 {/* On hover, display this paragraph */}
                 <p className="absolute inset-0 flex items-center px-4 py-2 bg-black/[.05] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 text-white z-10">
