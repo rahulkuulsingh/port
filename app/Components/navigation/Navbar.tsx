@@ -6,13 +6,13 @@ import { Suspense } from 'react';
 import MobileMenu from './mobile-menu';
 
 
+
 const { SITE_NAME } = process.env; // Not required
 
 // Simulated local menu data
 const localMenuData: Record<string, Menu[]> = {
   'top-navigation-handle': [
-    { title: 'Home', path: '/' },
-    { title: 'Projects', path: '/case-study' },
+    { title: 'Work / Case Study', path: '/' },
     { title: 'Gallery', path: '/gallery' },
     { title: 'About Me', path: '/about-me' },
     // Add more menu items as needed
@@ -37,6 +37,7 @@ export async function getMenu(handle: string): Promise<Menu[]> {
 
 export default async function Navbar() {
   const menu = await getMenu('top-navigation-handle');
+
 
   return (
     <nav className="relative flex items-center justify-between max-w-screen-lg px-8 py-4 m-auto laptop-nav">
