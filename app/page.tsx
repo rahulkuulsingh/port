@@ -37,7 +37,7 @@ function Home() {
             cardImage={insiderDesktop.src}
           />
           <Card
-            title="Designing 20+ end to end virtual simulations."
+            title="Designed Virtual Labs for Medical Grad Students"
             // tags={[
             //   { link: "#", label: "B2B" },
             //   { link: "#", label: "SASS" },
@@ -54,7 +54,7 @@ function Home() {
           />
 
           <Card
-            title="Mobile and Web App for Sakra world hospital."
+            title="Mobile and Web App for Sakra World Hospital."
             // tags={[
             //   { link: "#", label: "B2C" },
             //   { link: "#", label: "Mobile App" },

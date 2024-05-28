@@ -12,8 +12,7 @@ const { SITE_NAME } = process.env; // Not required
 // Simulated local menu data
 const localMenuData: Record<string, Menu[]> = {
   'top-navigation-handle': [
-    { title: 'Work / Case Study', path: '/' },
-    { title: 'Gallery', path: '/gallery' },
+    { title: 'My Work', path: '/' },
     { title: 'About Me', path: '/about-me' },
     // Add more menu items as needed
   ],
