@@ -3,6 +3,7 @@ import { alliance2 } from "@/app/fonts";
 import "./globals.css";
 import Navbar from "@/app/Components/navigation/Navbar"
 import Footer from "./Components/UI/Footer";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" >
+      <GoogleTagManager gtmId={"GTM-NQPGH3SS"} />
       <body
     className={`${alliance2.className} antialiased flex w-full min-h-full flex-col bg-[--root-bg]`}
     >
