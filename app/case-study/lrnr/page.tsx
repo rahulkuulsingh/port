@@ -561,6 +561,50 @@ export default function Lrnr() {
           alt="procees"
         />
       </section>
+
+      <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <div className="col-span-3 row-span-1 mt-4 mb-4 ">
+          <h2 className="text-lg  text-gray-400">
+            Oops! I made a mistake
+          </h2>
+          <h3 className="text-xl font-bold">
+            What happens if a student makes a mistake.
+          </h3>
+          <p className="mt-2 text-base text-gray-400">
+            Mistakes are an important part of learning. Some mistakes can be
+            fixed and for some; one has to start over.
+          </p>
+          <p className="mt-2 text-base text-gray-400">
+            Two types - Reversible and Irreversible mistakes.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+          <div className="flex flex-row gap-4  mt-4 bg-zinc-900 p-4 rounded-3xl  ">
+            <div className="flex flex-col gap-8">
+              <h3>Reversible Mistake</h3>
+              <p className="text-gray-400">
+                If a student forgets to add a required solution into the test
+                tube or has added less than the required ammount, it can still
+                be fixed. hence we only warn the student.
+              </p>
+            </div>
+            <img src="../lrnr/case-assets/fixable.svg" alt="" />
+          </div>
+
+          <div className="flex flex-row gap-4  mt-4 bg-zinc-900 p-4 rounded-3xl">
+            <img src="../lrnr/case-assets/non-fixable.svg" alt="" />
+            <div className="flex flex-col gap-8">
+              <h3>Irreversible Mistake</h3>
+              <p className="text-gray-400">
+                If a student forgets to add a required solution into the test
+                tube or has added less than the required ammount, it can still
+                be fixed. hence we only warn the student.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
