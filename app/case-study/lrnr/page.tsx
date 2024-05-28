@@ -7,6 +7,7 @@ import { CanvasRevealEffect } from "@/app/Components/UI/CosmeticComponents/Backg
 import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
+import DotGridBG from "@/app/Components/UI/CosmeticComponents/Backgrounds/DotGridBG";
 
 export default function Lrnr() {
   return (
@@ -115,15 +116,15 @@ export default function Lrnr() {
         </p>
         <ul
           role="list"
-          className="relative grid w-full grid-cols-2 mt-16 isolate col-span-full"
+          className="relative grid w-full grid-cols-1 md:grid-cols-2 mt-16 isolate col-span-full"
         >
           <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
-          <Image
-            src="../lrnr/case-assets/student.svg"
-            alt="Image description"
-            width={48}
-            height={38}
-          />
+            <Image
+              src="../lrnr/case-assets/student.svg"
+              alt="Image description"
+              width={48}
+              height={38}
+            />
             <p className="pb-8 mt-6 text-md ">
               What it is that the students want from this app?
             </p>
@@ -138,12 +139,12 @@ export default function Lrnr() {
             </p>
           </li>
           <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
-          <Image
-            src="../lrnr/case-assets/teacher.svg"
-            alt="Image description"
-            width={48}
-            height={38}
-          />
+            <Image
+              src="../lrnr/case-assets/teacher.svg"
+              alt="Image description"
+              width={48}
+              height={38}
+            />
             <p className="pb-8 mt-6 text-md ">
               What it is that the Instrcutors want from this app?
             </p>
@@ -202,7 +203,7 @@ export default function Lrnr() {
           />
           <ul
             role="list"
-            className="relative grid w-full grid-cols-3 mt-24 isolate col-span-full sm:row-start-1 my-role"
+            className="relative grid w-full  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 mt-24 isolate col-span-full sm:row-start-1 my-role"
           >
             <li className="flex flex-col items-start flex-none w-full px-6 py-8 border-t-4 border-green-500">
               <h3 className="mt-6 text-xl font-medium">The Good</h3>
@@ -281,7 +282,7 @@ export default function Lrnr() {
           How these experiments are performed in the Real World?
           <ul
             role="list"
-            className="relative grid w-full grid-cols-4 mt-24 isolate col-span-full"
+            className="relative grid w-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-24 isolate col-span-full"
           >
             <li className=" flex w-full flex-none flex-col items-start border border-black/[.075] dark:border-white/[.075] px-6 py-8 mt-2 ">
               <p className="mt-6 text-sm ">Step 1</p>
@@ -337,17 +338,18 @@ export default function Lrnr() {
           </p>
         </div>
       </section>
-
-      <HowMightWeSection
-        quoteText="How might we ensure consistent UI and common interactions throughout the product, rendering it seamlessly integrated and virtually invisible to the user?"
-        highlightedText={[
-          "consistent UI",
-          "common interactions",
-          "virtually invisible",
-        ]}
-        highlightedColors={["lime", "emerald", "violet"]}
-        containerClass="pt-4 pb-16 mt-4"
-      />
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <HowMightWeSection
+          quoteText="How might we ensure consistent UI and common interactions throughout the product, rendering it seamlessly integrated and virtually invisible to the user?"
+          highlightedText={[
+            "consistent UI",
+            "common interactions",
+            "virtually invisible",
+          ]}
+          highlightedColors={["lime", "emerald", "violet"]}
+          containerClass="pt-4 mt-4"
+        />
+      </section>
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
         <div className="relative">
           <header className="max-w-2xl">
@@ -398,7 +400,7 @@ export default function Lrnr() {
           Simplifing screen variations for quicker tool mastery. This reduces
           the congntive load.
         </p>
-        <div className="flex w-full gap-4 pt-8 mt-8 flex-wrap-flex-col">
+        <div className=" relative grid grid-cols-2 md:grid-cols-4 w-full gap-4 p-8 mt-8">
           <picture className="flex-grow">
             <img
               className="w-full"
@@ -435,34 +437,9 @@ export default function Lrnr() {
             />
             <p className="pt-4 text-sm text-gray-600">Layout 4. Modals</p>
           </picture>
+          <DotGridBG />
         </div>
       </section>
-
-      {/* <section className="flex relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        
-        <div className="left">
-          <img
-            className="w-full pt-16 mt-8"
-            src="../lrnr/case-assets/topbar.svg"
-            alt="procees"
-          />
-          <p className="mt-4 text-gray-400 text-base/6">
-            The top bar displays the current experiment name, score,
-            accessibility tools, and exit button.
-          </p>
-        </div>
-        <div className="right">
-          <img
-            className="w-full pt-16 mt-8"
-            src="../lrnr/case-assets/topbar.svg"
-            alt="procees"
-          />
-          <p className="mt-4 text-gray-400 text-base/6">
-            The top bar displays the current experiment name, score,
-            accessibility tools, and exit button.
-          </p>
-        </div>
-      </section> */}
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
         <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
@@ -493,12 +470,14 @@ export default function Lrnr() {
             toggle on or off hints etc.
           </li>
         </ul>
-
-        <img
-          className="w-full pt-16 mt-8"
-          src="../lrnr/case-assets/topbar.svg"
-          alt="procees"
-        />
+        <div className="relative mt-8">
+          <img
+            className="w-full p-8"
+            src="../lrnr/case-assets/topbar.svg"
+            alt="procees"
+          />
+          <DotGridBG />
+        </div>
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
@@ -521,11 +500,14 @@ export default function Lrnr() {
           Hence the bottom bar displays the current step name, sub-steps, and a
           context-aware action button.
         </p>
-        <img
-          className="w-full pt-16 mt-8"
-          src="../lrnr/case-assets/bottom-bar.svg"
-          alt="procees"
-        />
+        <div className="relative mt-8">
+          <img
+            className="w-full p-8"
+            src="../lrnr/case-assets/bottom-bar.svg"
+            alt="procees"
+          />
+          <DotGridBG />
+        </div>
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
