@@ -190,7 +190,7 @@ export default function Insider() {
             subtitle="Research Phase"
             title="The app has diverse users, so we conducted user interviews to understand their needs."
           />
-          <p className="text-gray-400 mt-4">It's important to understand the different user groups who will be using the application. Listening to their stories will help us achieve this goal.</p>
+          <p className="text-gray-400 mt-4">It&#39;s important to understand the different user groups who will be using the application. Listening to their stories will help us achieve this goal.</p>
         </section>
         <section className="lg:max-w-[64rem] md:max-w-[48rem] mx-auto relative sm:max-w-[40rem] w-full">
         <div className="relative max-w-[80rem] mx-auto mt-16 pt-4  ">
