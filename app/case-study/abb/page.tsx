@@ -113,7 +113,7 @@ export default function Lrnr() {
         <div className="relative">
           <header className="max-w-2xl mb-8">
             <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-              Let's break down why people hated their workflow when dealing with
+              Let&apos;s break down why people hated their workflow when dealing with
               the sheet.
             </p>
             <p className="mt-4 text-balance text-xl tracking-[-0.015em] bg-[#FF4800] max-w-fit">
@@ -121,8 +121,8 @@ export default function Lrnr() {
             </p>
             <p className="mt-4 text-gray-400 text-base/6">
               To view entire document the user will need 4 laptops side by side,
-              obviouslly it's not possible. So, they have to scroll horizontally
-              to view the entire document. This is a very tedious task and it's
+              obviouslly it&apos;s not possible. So, they have to scroll horizontally
+              to view the entire document. This is a very tedious task and it&apos;s
               very easy to lose track of where you are in the document.
             </p>
           </header>
@@ -257,7 +257,7 @@ export default function Lrnr() {
           title=" Adding Support for Shortcuts and Predefiend Layouts."
         />
         <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
-          After hiding the empty & irrelevant columns, it's much easier to work.
+          After hiding the empty & irrelevant columns, it&apos;s much easier to work.
           But the side scroll still exists. So if the user wants to compare
           input with output 2, they still will have to scroll all the way to the
           right. To minimize this issue, we created the prebuilt layout.
@@ -333,7 +333,7 @@ export default function Lrnr() {
         <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
           Based on Project Type, Sidebar contains all the sheets. The user can
           switch between sheets by clicking on the sheet name. It opens up a new
-          tab or switches to the existing tab if it's already open.
+          tab or switches to the existing tab if it&apos;s already open.
         </p>
 
         <div className="relative mt-8">
@@ -428,7 +428,7 @@ export default function Lrnr() {
           subtitle="Concolusion"
         />
         <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
-          That's it for this project. Reach out if you have a similar problem
+          That&apos;s it for this project. Reach out if you have a similar problem
           and want to solve the problem together.
         </p>
       </section>
