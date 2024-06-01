@@ -97,7 +97,7 @@ export default function Lrnr() {
         <div className="relative">
           <header className="max-w-2xl mb-8">
             <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-              Let's start by looking at the sheet that needs to be converted to
+              Let&apos;s start by looking at the sheet that needs to be converted to
               a web app.
             </p>
             <p className="mt-4 text-gray-400 text-base/6">
