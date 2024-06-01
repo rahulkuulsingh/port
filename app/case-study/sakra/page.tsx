@@ -9,18 +9,12 @@ import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
 
-// Static Images
-import dovetail from "@/public/insider/case-assets/dovetail.png";
-import previewComponent from "@/public/insider/case-assets/preview-component.png";
-import DovetailCard from "@/app/Components/UI/Dovetail/dovetailCard";
-import MasonryLayout from "@/app/Components/UI/MasonryLayout/MasonryLayout";
+
 import DotGridBG from "@/app/Components/UI/CosmeticComponents/Backgrounds/DotGridBG";
 import TableOfContents from "@/app/Components/navigation/ContentStickyNav/TableOfContents";
 import SectionTitle from "@/app/Components/SectionTitle";
-import SectionMultiSelect from "@/app/Components/Parts/Insider/SectionMultiSelect";
+
 import IntroductionGrid from "@/app/Components/IntroductionGrid";
-import solutionTrashed from "@/public/insider/case-assets/solutionTrashed.png";
-import solutionTrashed2 from "@/public/insider/case-assets/solutionTrashed2.png";
 
 export default function Insider() {
   const tocItems = [

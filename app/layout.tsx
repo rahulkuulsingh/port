@@ -4,7 +4,8 @@ import "./globals.css";
 import Navbar from "@/app/Components/navigation/Navbar"
 import Footer from "./Components/UI/Footer";
 // import { GoogleTagManager } from '@next/third-parties/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from "next/script";
 
 
 
