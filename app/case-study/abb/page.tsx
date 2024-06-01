@@ -2,13 +2,21 @@ import Image from "next/image";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import DotGridBG from "@/app/Components/UI/CosmeticComponents/Backgrounds/DotGridBG";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
+import SectionTitle from "@/app/Components/SectionTitle";
 
 // static Images
 import projectFeaturedImage from "@/public/abb/case-assets/project-featured-image.png";
 import sheet from "@/public/abb/case-assets/sheet.png";
 import sheetAnotated from "@/public/abb/case-assets/sheet-anotated.png";
 import sheetAnotatedMore from "@/public/abb/case-assets/sheet-anotated-more.png";
+import emptyRemoved from "@/public/abb/case-assets/removed-empty.png";
 import workflow from "@/public/abb/case-assets/project-image-4.svg";
+import switchViews from "@/public/abb/case-assets/switchViews.svg";
+import finalWireFrame from "@/public/abb/case-assets/abb-wireframe.svg";
+import newNavigation from "@/public/abb/case-assets/newNavigation.svg";
+import dashboardHome from "@/public/abb/case-assets/dashboardHome.svg";
+import closingImage from "@/public/abb/case-assets/closingImage.png";
+import Video from "@/app/Components/Video";
 export default function Lrnr() {
   const userInterViewQuestions = [
     "How are people interacting with the current product?",
@@ -211,14 +219,219 @@ export default function Lrnr() {
       </section>
       <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
         <p className="mt-4 text-balance text-xl tracking-[-0.015em] bg-sky-300 text-black max-w-fit mb-8">
-          Lets reframe the Problem statement</p>
+          Lets reframe the Problem statement
+        </p>
         <HowMightWeSection
           quoteText="Users at ABB are constantly zooming in and out, scrolling left and right and are struggling to find the appropriate content because important data is off canvas, which makes comparing and editing data difficult."
-          highlightedText={["constantly zooming in and out", "scrolling left and right" , "struggling to find the appropriate content", "important data is off canvas", "comparing and editing data difficult"]}
+          highlightedText={[
+            "constantly zooming in and out",
+            "scrolling left and right",
+            "struggling to find the appropriate content",
+            "important data is off canvas",
+            "comparing and editing data difficult",
+          ]}
           highlightedColors={["lime", "fuchsia", "rose"]}
           containerClass="my-8"
         />
       </div>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID={""}
+          title=" Logically hide empty or irrelevant columns."
+          subtitle="Trying to reduce the side scroll, solution to the first problem"
+        />
+        <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
+          We first define the project type, and then based on it, we hide
+          irrelevant and empty columns.
+        </p>
+        <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-8 max-w-lg">
+          I also added proper labels to the column groups, as demonstrated
+          below.
+        </p>
+
+        <Image src={emptyRemoved} alt="an image that displays a motor" />
+      </section>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID={""}
+          title=" Adding Support for Shortcuts and Predefiend Layouts."
+        />
+        <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
+          After hiding the empty & irrelevant columns, it's much easier to work.
+          But the side scroll still exists. So if the user wants to compare
+          input with output 2, they still will have to scroll all the way to the
+          right. To minimize this issue, we created the prebuilt layout.
+        </p>
+        <div className="relative mt-8">
+          <Image
+            src={switchViews}
+            alt="an image that displays a motor"
+            className="p-4"
+          />
+          <DotGridBG />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 p-4 ">
+          <div className="flex flex-col">
+            <p>Layout 1. “The standard view”</p>
+            <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+              In this show all the column groups - i.e. Input, Motor Output,
+              Catalog data, Drive Output.
+            </p>
+          </div>
+          <div className="flex flex-col">
+            <p>Layout 1. Layout 2. “Motor Output”</p>
+            <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+              In this show all the column groups - i.e. Input, Motor Output,
+              Catalog data, Drive Output.
+            </p>
+          </div>
+          <div className="flex flex-col">
+            <p>Layout 1. Layout 3. “Drive Output”</p>
+            <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+              In this show all the column groups - i.e. Input, Motor Output,
+              Catalog data, Drive Output.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID={""}
+          title="Better & easier way to hide columns and col-groups using mouse/trackpad."
+        />
+        <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
+          Almost all the users were heavily using the mouse or the laptop
+          trackpad to navigate. So instead of hiding a column group, We came up
+          with a way to minimize the group. When a user double taps the column
+          group name, it shrinks it’s width which is still visible and can be
+          expanded again by double tapping on it.
+        </p>
+        <div className="relative mt-8">
+          <video controls={true} autoPlay muted loop>
+            <source
+              src={"../abb/videos/show-hide-columns.webm"}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
+            this solution cloud not be implemented because of technical
+            contratints.
+          </p>
+        </div>
+      </section>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID=""
+          title="Final Design for the New Dashboard"
+          subtitle=""
+        />
+        <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
+          Now that the user can hide empty columns, switch between layouts, it
+          was time to create the dashboard.
+        </p>
+        <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
+          Based on Project Type, Sidebar contains all the sheets. The user can
+          switch between sheets by clicking on the sheet name. It opens up a new
+          tab or switches to the existing tab if it's already open.
+        </p>
+
+        <div className="relative mt-8">
+          <Image
+            src={finalWireFrame}
+            alt="an image that displays a motor"
+            className="p-4"
+          />
+
+          <DotGridBG />
+        </div>
+        <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
+          User can also switch projects from the sidebar as they may be working
+          on multiple projects.
+        </p>
+      </section>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID="finalDesign"
+          title="Updated workflow for Creating a New Project"
+          subtitle=""
+        />
+        <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+          When a user logs in, they first see a Dashboard, where all the
+          documents that they have created are listed. They can start a new
+          project or open an exsisting one right from here.
+        </p>
+        <div className="relative mt-8">
+          <Image
+            src={newNavigation}
+            alt="an image that displays a motor"
+            className="p-4"
+          />
+
+          <DotGridBG />
+        </div>
+      </section>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID="finalDesign"
+          title="Dashboard Wireframe"
+          subtitle=""
+        />
+        <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+          The platform features a listing page displaying all the projects a
+          user has created. Users can easily view files shared with them and
+          perform various actions such as creating a new project, renaming,
+          duplicating, or deleting existing ones.
+        </p>
+        <div className="relative mt-8">
+          <Image
+            src={dashboardHome}
+            alt="an image that displays a motor"
+            className="p-4 w-full"
+          />
+
+          <DotGridBG />
+        </div>
+        <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+          Everything at this point looks good. Scroll is minimum, cells sizes
+          are bigger than before, font is now 12pt @85% zoom, Hiding/showing
+          column groups is significantly easier.
+        </p>
+      </section>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID="finalDesign"
+          title="One more problem I wanted solve but it was out of the scope"
+          subtitle="User manually fill in the details sent by vendor"
+        />
+        <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+          While creating a new project, different vendors usually send a .pdf
+          document, with their requirements and specifications. Feeding this
+          data into the system takes time as this process is manual. This
+          usually takes ~3 hours.
+        </p>
+        <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+          This time can be minimized if we can copy the data from .pdf file
+          directly to the system to start the project with. I was not able to
+          work on this problem.
+        </p>
+        <Image
+          src={closingImage}
+          alt="an image that displays a motor"
+          className="w-full"
+        />
+      </section>
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+        <SectionTitle
+          sectionID="finalDesign"
+          title="The final design reduced user frustration regarding scrolling and creating new projects."
+          subtitle="Concolusion"
+        />
+        <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
+          That's it for this project. Reach out if you have a similar problem
+          and want to solve the problem together.
+        </p>
+      </section>
     </>
   );
 }
