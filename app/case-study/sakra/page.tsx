@@ -12,7 +12,11 @@ import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
 import DotGridBG from "@/app/Components/UI/CosmeticComponents/Backgrounds/DotGridBG";
 import TableOfContents from "@/app/Components/navigation/ContentStickyNav/TableOfContents";
 import SectionTitle from "@/app/Components/SectionTitle";
-import userFlow from "@/public/sakra/case-assets/useFlow.svg"
+import userFlow from "@/public/sakra/case-assets/useFlow.svg";
+import navigation from "@/public/sakra/case-assets/navigation.svg";
+import wireframe from "@/public/sakra/case-assets/wireframe.png";
+import desktopSearchDoctors from "@/public/sakra/case-assets/desktop-SearchDoctors.png";
+import mobileSearchDoctors from "@/public/sakra/case-assets/mobile-SearchDoctors.png";
 
 import IntroductionGrid from "@/app/Components/IntroductionGrid";
 
@@ -27,7 +31,7 @@ export default function Insider() {
   ];
 
   const workflow = [
-    "Can't copy and paste entire branches or multiple elements at once.",
+    "Can &apos;t copy and paste entire branches or multiple elements at once.",
     "While creating a journey user can’t split and reconnect paths",
     "Can’t see preview of the element design",
     "Lack of clarity regarding journey editability",
@@ -243,8 +247,8 @@ export default function Insider() {
                 </div>
                 <p className="mt-2 text-gray-400 text-sm">
                   My younger son has kidney problems, he goes through dialysis
-                  three times every week. So it &apos;s important for me to know his
-                  health status.
+                  three times every week. So it &apos;s important for me to know
+                  his health status.
                 </p>
 
                 <p className="mt-2 text-gray-400 text-sm">
@@ -440,6 +444,56 @@ interview done earlier."
             <DotGridBG />
           </div>
         </section>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            sectionID="survey"
+            subtitle="Initial Design - Wireframing Navigation Structure"
+            title="How would User Navigate for different requirements?"
+            customCode={
+              <p className="mt-2 text-gray-400 text-sm">
+                Based on the Research and Infomation acrhitcture, the user has
+                Invoked this app to do the Following. Find Relavant Doctors for
+                their sympotoms, Book a Consultation either - in person or
+                video, Book a health Checkup, View Their health records, Pay
+                Bills or talk to customer care or call an ambulance.
+              </p>
+            }
+          />
+          <div className="relative w-full ">
+            <Image src={navigation} alt="" className="p-4" />
+            <DotGridBG />
+          </div>
+        </section>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <SectionTitle
+            sectionID="survey"
+            subtitle="Initial Design - Key User Flow - Find a Doctor"
+            title="Patients don't need to know the doctor's name. They can search by symptoms."
+            customCode={
+              <p className="mt-2 text-gray-400 text-sm">
+                Symptom-based searches allows patients to find the best
+                available doctor with ease.
+              </p>
+            }
+          />
+        </section>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+          <Image src={desktopSearchDoctors} alt="" className="p-4" />
+          <Image src={mobileSearchDoctors} alt="" className="p-4 m-auto" />
+        </section>
+          <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+            <SectionTitle
+              sectionID="survey"
+              subtitle="Initial Design - Key User Flow - Find a Doctor"
+              title="Let's look at some other key user flows"
+              customCode={
+                <p className="mt-2 text-gray-400 text-sm">
+                  How will the use user check
+                </p>
+              }
+              />
+              
+          </section>
       </div>
     </>
   );
