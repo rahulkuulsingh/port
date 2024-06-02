@@ -243,7 +243,7 @@ export default function Insider() {
                 </div>
                 <p className="mt-2 text-gray-400 text-sm">
                   My younger son has kidney problems, he goes through dialysis
-                  three times every week. So it's important for me to know his
+                  three times every week. So it &apos;s important for me to know his
                   health status.
                 </p>
 
@@ -304,7 +304,7 @@ interview done earlier."
             <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
               <p className="mt-2 text-gray-400 text-sm">
                 Patients will find it easier to search for doctors by symptoms
-                or specialty, but it's good to have the option to let them
+                or specialty, but it &apos;s good to have the option to let them
                 search by doctor name as well.
               </p>
 
@@ -334,12 +334,12 @@ interview done earlier."
               <p className="mt-2 text-gray-400 text-sm">
                 Allow patients to make appointments on their preferred date and
                 time. But if the doctor is not available on the selected date or
-                time, don't allow booking for the same.
+                time, don &apos;t allow booking for the same.
               </p>
               <p className="mt-2 text-gray-400 text-sm">
                 Access to lab reports and case sheets will help patients know
                 more about their health. It will also save their time as they
-                won't have to physically collect it.
+                won &apos;t have to physically collect it.
               </p>
               <p className="mt-2 text-gray-400 text-sm">
                 Giving options to book health checkups on a specific date can be
@@ -361,13 +361,13 @@ interview done earlier."
               <p className="mt-2 text-gray-400 text-sm">
                 Some patients visit the same doctor multiple times in a week or
                 a month. Allowing them to save doctors as favorites will be a
-                time saver as they won't have to search again.
+                time saver as they won &apos;t have to search again.
               </p>
 
               <p className="mt-2 text-gray-400 text-sm">
                 Some patients visit the same doctor multiple times in a week or
                 a month. Allowing them to save doctors as favorites will be a
-                time saver as they won't have to search again.
+                time saver as they won &apos;t have to search again.
               </p>
             </div>
           </div>
