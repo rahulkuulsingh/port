@@ -123,7 +123,7 @@ export default function Lrnr() {
               To view the entire document, the user would need four laptops side
               by side, which is obviously not possible. As a result, they have
               to scroll horizontally to see the entire document. This is a very
-              tedious task, and it's very easy to lose track of where you are in
+              tedious task, and it&apos;s very easy to lose track of where you are in
               the document.
             </p>
           </header>
@@ -427,7 +427,7 @@ export default function Lrnr() {
         <SectionTitle
           sectionID="finalDesign"
           title="The final design reduced user frustration regarding scrolling and creating new projects."
-          subtitle="Concolusion"
+          subtitle="Conclusion"
         />
         <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
           That&apos;s it for this project. Reach out if you have a similar
