@@ -3,6 +3,7 @@ import Card from "@/app/Components/Card";
 import insiderDesktop from "@/public/insider/insider-desktop-2x.png";
 import sakraDesktop from "@/public/sakra/sakra-desktop-2x.png";
 import lrnrDesktop from "@/public/lrnr/lrnr-virtual-sim-desktop-2x.png";
+import abbDesktop from "@/public/abb/abb-desktop-2x.png"
 import figma from "@/public/figma-community/figma.png";
 import RevealAboutMe from "./Components/RevealAboutMe";
 import SectionTitle from "./Components/SectionTitle";
@@ -36,6 +37,7 @@ function Home() {
             showGrowthMetrics={true}
             cardImage={insiderDesktop.src}
           />
+
           <Card
             title="Designed Virtual Labs for Medical Grad Students"
             // tags={[
@@ -46,7 +48,7 @@ function Home() {
             //   { link: "#", label: "Web App" },
             // ]}
             role="Product Designer"
-            projectDate="2021 - 2023"
+            projectDate="Sep 2020 - Nov 2021"
             team="Dr. Lang, Chaitnya, Prajin, Ventak, Mohan"
             caseLink="/case-study/lrnr"
             showGrowthMetrics={false}
@@ -61,11 +63,22 @@ function Home() {
             //   { link: "#", label: "Web App" },
             // ]}
             role="Product Designer"
-            projectDate="2021 - 2023"
+            projectDate="Jun 2019 - Sep 2020"
             team="Sampath Kumar, Rashid Ansari, Prabhat, Divya"
             caseLink="/case-study/sakra"
             showGrowthMetrics={false}
             cardImage={sakraDesktop.src}
+          />
+          <Card
+            containerclassName="col-span-1 md:col-span-2"
+            cardClassName="flex flex-col gap-4 rounded-lg bg-white	shadow-xl overflow-clip md:row-span-1 md:flex-row  dark:bg-zinc-900 text-xs"
+            title="Converting Excel Sheet into a Web App."
+            role="UX Designer"
+            projectDate="Jun 2019 - Sep 2020"
+            team="Sampath Kumar, Rashid Ansari"
+            caseLink="/case-study/abb"
+            showGrowthMetrics={false}
+            cardImage={abbDesktop.src}
           />
         </div>
 
