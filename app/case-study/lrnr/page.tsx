@@ -8,6 +8,7 @@ import Video from "@/app/Components/Video";
 import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
 import DotGridBG from "@/app/Components/UI/CosmeticComponents/Backgrounds/DotGridBG";
+import SectionTitle from "@/app/Components/SectionTitle";
 
 export default function Lrnr() {
   return (
@@ -442,17 +443,17 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
           Fixed Topbar
         </p>
 
         <p className="mt-4 text-gray-400 text-base/6">
-          My focus was on, taking advantage of the top bar to show all the
-          necesassy information to user in seconds.
+          My focus was on taking advantage of the top bar to show all the
+          necessary information to the user in seconds.
         </p>
         <p className="pt-2 text-gray-400 ">
-          What is the most important information for a Student?
+          What is the most important information for a student?
         </p>
         <ul>
           <li className="mt-8 text-gray-400 list-disc">
@@ -481,7 +482,7 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
           Fixed Bottom Navigation Bar
         </p>
@@ -511,13 +512,13 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
-          Simplifuing access to find Materisl, Appratus, Tasks, Answers.
+          Simplifying access to find Materials, Apparatus, Tasks, and Answers.
         </p>
         <p className="mt-4 text-gray-400 text-base/6">
-          Implementing a drawer or shelf type feature to conveniently store
-          materials, apparatus, tasks, and answers for each experiment. Enhances
+          Implementing a drawer or shelf-type feature to conveniently store
+          materials, apparatus, tasks, and answers for each experiment enhances
           findability and usability.
         </p>
         <img
@@ -528,15 +529,15 @@ export default function Lrnr() {
       </section>
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <p className="text-sm text-purple-500 ">Designbing Screen Parts</p>
+        <p className="text-sm text-purple-500 ">Designing Screen Parts</p>
         <p className="mt-4 text-balance text-2xl tracking-[-0.015em] ">
           Experiment Canvas
         </p>
         <p className="mt-4 text-gray-400 text-base/6">
-          This is the area where the student will spend most of the time. So it
-          has to be as simple as possible. It has to be informative. The main
-          area displays reading materials, videos, and instructions. Students
-          can perform the procedure in this area of the layout.
+          This is the area where the student will spend most of their time, so
+          it has to be as simple and informative as possible. The main area
+          displays reading materials, videos, and instructions. Students can
+          perform the procedure in this part of the layout.
         </p>
 
         <ul>
@@ -564,29 +565,27 @@ export default function Lrnr() {
 
       <section className="relative mt-8 pb-32 pt-8 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
         <div className="col-span-3 row-span-1 mt-4 mb-4 ">
-          <h2 className="text-lg  text-gray-400">
-            Oops! I made a mistake
-          </h2>
+          <h2 className="text-lg  text-gray-400">Oops! I made a mistake</h2>
           <h3 className="text-xl font-bold">
-            What happens if a student makes a mistake.
+            What happens if a student makes a mistake?
           </h3>
           <p className="mt-2 text-base text-gray-400">
             Mistakes are an important part of learning. Some mistakes can be
-            fixed and for some; one has to start over.
+            fixed, while for others, one has to start over.
           </p>
           <p className="mt-2 text-base text-gray-400">
-            Two types - Reversible and Irreversible mistakes.
+            There are two types of mistakes: reversible and irreversible.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <div className="flex flex-row gap-4  mt-4 bg-zinc-900 p-4 rounded-3xl  ">
             <div className="flex flex-col gap-8">
-              <h3>Reversible Mistake</h3>
+              <h3>Reversible Mistake:</h3>
               <p className="text-gray-400">
                 If a student forgets to add a required solution into the test
-                tube or has added less than the required ammount, it can still
-                be fixed. hence we only warn the student.
+                tube or adds less than the required amount, it can still be
+                fixed. Hence, we only warn the student.
               </p>
             </div>
             <img src="../lrnr/case-assets/fixable.svg" alt="" />
@@ -595,15 +594,27 @@ export default function Lrnr() {
           <div className="flex flex-row gap-4  mt-4 bg-zinc-900 p-4 rounded-3xl">
             <img src="../lrnr/case-assets/non-fixable.svg" alt="" />
             <div className="flex flex-col gap-8">
-              <h3>Irreversible Mistake</h3>
+              <h3>Irreversible Mistake:</h3>
               <p className="text-gray-400">
-                If a student forgets to add a required solution into the test
-                tube or has added less than the required ammount, it can still
-                be fixed. hence we only warn the student.
+                If a student adds the wrong solution or exceeds the required
+                amount, it cannot be fixed. In such cases, the student must
+                start over.
               </p>
             </div>
           </div>
         </div>
+      </section>
+      <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <SectionTitle
+          sectionID="survey"
+          subtitle="More details hidden"
+          title="For More Indepth Review of this case study, let us connect on a Google Meet "
+          customCode={
+            <p className="mt-2 text-gray-400 text-sm">
+              You can find my contact details at bottom of the page.
+            </p>
+          }
+        />
       </section>
     </>
   );

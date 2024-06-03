@@ -484,11 +484,11 @@ interview done earlier."
           <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
             <SectionTitle
               sectionID="survey"
-              subtitle="Initial Design - Key User Flow - Find a Doctor"
-              title="Let's look at some other key user flows"
+              subtitle="More details hidden"
+              title="For More Indepth Review of this case study, let us connect on a Google Meet "
               customCode={
                 <p className="mt-2 text-gray-400 text-sm">
-                  How will the use user check
+                  You can find my contact details at bottom of the page.
                 </p>
               }
               />

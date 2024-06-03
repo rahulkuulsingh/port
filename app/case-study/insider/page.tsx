@@ -21,6 +21,7 @@ import SectionMultiSelect from "@/app/Components/Parts/Insider/SectionMultiSelec
 import IntroductionGrid from "@/app/Components/IntroductionGrid";
 import solutionTrashed from "@/public/insider/case-assets/solutionTrashed.png";
 import solutionTrashed2 from "@/public/insider/case-assets/solutionTrashed2.png";
+import GrowthMetrics from "@/app/Components/grwothMetrics";
 
 export default function Insider() {
   const tocItems = [
@@ -659,7 +660,7 @@ export default function Insider() {
           <HowMightWeSection
             quoteText="During Research, we wanted to know what resources our partners use to learn architect, Do they find it easy to learn?"
             problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
-            problemCount={2}
+            problemCount={4}
             highlightedText={["what resources", "easy to learn"]}
             highlightedColors={["gray", "gray"]}
             containerClass="my-8"
@@ -711,7 +712,7 @@ export default function Insider() {
           <div className="w-full">
             <div className="mb-8 pb-8">
               <p className="mt-4 mb-8 text-balance max-w-md text-xl tracking-[-0.015em] ">
-                To guide the suer added useful tips on the canvas.
+                To guide the user, we added useful tips on the canvas.
               </p>
               <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
                 <Video
@@ -721,24 +722,24 @@ export default function Insider() {
                 />
               </div>
               <p className="mt-4 text-gray-400 text-sm">
-                Users reported they have hard time understanding the use cases
-                for Starter Elements. So I added an Inline Help, when they hover
-                they see these useful tips.
+                Users reported having a hard time understanding the use cases
+                for Starter Elements, so I added inline help. When they hover,
+                they see useful tips.
               </p>
               <p className="mt-2 text-gray-400 text-sm">
-                But this is not enough. I wanted to make self learning
-                accessible, to do that I had another plan.
+                But this is not enough. I wanted to make self-learning
+                accessible, so I had another plan.
               </p>
             </div>
             <SectionTitle
               sectionID="survey"
               // subtitle=""
-              title="Brinnging Academy aka Help Center right in the canvas, access anything, anytime"
+              title="Bringing Academy, aka Help Center, right into the canvas allows access to anything, anytime."
               customCode={
                 <>
                   <p className="max-w-md mt-4 text-gray-500 text-base/6">
-                    What if we cloud bring the help center right in the canvas.
-                    I did the following mockup.
+                    What if we could bring the Help Center right into the
+                    canvas? I created the following mockup.
                   </p>
                 </>
               }
@@ -752,8 +753,8 @@ export default function Insider() {
                 />
               </div>
               <p className="mt-4 text-gray-400 text-sm">
-                As good it may sound and look, we cloud not do it, Our Technical
-                infrastruture cloud not support it at that time.
+                As good as it may sound and look, we could not do it. Our
+                technical infrastructure could not support it at that time.
               </p>
             </div>
           </div>
@@ -762,7 +763,7 @@ export default function Insider() {
         {/* UI Changes to make the user flow hirarchly */}
 
         {/* High Learning Curve */}
-        <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
+        {/* <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
           <HowMightWeSection
             quoteText="But to do the above changes and implement new interactions, we also updated our IA "
             problemStatement="Users struggle to quickly remeber which Starter Element does what, A Learning Issue. "
@@ -771,11 +772,39 @@ export default function Insider() {
             highlightedColors={["gray", "gray"]}
             containerClass="my-8"
           />
-        </div>
+        </div> */}
 
         <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-
+        <SectionTitle
+              sectionID="survey"
+              // subtitle=""
+              title="The Impact of the project."
+            />
+          <div className="flex gap-4 mb-8 w-full mt-8 md:scale-125 translate-x-32">
+            <GrowthMetrics
+              growthValue={13}
+              growthStatement={"increase in NPS score"}
+            />
+            <GrowthMetrics
+              growthValue={7}
+              growthStatement={"boost in product adoption"}
+            />
+            <GrowthMetrics growthValue={9} growthStatement={"rise in MRR"} />
+          </div>
+          That&#39;s it for this project. Thank you.
         </section>
+        <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
+        <SectionTitle
+          sectionID="survey"
+          subtitle="More details hidden"
+          title="For More Indepth Review of this case study, let us connect on a Google Meet "
+          customCode={
+            <p className="mt-2 text-gray-400 text-sm">
+              You can find my contact details at bottom of the page.
+            </p>
+          }
+        />
+      </section>
       </div>
     </>
   );

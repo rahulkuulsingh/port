@@ -97,8 +97,8 @@ export default function Lrnr() {
         <div className="relative">
           <header className="max-w-2xl mb-8">
             <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-              Let&apos;s start by looking at the sheet that needs to be converted to
-              a web app.
+              Let&apos;s start by looking at the sheet that needs to be
+              converted to a web app.
             </p>
             <p className="mt-4 text-gray-400 text-base/6">
               After closely inspecting the sheet and talking to the users, I
@@ -113,17 +113,18 @@ export default function Lrnr() {
         <div className="relative">
           <header className="max-w-2xl mb-8">
             <p className="mt-4 text-balance text-3xl tracking-[-0.015em] ">
-              Let&apos;s break down why people hated their workflow when dealing with
-              the sheet.
+              Let&apos;s break down why people hated their workflow when dealing
+              with the sheet.
             </p>
             <p className="mt-4 text-balance text-xl tracking-[-0.015em] bg-[#FF4800] max-w-fit">
               Primary Problem
             </p>
             <p className="mt-4 text-gray-400 text-base/6">
-              To view entire document the user will need 4 laptops side by side,
-              obviouslly it&apos;s not possible. So, they have to scroll horizontally
-              to view the entire document. This is a very tedious task and it&apos;s
-              very easy to lose track of where you are in the document.
+              To view the entire document, the user would need four laptops side
+              by side, which is obviously not possible. As a result, they have
+              to scroll horizontally to see the entire document. This is a very
+              tedious task, and it's very easy to lose track of where you are in
+              the document.
             </p>
           </header>
           <Image src={sheetAnotated} alt="an image that displays a motor" />
@@ -254,13 +255,14 @@ export default function Lrnr() {
       <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
         <SectionTitle
           sectionID={""}
-          title=" Adding Support for Shortcuts and Predefiend Layouts."
+          title="Adding Support for Shortcuts and Predefined Layouts."
         />
         <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
-          After hiding the empty & irrelevant columns, it&apos;s much easier to work.
-          But the side scroll still exists. So if the user wants to compare
-          input with output 2, they still will have to scroll all the way to the
-          right. To minimize this issue, we created the prebuilt layout.
+          After hiding the empty & irrelevant columns, it&apos;s much easier to
+          work. But the side scroll still exists. So if the user wants to
+          compare input with output 2, they still will have to scroll all the
+          way to the right. To minimize this issue, we created the prebuilt
+          layout.
         </p>
         <div className="relative mt-8">
           <Image
@@ -315,8 +317,8 @@ export default function Lrnr() {
             Your browser does not support the video tag.
           </video>
           <p className=" text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4 max-w-lg">
-            this solution cloud not be implemented because of technical
-            contratints.
+          this solution could not be implemented because of technical constraints.
+
           </p>
         </div>
       </section>
@@ -428,8 +430,8 @@ export default function Lrnr() {
           subtitle="Concolusion"
         />
         <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
-          That&apos;s it for this project. Reach out if you have a similar problem
-          and want to solve the problem together.
+          That&apos;s it for this project. Reach out if you have a similar
+          problem and want to solve the problem together.
         </p>
       </section>
     </>
