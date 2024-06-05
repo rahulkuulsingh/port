@@ -32,7 +32,7 @@ export default function Card({
   return (
     <Link href={caseLink} passHref className={`${containerclassName}`}>
       <div
-        className={`${cardClassName} rounded-lg bg-white shadow-xl overflow-clip dark:bg-zinc-900`}
+        className={`${cardClassName} rounded-lg shadow-xl overflow-clip bg-zinc-900`}
       >
         <div className="overflow-hidden">
           <Image

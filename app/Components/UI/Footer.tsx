@@ -42,20 +42,20 @@ const Footer: React.FC<FooterProps> = ({ email, phone, className = "" }) => {
               height="43"
               viewBox="0 0 74 43"
               xmlns="http://www.w3.org/2000/svg"
-              className="fill-current dark:text-gray-50 hover:text-[#FF4800]"
+              className="fill-current text-gray-50 hover:text-[#FF4800]"
             >
               <path d="M52.7553 42.3344L50.0092 39.5883L66.2065 23.4375H0.393066V19.5278H66.2065L50.0092 3.33042L52.7553 0.630859L73.607 21.4826L52.7553 42.3344Z" />
             </svg>
             <div className="flex flex-col">
               <a
                 href={`mailto:${email}`}
-                className="mb-2 text-xl sm:text-2xl md:text-3xl dark:text-gray-50 hover:text-[#FF4800]"
+                className="mb-2 text-xl sm:text-2xl md:text-3xl text-gray-50 hover:text-[#FF4800]"
               >
                 {email}
               </a>
               <a
                 href={`tel:${phone}`}
-                className="text-xl sm:text-2xl md:text-3xl dark:text-gray-50 hover:text-[#FF4800]"
+                className="text-xl sm:text-2xl md:text-3xl text-gray-50 hover:text-[#FF4800]"
               >
                 {phone}
               </a>

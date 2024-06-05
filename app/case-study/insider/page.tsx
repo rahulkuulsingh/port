@@ -83,8 +83,9 @@ export default function Insider() {
   return (
     <>
       <CanvasRevealEffect
-        containerClassName="dark:bg-black bg-sky-500"
+        containerClassName="bg-black"
         gradientClassName="from-indigo-500"
+        showGradient={true}
         animationSpeed={0.8}
         colors={[[255, 255, 255]]}
       />
@@ -340,7 +341,7 @@ export default function Insider() {
 
           <div className="container mx-auto mt-8">
             <div className="w-full">
-              <div className="mb-8 pb-8">
+              <div className="pb-8 mb-8">
                 <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
                   <Video
                     src="../insider/videos/MultiSelectArrange.webm"
@@ -348,10 +349,10 @@ export default function Insider() {
                     width={1920}
                   />
                 </div>
-                <p className="mt-4 text-gray-400 text-sm">
+                <p className="mt-4 text-sm text-gray-400">
                   Video demonstrating multi-select and copy-paste operations.
                 </p>
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   Users can click and drag to select multiple items. By holding
                   the Alt key, they can easily duplicate these elements.
                 </p>
@@ -359,18 +360,18 @@ export default function Insider() {
             </div>
             <div className="grid w-full grid-cols-1 gap-4 mt-4 sm:grid-cols-3">
               <div className="">
-                <div className="bg-gray-600  rounded-lg video-container fit-content overflow-clip">
+                <div className="bg-gray-600 rounded-lg video-container fit-content overflow-clip">
                   <Video
                     src="../insider/videos/DropInMiddle2.webm"
                     height={1440}
                     width={1280}
                   />
                 </div>
-                <p className="mt-4 text-gray-400 text-sm">
+                <p className="mt-4 text-sm text-gray-400">
                   Video demonstrating dragging and rearranging element
                   positions.
                 </p>
-                <p className="mt-4 text-gray-400 text-sm">
+                <p className="mt-4 text-sm text-gray-400">
                   As the elements are now draggable, users can arrange them
                   however they like. The Canvas UI will show visual cues
                   indicating whether an element can be dropped at a specific
@@ -385,8 +386,8 @@ export default function Insider() {
                   width={640}
                   height={720}
                 />
-                <p className="mt-4 text-gray-400 text-sm">Shuffle Elements</p>
-                <p className="mt-4 text-gray-400 text-sm">
+                <p className="mt-4 text-sm text-gray-400">Shuffle Elements</p>
+                <p className="mt-4 text-sm text-gray-400">
                   Notice how the elements display drag handles as signifier, but
                   still this design did not make it to the final launch. Because
                   it conflicted with Elemnt Actions menu.
@@ -400,10 +401,10 @@ export default function Insider() {
                   width={640}
                   height={720}
                 />
-                <p className="mt-4 text-gray-400 text-sm">
+                <p className="mt-4 text-sm text-gray-400">
                   Swap or Change Elements
                 </p>
-                <p className="mt-4 text-gray-400 text-sm">
+                <p className="mt-4 text-sm text-gray-400">
                   This design was also scraped, because we went into a different
                   direction. This solution was limiting.
                 </p>
@@ -425,8 +426,8 @@ export default function Insider() {
             highlightedColors={["lime", "", "", "cyan"]}
           />
 
-          <div className="rounded-lg fit-content overflow-clip mt-8  m-auto pt-8">
-            <p className="mt-4 text-gray-400 text-sm">
+          <div className="pt-8 m-auto mt-8 rounded-lg fit-content overflow-clip">
+            <p className="mt-4 text-sm text-gray-400">
               First of all, let&apos;s hear a user&apos;s feedback. Unmute the
               video to listen. He explains his problem very clearly, and it
               makes sense.
@@ -682,7 +683,7 @@ export default function Insider() {
                   find what they are looking for.
                 </p>
               </div>
-              <div className="w-full sm:w-1/2 overflow-hidden rounded-xl">
+              <div className="w-full overflow-hidden sm:w-1/2 rounded-xl">
                 user feedback, says can&apos;t understand, needs help of
                 colleagues.
                 <Video
@@ -710,7 +711,7 @@ export default function Insider() {
 
         <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
           <div className="w-full">
-            <div className="mb-8 pb-8">
+            <div className="pb-8 mb-8">
               <p className="mt-4 mb-8 text-balance max-w-md text-xl tracking-[-0.015em] ">
                 To guide the user, we added useful tips on the canvas.
               </p>
@@ -721,12 +722,12 @@ export default function Insider() {
                   width={1920}
                 />
               </div>
-              <p className="mt-4 text-gray-400 text-sm">
+              <p className="mt-4 text-sm text-gray-400">
                 Users reported having a hard time understanding the use cases
                 for Starter Elements, so I added inline help. When they hover,
                 they see useful tips.
               </p>
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 But this is not enough. I wanted to make self-learning
                 accessible, so I had another plan.
               </p>
@@ -744,7 +745,7 @@ export default function Insider() {
                 </>
               }
             />
-            <div className="my-8 pb-8">
+            <div className="pb-8 my-8">
               <div className="col-span-3 bg-gray-600 rounded-lg video-container fit-content overflow-clip">
                 <Video
                   src="../insider/videos/academyInCanvas.webm"
@@ -752,7 +753,7 @@ export default function Insider() {
                   width={1920}
                 />
               </div>
-              <p className="mt-4 text-gray-400 text-sm">
+              <p className="mt-4 text-sm text-gray-400">
                 As good as it may sound and look, we could not do it. Our
                 technical infrastructure could not support it at that time.
               </p>
@@ -780,7 +781,7 @@ export default function Insider() {
               // subtitle=""
               title="The Impact of the project."
             />
-          <div className="flex gap-4 mb-8 w-full mt-8 md:scale-125 translate-x-32">
+          <div className="flex w-full gap-4 mt-8 mb-8 translate-x-32 md:scale-125">
             <GrowthMetrics
               growthValue={13}
               growthStatement={"increase in NPS score"}
@@ -799,7 +800,7 @@ export default function Insider() {
           subtitle="More details hidden"
           title="For More Indepth Review of this case study, let us connect on a Google Meet "
           customCode={
-            <p className="mt-2 text-gray-400 text-sm">
+            <p className="mt-2 text-sm text-gray-400">
               You can find my contact details at bottom of the page.
             </p>
           }

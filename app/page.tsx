@@ -23,13 +23,8 @@ function Home() {
         <div className="grid grid-cols-1 gap-4 pb-4 mx-auto mt-8 md:grid-cols-2 ">
           <Card
             containerclassName="col-span-1 md:col-span-2"
-            cardClassName="flex flex-col gap-4 rounded-lg bg-white	shadow-xl overflow-clip md:row-span-1 md:flex-row  dark:bg-zinc-900 text-xs"
+            cardClassName="flex flex-col gap-4 rounded-lg shadow-xl overflow-clip md:row-span-1 md:flex-row  bg-zinc-900 text-xs"
             title="Enhancing Usability of Architect."
-            // tags={[
-            //   { link: "#", label: "B2B" },
-            //   { link: "#", label: "SASS" },
-            //   { link: "#", label: "Marketing Automation" },
-            // ]}
             role="Product Designer, @Insider"
             projectDate="2021 - 2023"
             team="Sarper, Blazenko, Nour, Cansu, Barim"
@@ -40,13 +35,6 @@ function Home() {
 
           <Card
             title="Designed Virtual Labs for Medical Grad Students"
-            // tags={[
-            //   { link: "#", label: "B2B" },
-            //   { link: "#", label: "SASS" },
-            //   { link: "#", label: "Ed-tech" },
-            //   { link: "#", label: "Mobile App" },
-            //   { link: "#", label: "Web App" },
-            // ]}
             role="Product Designer"
             projectDate="Sep 2020 - Nov 2021"
             team="Dr. Lang, Chaitnya, Prajin, Ventak, Mohan"
@@ -57,11 +45,6 @@ function Home() {
 
           <Card
             title="Mobile and Web App for Sakra World Hospital."
-            // tags={[
-            //   { link: "#", label: "B2C" },
-            //   { link: "#", label: "Mobile App" },
-            //   { link: "#", label: "Web App" },
-            // ]}
             role="Product Designer"
             projectDate="Jun 2019 - Sep 2020"
             team="Sampath Kumar, Rashid Ansari, Prabhat, Divya"
@@ -71,7 +54,7 @@ function Home() {
           />
           <Card
             containerclassName="col-span-1 md:col-span-2"
-            cardClassName="flex flex-col gap-4 rounded-lg bg-white	shadow-xl overflow-clip md:row-span-1 md:flex-row  dark:bg-zinc-900 text-xs"
+            cardClassName="flex flex-col gap-4 rounded-lg shadow-xl overflow-clip md:row-span-1 md:flex-row  bg-zinc-900 text-xs"
             title="Converting Excel Sheet into a Web App."
             role="UX Designer"
             projectDate="Jun 2019 - Sep 2020"
@@ -91,11 +74,9 @@ function Home() {
           <div className="m-auto">
             <Link href="https://www.figma.com/@rahulsingh" passHref>
               <div className="relative group flex">
-                {/* On hover, display this paragraph */}
                 <p className="absolute inset-0 flex items-center px-4 py-2 bg-black/[.05] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 text-white z-10">
                   Click to Visit Figma Community See all Designs
                 </p>
-                {/* On hover, blur this image with an ease-in transition */}
                 <Image
                   src={figma}
                   alt="community page"

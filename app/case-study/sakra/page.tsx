@@ -80,7 +80,7 @@ export default function Insider() {
   return (
     <>
       <CanvasRevealEffect
-        containerClassName="dark:bg-black bg-sky-500"
+        containerClassName=""
         gradientClassName="from-indigo-500"
         animationSpeed={0.8}
         colors={[[255, 255, 255]]}
@@ -124,10 +124,10 @@ export default function Insider() {
             />
           </div>
         </section>
-        <div className="relative max-w-[80rem] mx-auto mt-16 pt-4 dark:text-black ">
-          <div className="grid grid-col-1 md:grid-cols-3 gap-4">
-            <div className="flex flex-col bg-blue-100 gap-8  rounded-xl p-4 pb-8">
-              <div className="flex gap-4 items-center ">
+        <div className="relative max-w-[80rem] mx-auto mt-16 pt-4 text-black ">
+          <div className="grid gap-4 grid-col-1 md:grid-cols-3">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-blue-100 rounded-xl">
+              <div className="flex items-center gap-4 ">
                 <img
                   src="../sakra/case-assets/connect.svg"
                   height={64}
@@ -135,7 +135,7 @@ export default function Insider() {
                   alt=""
                 />
                 <div className="flex flex-col">
-                  <p className="text-blue-600 font-semibold	text-lg">Connect</p>
+                  <p className="text-lg font-semibold text-blue-600">Connect</p>
                   <p>Patient with Doctors</p>
                 </div>
               </div>
@@ -144,8 +144,8 @@ export default function Insider() {
                 specialty, or by symptoms
               </p>
             </div>
-            <div className="flex flex-col bg-orange-100 gap-8  rounded-xl p-4 pb-8">
-              <div className="flex gap-4 items-center ">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-orange-100 rounded-xl">
+              <div className="flex items-center gap-4 ">
                 <img
                   src="../sakra/case-assets/manage.svg"
                   height={64}
@@ -153,7 +153,7 @@ export default function Insider() {
                   alt=""
                 />
                 <div className="flex flex-col">
-                  <p className="text-orange-400 font-semibold	text-lg">Manage</p>
+                  <p className="text-lg font-semibold text-orange-400">Manage</p>
                   <p>Health Records, Bookings</p>
                 </div>
               </div>
@@ -162,8 +162,8 @@ export default function Insider() {
                 cancel or reschedule appointments.
               </p>
             </div>
-            <div className="flex flex-col bg-green-100 gap-8  rounded-xl p-4 pb-8">
-              <div className="flex gap-4 items-center ">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-green-100 rounded-xl">
+              <div className="flex items-center gap-4 ">
                 <img
                   src="../sakra/case-assets/pay.svg"
                   height={64}
@@ -171,7 +171,7 @@ export default function Insider() {
                   alt=""
                 />
                 <div className="flex flex-col">
-                  <p className="text-green-600 font-semibold text-lg">Pay</p>
+                  <p className="text-lg font-semibold text-green-600">Pay</p>
                   <p>Hospital Bills</p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function Insider() {
             subtitle="Research Phase"
             title="The app has diverse users, so we conducted user interviews to understand their needs."
           />
-          <p className="text-gray-400 mt-4">
+          <p className="mt-4 text-gray-400">
             It is important to understand the different user groups who will be
             using the application. Listening to their stories will help us
             achieve this goal.
@@ -196,9 +196,9 @@ export default function Insider() {
         </section>
         <section className="lg:max-w-[64rem] md:max-w-[48rem] mx-auto relative sm:max-w-[40rem] w-full">
           <div className="relative max-w-[80rem] mx-auto mt-16 pt-4  ">
-            <div className="grid grid-col-1 md:grid-cols-3 gap-4">
-              <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-                <div className="flex gap-4 items-center ">
+            <div className="grid gap-4 grid-col-1 md:grid-cols-3">
+              <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+                <div className="flex items-center gap-4 ">
                   <img
                     src="../sakra/case-assets/connect.svg"
                     height={64}
@@ -206,31 +206,31 @@ export default function Insider() {
                     alt=""
                   />
                   <div className="flex flex-col">
-                    <p className="text-blue-600 font-semibold	text-lg">
+                    <p className="text-lg font-semibold text-blue-600">
                       Ramesh Roy
                     </p>
                     <p>Manager at MNC</p>
                     <p className="text-xs">Bengaluru, KA</p>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   When I want to consult a doctor I want to know the timings as
                   I am mostly busy on projects I work on.
                 </p>
 
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   Some times, when a sudden meeting is organized and I am also
                   part of the meeting I want to reschedule my appointments or
                   may be cancel them.
                 </p>
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   Going physically to a hospital or lab to collect lab reports
                   takes time, I wish If I can access the reports on my mobile
                   phone or laptop, without me physically going to collect it.
                 </p>
               </div>
-              <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-                <div className="flex gap-4 items-center ">
+              <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+                <div className="flex items-center gap-4 ">
                   <img
                     src="../sakra/case-assets/connect.svg"
                     height={64}
@@ -238,31 +238,31 @@ export default function Insider() {
                     alt=""
                   />
                   <div className="flex flex-col">
-                    <p className="text-blue-600 font-semibold	text-lg">
+                    <p className="text-lg font-semibold text-blue-600">
                       Deepti Jha
                     </p>
                     <p>Home Maker</p>
                     <p className="text-xs">Indore, MP</p>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   My younger son has kidney problems, he goes through dialysis
                   three times every week. So it &apos;s important for me to know
                   his health status.
                 </p>
 
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   I want to closely monitor his health status, see reports, and
                   want to consult with a doctor whenever we have an emergency.
                 </p>
 
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   Making payments is a hassle for us. I want to make online
                   payments, and want to keep track of payment history.
                 </p>
               </div>
-              <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-                <div className="flex gap-4 items-center ">
+              <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+                <div className="flex items-center gap-4 ">
                   <img
                     src="../sakra/case-assets/connect.svg"
                     height={64}
@@ -270,25 +270,25 @@ export default function Insider() {
                     alt=""
                   />
                   <div className="flex flex-col">
-                    <p className="text-blue-600 font-semibold	text-lg">
+                    <p className="text-lg font-semibold text-blue-600">
                       G. Maniraj
                     </p>
                     <p>Engineering student</p>
                     <p className="text-xs">Anantapur, AP</p>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   I stay in a hostel, but mom and dad stay at home. As I am not
                   staying with them, it will be convenient for me to book
                   appointments from my hostel.
                 </p>
 
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   Dad is a diabetes patient, I want to see his reports and take
                   actions accordingly.
                 </p>
 
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   As dad wants to consult with the same doctor, I want to have a
                   quick option to book an appointment with the same doctor he
                   consulted with last time.
@@ -304,71 +304,71 @@ export default function Insider() {
             title="The following hypothesis can be formed by synthesizing the data obtained from the
 interview done earlier."
           />
-          <div className="grid grid-col-1 md:grid-cols-3 gap-4">
-            <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-              <p className="mt-2 text-gray-400 text-sm">
+          <div className="grid gap-4 grid-col-1 md:grid-cols-3">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+              <p className="mt-2 text-sm text-gray-400">
                 Patients will find it easier to search for doctors by symptoms
                 or specialty, but it &apos;s good to have the option to let them
                 search by doctor name as well.
               </p>
 
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Allowing the patient to visit the nearest facility will help
                 them save time. It will also reduce traffic in the main branch
                 of the hospital.
               </p>
 
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Patients or family members often want to know more about the
                 doctor, their experience, specialty, education, etc. It creates
                 trust and good relations between patients and doctors.
               </p>
 
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Keeping track of visit history and reminding patients of
                 upcoming appointments will be a nice idea, as sometimes users
                 forget about their appointments.
               </p>
             </div>
-            <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-              <p className="mt-2 text-gray-400 text-sm">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+              <p className="mt-2 text-sm text-gray-400">
                 It will be a good idea to remind the patient to take medicine on
                 time as prescribed by the doctor or physician.
               </p>
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Allow patients to make appointments on their preferred date and
                 time. But if the doctor is not available on the selected date or
                 time, don &apos;t allow booking for the same.
               </p>
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Access to lab reports and case sheets will help patients know
                 more about their health. It will also save their time as they
                 won &apos;t have to physically collect it.
               </p>
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Giving options to book health checkups on a specific date can be
                 implemented, though users will have to visit the hospital or lab
                 physically if required.
               </p>
             </div>
-            <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-              <p className="mt-2 text-gray-400 text-sm">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+              <p className="mt-2 text-sm text-gray-400">
                 Giving the option to reschedule appointments will greatly help
                 busy professionals.
               </p>
 
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Giving options to make and track payments online will not only
                 save time but also be easier and more convenient.
               </p>
 
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Some patients visit the same doctor multiple times in a week or
                 a month. Allowing them to save doctors as favorites will be a
                 time saver as they won &apos;t have to search again.
               </p>
 
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Some patients visit the same doctor multiple times in a week or
                 a month. Allowing them to save doctors as favorites will be a
                 time saver as they won &apos;t have to search again.
@@ -382,23 +382,23 @@ interview done earlier."
             subtitle="Reasearch Phase - Privacy and Security"
             title="Health care data is very sensitive. Users want to know who has access to their data. Hence, privacy and security are top priorities while designing and developing these apps."
           />
-          <div className="grid grid-col-1 md:grid-cols-3 gap-4">
-            <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-              <h3 className="font-semibold text-lg">
+          <div className="grid gap-4 grid-col-1 md:grid-cols-3">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+              <h3 className="text-lg font-semibold">
                 Two Factor Authentication
               </h3>
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Every time a user logs in, after entering the user credentials,
                 the user will have to enter the OTP sent to their registered
                 mobile number and email ID. If successful, the user will be
                 logged in.
               </p>
             </div>
-            <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-              <h3 className="font-semibold text-lg">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+              <h3 className="text-lg font-semibold">
                 Allowing users to change their password.
               </h3>
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Passwords are painful if one forgets it. It&#39;s 8 characters
                 long, with at least one small letter, one capital letter, and
                 one special character. Users may forget their password or
@@ -407,11 +407,11 @@ interview done earlier."
                 mobile number.
               </p>
             </div>
-            <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-              <h3 className="font-semibold text-lg">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+              <h3 className="text-lg font-semibold">
                 Recovery and security questions.
               </h3>
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 If the user forgets their password, they will have to answer
                 security questions. Then they will be prompted to enter the
                 registered mobile number and finally enter an OTP to
@@ -419,9 +419,9 @@ interview done earlier."
                 now change their password.
               </p>
             </div>
-            <div className="flex flex-col bg-zinc-900 gap-8  rounded-xl p-4 pb-8">
-              <h3 className="font-semibold text-lg">Limited access of data.</h3>
-              <p className="mt-2 text-gray-400 text-sm">
+            <div className="flex flex-col gap-8 p-4 pb-8 bg-zinc-900 rounded-xl">
+              <h3 className="text-lg font-semibold">Limited access of data.</h3>
+              <p className="mt-2 text-sm text-gray-400">
                 Patient data is only available to previously consulted doctors
                 and can be given to any other doctor if the patient grants
                 access to them.
@@ -439,7 +439,7 @@ interview done earlier."
             <Image
               src={userFlow}
               alt="Image description"
-              className="p-4 w-full"
+              className="w-full p-4"
             />
             <DotGridBG />
           </div>
@@ -450,7 +450,7 @@ interview done earlier."
             subtitle="Initial Design - Wireframing Navigation Structure"
             title="How would User Navigate for different requirements?"
             customCode={
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Based on the Research and Infomation acrhitcture, the user has
                 Invoked this app to do the Following. Find Relavant Doctors for
                 their sympotoms, Book a Consultation either - in person or
@@ -470,7 +470,7 @@ interview done earlier."
             subtitle="Initial Design - Key User Flow - Find a Doctor"
             title="Patients don't need to know the doctor's name. They can search by symptoms."
             customCode={
-              <p className="mt-2 text-gray-400 text-sm">
+              <p className="mt-2 text-sm text-gray-400">
                 Symptom-based searches allows patients to find the best
                 available doctor with ease.
               </p>
@@ -487,7 +487,7 @@ interview done earlier."
               subtitle="More details hidden"
               title="For More Indepth Review of this case study, let us connect on a Google Meet "
               customCode={
-                <p className="mt-2 text-gray-400 text-sm">
+                <p className="mt-2 text-sm text-gray-400">
                   You can find my contact details at bottom of the page.
                 </p>
               }

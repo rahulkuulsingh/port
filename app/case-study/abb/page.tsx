@@ -34,8 +34,8 @@ export default function Lrnr() {
   return (
     <>
       <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
-          <div className="flex flex-col col-span-4  ">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-6">
+          <div className="flex flex-col col-span-4 ">
             <h2 className="pb-8 text-sm text-purple-500">
               Intranet Web Application &#40;Internal Product&#41;
             </h2>
@@ -55,7 +55,7 @@ export default function Lrnr() {
             className="col-span-2"
           />
         </div>
-        <div className="my-role isolate mt-24 grid grid-cols-1 border border-black/[.075] dark:border-white/[.075] sm:grid-cols-2 lg:grid-cols-4">
+        <div className="my-role isolate mt-24 grid grid-cols-1 border border-white/[.075] sm:grid-cols-2 lg:grid-cols-4">
           <div className="relative z-10 col-start-1 row-start-1 px-6 py-8">
             <h2 className="text-balance text-xl tracking-[-0.015em] ">
               The Projects High Level Context
@@ -68,7 +68,7 @@ export default function Lrnr() {
             role="list"
             className="relative flex flex-wrap col-start-1 isolate col-span-full sm:row-start-1"
           >
-            <li className="flex w-full flex-none flex-col items-start border-t border-black/[.075] dark:border-white/[.075] px-6 py-8 sm:ml-[50%] sm:w-1/2 sm:border-l sm:border-t-0 lg:ml-[25%] lg:w-1/4">
+            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075] px-6 py-8 sm:ml-[50%] sm:w-1/2 sm:border-l sm:border-t-0 lg:ml-[25%] lg:w-1/4">
               <h3 className="mt-6 text-sm font-medium ">My Role</h3>
               <p className="mt-2 mb-auto text-gray-400 text-sm/5">
                 I was responsible for - layout & navigation.
@@ -77,7 +77,7 @@ export default function Lrnr() {
                 UI and UX Design, Interaction Design
               </p>
             </li>
-            <li className="flex w-full flex-none flex-col items-start border-t border-black/[.075] dark:border-white/[.075]  px-6 py-8 sm:w-1/2 lg:w-1/4 lg:border-l lg:border-t-0">
+            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075]  px-6 py-8 sm:w-1/2 lg:w-1/4 lg:border-l lg:border-t-0">
               <h3 className="mt-6 text-sm font-medium ">Team Structure</h3>
               <p className="mt-2 mb-auto text-gray-400 text-sm/5">
                 <span>Design Team: Rahul</span>
@@ -85,7 +85,7 @@ export default function Lrnr() {
                 Manjunath, Rashid Ansari, Penchala.
               </p>
             </li>
-            <li className="flex w-full flex-none flex-col items-start border-t border-black/[.075] dark:border-white/[.075]  px-6 py-8 sm:w-1/2 sm:border-l lg:w-1/4 lg:border-t-0">
+            <li className="flex w-full flex-none flex-col items-start border-t border-white/[.075]  px-6 py-8 sm:w-1/2 sm:border-l lg:w-1/4 lg:border-t-0">
               <h3 className="mt-6 text-sm font-medium ">Project Timeline</h3>
               <p className="mt-2 mb-auto text-gray-400 text-sm/5">2 Months</p>
             </li>
@@ -149,7 +149,7 @@ export default function Lrnr() {
           Focusing mainly on workflow
         </p>
 
-        <div className=" inline-flex flex-wrap pt-8 mt-8">
+        <div className="inline-flex flex-wrap pt-8 mt-8 ">
           {userInterViewQuestions.map((item, index) => (
             <StickyNotes
               key={index}
@@ -178,8 +178,8 @@ export default function Lrnr() {
           LSU, Drive Point MD, and Transformer. Drive Point MD &#40;one of the
           key sheets&#41; has 154 columns.
         </p>
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-4">
-          <div className="col-span-1 border border-black/[0.075] dark:border-white/[0.15]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+          <div className="col-span-1 border  border-white/[0.15]">
             <p className=" text-balance text-md p-4 tracking-[-0.015em] bg-yellow-300 text-black w-full">
               Why are so many columns empty?
             </p>
@@ -189,7 +189,7 @@ export default function Lrnr() {
               will not be used. Hence they are left empty.
             </p>
           </div>
-          <div className="col-span-1 border border-black/[0.075] dark:border-white/[0.15]">
+          <div className="col-span-1 border  border-white/[0.15]">
             <p className=" text-balance text-md p-4 tracking-[-0.015em] bg-yellow-300 text-black w-full">
               Why are some columns colored differently?
             </p>
@@ -198,7 +198,7 @@ export default function Lrnr() {
               Output.
             </p>
           </div>
-          <div className="col-span-1 border border-black/[0.075] dark:border-white/[0.15]">
+          <div className="col-span-1 border  border-white/[0.15]">
             <p className=" text-balance text-md p-4 tracking-[-0.015em] bg-yellow-300 text-black w-full">
               What does the toggle button hide?
             </p>
@@ -207,7 +207,7 @@ export default function Lrnr() {
               groups.
             </p>
           </div>
-          <div className="col-span-1 border border-black/[0.075] dark:border-white/[0.15]">
+          <div className="col-span-1 border  border-white/[0.15]">
             <p className=" text-balance text-md p-4 tracking-[-0.015em] bg-yellow-300 text-black w-full">
               How many times do they use the toggle button?
             </p>
@@ -272,7 +272,7 @@ export default function Lrnr() {
           />
           <DotGridBG />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 p-4 ">
+        <div className="grid grid-cols-1 gap-4 p-4 mt-8 md:grid-cols-3 ">
           <div className="flex flex-col">
             <p>Layout 1. “The standard view”</p>
             <p className="text-balance text-gray-400 pt-4  tracking-[-0.015em] mb-4">
@@ -389,7 +389,7 @@ export default function Lrnr() {
           <Image
             src={dashboardHome}
             alt="an image that displays a motor"
-            className="p-4 w-full"
+            className="w-full p-4"
           />
 
           <DotGridBG />

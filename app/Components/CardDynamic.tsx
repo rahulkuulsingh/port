@@ -25,7 +25,7 @@ export default function CardDynamic({
 }: CardDynamicProps) {
   return (
     <Link href={cardLink} passHref className={`${containerClassName}`}>
-      <div className={`${cardClassName} rounded-lg bg-white shadow-xl overflow-clip dark:bg-zinc-900`}>
+      <div className={`${cardClassName} rounded-lg shadow-xl overflow-clip bg-zinc-900`}>
         {cardImage && (
           <div className="overflow-hidden">
             <Image
