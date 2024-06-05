@@ -781,7 +781,7 @@ export default function Insider() {
               // subtitle=""
               title="The Impact of the project."
             />
-          <div className="flex w-full gap-4 mt-8 mb-8 translate-x-32 md:scale-125">
+          <div className="flex w-full gap-4 mt-8 mb-8">
             <GrowthMetrics
               growthValue={13}
               growthStatement={"increase in NPS score"}
