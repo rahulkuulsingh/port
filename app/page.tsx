@@ -65,6 +65,9 @@ function Home() {
           /> */}
         </div>
 
+
+
+
         <section className="mt-16 pb-32 pt-16 mx-auto w-full sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[64rem] xl:max-w-[80rem]">
           <SectionTitle
             title="My Figma Community Profile"

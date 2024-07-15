@@ -45,24 +45,6 @@ export default function Card({
         </div>
         <div className="flex flex-col w-full px-4 py-8 pb-4">
           <h2 className="mt-4 text-2xl font-light tracking-tight">{title}</h2>
-          <div className="flex flex-col gap-1 mt-2 mb-8 text-xs text-gray-400">
-            <p>Role: {role}</p>
-            <p>Year: {projectDate}</p>
-            <p>Team: {team}</p>
-          </div>
-          {showGrowthMetrics && (
-            <div className="flex gap-4 mb-8 max-w-max">
-              <GrowthMetrics
-                growthValue={13}
-                growthStatement={"increase in NPS score"}
-              />
-              <GrowthMetrics
-                growthValue={7}
-                growthStatement={"boost in product adoption"}
-              />
-              <GrowthMetrics growthValue={9} growthStatement={"rise in MRR"} />
-            </div>
-          )}
 
           <CaseStudyButton />
         </div>
