@@ -52,7 +52,7 @@ function Home() {
             showGrowthMetrics={false}
             cardImage={sakraDesktop.src}
           />
-          <Card
+          {/* <Card
             containerclassName="col-span-1 md:col-span-2"
             cardClassName="flex flex-col gap-4 rounded-lg shadow-xl overflow-clip md:row-span-1 md:flex-row  bg-zinc-900 text-xs"
             title="Converting Excel Sheet into a Web App."
@@ -62,7 +62,7 @@ function Home() {
             caseLink="/case-study/abb"
             showGrowthMetrics={false}
             cardImage={abbDesktop.src}
-          />
+          /> */}
         </div>
 
         <section className="mt-16 pb-32 pt-16 mx-auto w-full sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[64rem] xl:max-w-[80rem]">
