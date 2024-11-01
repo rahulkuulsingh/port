@@ -37,7 +37,7 @@ const TechCard: React.FC<TechCardProps> = ({
       <div
         data-tooltip-id="techStackToolTip"
         data-tooltip-content={tooltipData}
-        data-tooltip-offset="8"
+        data-tooltip-offset={8}
         data-tooltip-delay-show={300}
         className={`w-24 h-24 flex flex-col rounded-lg overflow-hidden bg-[#171717] transition duration-300 ease-in-out transform hover:scale-110 p-2 ${cardClassName}`}
       >
