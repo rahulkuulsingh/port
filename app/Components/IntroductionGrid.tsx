@@ -23,7 +23,7 @@ const IntroductionGrid: React.FC<IntroductionGridProps> = ({
     <section className="hero-section mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
       <div className="">
         <h2 className="pb-8 text-sm text-purple-500">{subTitle}</h2>
-        <h1 className="max-w-4xl text-balance text-3xl/9 tracking-tight sm:text-5.5xl md:text-6xl">
+        <h1 className=" text-balance text-3xl/9 tracking-tight sm:text-5.5xl md:text-6xl">
           {title}
         </h1>
         <p className="max-w-md mt-4 text-gray-500 text-base/6">{description}</p>

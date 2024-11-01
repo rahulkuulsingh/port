@@ -1,8 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import { cn } from "../utils/cn";
 
-function RevealAboutMe() {
+interface RevealAboutMeProps {
+  containerClass?:string;
+  sectionID: string;
+}
+
+function RevealAboutMe(props: RevealAboutMeProps) {
   const [rahulOpen, setRahulOpen] = useState(false);
   const [uxOpen, setUXOpen] = useState(false);
   const [andOpen, setAndOpen] = useState(false);
@@ -36,7 +42,7 @@ function RevealAboutMe() {
 
   return (
     <>
-      <div className="pt-16 mt-16 mb-32 text-xl reveal-about-me home-text leading-extra-loose md:text-2xl ">
+      <div className={cn("text-xl reveal-about-me home-text leading-extra-loose md:text-2xl", props.containerClass )} id={props.sectionID}>
         Hi, I am{" "}
         <button
           type="button"

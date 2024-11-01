@@ -2,7 +2,7 @@ import React from 'react';
 
 const CaseStudyButton: React.FC = () => {
   return (
-    <button className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50 text-xs max-w-max place-self-end">
+    <button className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50 text-xs max-w-max">
       <span className="z-10 pr-2">View Case Study</span>
       <div className="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full  bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]">
         <div className="mr-3.5 flex items-center justify-center">

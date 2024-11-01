@@ -3,9 +3,7 @@ import Image from "next/image";
 import benchmark from "@/public/lrnr/case-assets/benchmark-full.png";
 import manuscriptHighlited from "@/public/lrnr/case-assets/manuscript-highlighted.png";
 
-import { CanvasRevealEffect } from "@/app/Components/UI/CosmeticComponents/Backgrounds/canvas-reveal-effect";
-import Video from "@/app/Components/Video";
-import StickyNotes from "@/app/Components/UI/Figjam/StikcyNotes";
+
 import HowMightWeSection from "@/app/Components/UI/Quote/HowMightWe";
 import DotGridBG from "@/app/Components/UI/CosmeticComponents/Backgrounds/DotGridBG";
 import SectionTitle from "@/app/Components/SectionTitle";
@@ -13,19 +11,13 @@ import SectionTitle from "@/app/Components/SectionTitle";
 export default function Lrnr() {
   return (
     <>
-      <CanvasRevealEffect
-        containerClassName=""
-        gradientClassName="from-indigo-500"
-        animationSpeed={0.8}
-        colors={[[255, 255, 255]]}
-      />
-      <section className="hero-section mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[80rem]">
+      <section className="w-full max-w-screen-lg px-8 pt-16 pb-32 mx-auto mt-16">
         <div className="">
           <h2 className="pb-8 text-sm text-purple-500">
             B2B Ed-Tech SaaS Product
           </h2>
           <h1 className="max-w-4xl text-balance text-3xl/9  tracking-tight  sm:text-5.5xl md:text-6xl">
-            Designed Virtual Labs for Medical Grad Students
+            Designed an end-to-end virtual lab for instructors struggling to teach experiments due to inefficient tools.
           </h1>
           <p className="max-w-md mt-4 text-gray-500 text-base/6">
             Year, 2019 world was hit hard by Covid. Altering the landscape of
@@ -72,9 +64,6 @@ export default function Lrnr() {
                   Ventak (BE Dev), Mohan (QA)
                 </span>
               </p>
-              {/* <p className="mt-16 text-gray-400 text-2xs">
-                A dedicated development team of 15 devs
-              </p> */}
             </li>
             <li className="flex w-full flex-none flex-col items-start border-t  border-white/[.075]  px-6 py-8 sm:w-1/2 sm:border-l lg:w-1/4 lg:border-t-0">
               <h3 className="mt-6 text-sm font-medium ">Project Timeline</h3>
@@ -616,6 +605,7 @@ export default function Lrnr() {
           }
         />
       </section>
+      
     </>
   );
 }

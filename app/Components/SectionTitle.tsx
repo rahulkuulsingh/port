@@ -3,6 +3,7 @@ import { cn } from "../utils/cn";
 import { highlightWords } from "../utils/textHighlighter"; // Import the highlightWords function
 
 interface SectionTitleProps {
+  containerClass?:string;
   sectionID: string;
   title?: string;
   subtitle?: string;
@@ -13,7 +14,7 @@ interface SectionTitleProps {
 
 export default function SectionTitle(props: SectionTitleProps) {
   return (
-    <header className="max-w-3xl" id={props.sectionID}>
+    <header className={cn("max-w-3xl", props.containerClass )}  id={props.sectionID}>
       {props.subtitle && ( 
         <p className={cn("text-sm font-medium text-gray-400", props.subtitleColor )}>
           {props.subtitle}

@@ -27,6 +27,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-merge-refs": "^2.1.1",
+    "react-tooltip": "^5.27.1",
     "short-uuid": "^4.2.2",
     "tailwind-merge": "^2.3.0",
     "three": "^0.164.0"

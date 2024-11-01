@@ -87,7 +87,7 @@ export default function Insider() {
       />
 
       <IntroductionGrid
-        title={"Mobile and Web App for Sakra World Hospital."}
+        title={"Simplifying patients lives with easy appointment scheduling and medical record access."}
         subTitle={"B2C Mobile and Web App"}
         subTitleColor={"blue"}
         description={

@@ -91,11 +91,13 @@ export default function Insider() {
       />
 
       <IntroductionGrid
-        title={"Enhancing Usability of Architect."}
+        title={
+          "Why partners create draft campaings but don't publish it: a case study on redesigning user experience to overcome launch barriers."
+        }
         subTitle={"B2B SaaS Product"}
         subTitleColor={"blue"}
         description={
-          "Architect is a SaaS platform that empowers marketers to automate their omnichannel marketing campaigns."
+          "Join me as I walk you through my process of redesigning the campaign creation flow, transforming how partners move from draft to launch."
         }
         roleContent={[
           "The project aims to improve user satisfaction by addressing key pain points like workflow issues and high learning curves, enhancing usability.",
@@ -104,6 +106,25 @@ export default function Insider() {
         teamContent={["Cagdas", "Sarper", "Nour", "Blzenko"]}
         timeline={"Dec, 2021 - June, 2023"}
       />
+
+{/* Image Goes here */}
+
+      <section className="relative mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[54rem]">
+        <SectionTitle
+          sectionID="about-insider"
+          title="About Insider"
+          // subtitle="How it all started?"
+        />
+        <p className="mt-8 text-gray-400  text-lg">
+          Insider is a Marketing-tech company that provides a platform to help
+          marketers who are interested in automating their campaign creation
+          process. The company offers features and resources that make it easier
+          for marketers to deliver personalized experiences, optimize customer
+          journeys, and drive meaningful engagement across channels and more.
+          Overall, Insider aims to simplify and enhance the marketing process,
+          making it more effective and accessible.
+        </p>
+      </section>
 
       <div className="relative max-w-[80rem] mx-auto mt-16 pt-16">
         <HowMightWeSection
@@ -776,11 +797,11 @@ export default function Insider() {
         </div> */}
 
         <section className=" mt-16 pb-32 pt-16 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem]">
-        <SectionTitle
-              sectionID="survey"
-              // subtitle=""
-              title="The Impact of the project."
-            />
+          <SectionTitle
+            sectionID="survey"
+            // subtitle=""
+            title="The Impact of the project."
+          />
           <div className="flex w-full gap-4 mt-8 mb-8">
             <GrowthMetrics
               growthValue={13}
@@ -795,17 +816,17 @@ export default function Insider() {
           That&#39;s it for this project. Thank you.
         </section>
         <section className="lg:max-w-[64rem] md:max-w-[48rem] md:px-8 mt-16 mx-auto pt-16 pb-8 px-6 relative sm:max-w-[40rem] w-full">
-        <SectionTitle
-          sectionID="survey"
-          subtitle="More details hidden"
-          title="For More Indepth Review of this case study, let us connect on a Google Meet "
-          customCode={
-            <p className="mt-2 text-sm text-gray-400">
-              You can find my contact details at bottom of the page.
-            </p>
-          }
-        />
-      </section>
+          <SectionTitle
+            sectionID="survey"
+            subtitle="More details hidden"
+            title="For More Indepth Review of this case study, let us connect on a Google Meet "
+            customCode={
+              <p className="mt-2 text-sm text-gray-400">
+                You can find my contact details at bottom of the page.
+              </p>
+            }
+          />
+        </section>
       </div>
     </>
   );
